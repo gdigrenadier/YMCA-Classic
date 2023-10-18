@@ -1,0 +1,48 @@
+Container@SETTINGS_PANEL:
+	Logic: SettingsLogic
+		ButtonStride: 120, 0
+		Panels:
+			DISPLAY_PANEL: Display
+			AUDIO_PANEL: Audio
+			INPUT_PANEL: Input
+			HOTKEYS_PANEL: Hotkeys
+			ADVANCED_PANEL: Advanced
+	X: (WINDOW_RIGHT - WIDTH) / 2
+	Y: (WINDOW_BOTTOM - HEIGHT) / 2
+	Width: 590
+	Height: 328
+	Children:
+		Label@TITLE:
+			Width: 590
+			Y: 0 - 22
+			Font: BigBold
+			Contrast: true
+			Align: Center
+			Text: Settings
+		Container@TAB_CONTAINER:
+			Children:
+				Button@BUTTON_TEMPLATE:
+					Width: 110
+					Height: 35
+		Background@PANEL_CONTAINER:
+			Y: 34
+			Width: 590
+			Height: 310
+			Background: panel-black
+			Children:
+				Container@PANEL_TEMPLATE:
+					Width: PARENT_RIGHT
+					Height: PARENT_BOTTOM
+		Button@BACK_BUTTON:
+			Key: escape
+			Y: 343
+			Width: 140
+			Height: 35
+			Text: Back
+		Button@RESET_BUTTON:
+			X: 150
+			Y: 343
+			Width: 140
+			Height: 35
+			Text: Reset
+		TooltipContainer@SETTINGS_TOOLTIP_CONTAINER:

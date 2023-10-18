@@ -1,0 +1,2351 @@
+^VehicleOverlays:
+	emp-overlay: emp_fx01
+		Length: *
+		BlendMode: Additive
+		Offset: 0, 0
+		UseTilesetCode: false
+		ZOffset: 512
+	chrono-overlay: chronofade
+		Length: *
+		BlendMode: Additive
+		Offset: 0, 0
+		UseTilesetCode: false
+		ZOffset: 512
+	mind-overlay: mindanim
+		Length: *
+		Tick: 200
+		BlendMode: Alpha
+		Offset: 0, 0
+
+mcv:
+	Inherits: ^VehicleOverlays
+	idle: mcv
+		Facings: 32
+		UseClassicFacings: True
+	icon: mcvicon
+
+mcvhusk:
+	Inherits: ^VehicleOverlays
+	idle: mcvhusk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -1023
+
+truk:
+	Inherits: ^VehicleOverlays
+	idle: truk
+		Facings: 32
+		UseClassicFacings: True
+	icon: trukicon
+
+truk1:
+	Inherits: ^VehicleOverlays
+	idle: truk
+		Facings: 32
+		UseClassicFacings: True
+	icon: trukicon
+
+truk2:
+	Inherits: ^VehicleOverlays
+	idle: truk
+		Facings: 32
+		UseClassicFacings: True
+	icon: trukicon
+
+harv:
+	Inherits: ^VehicleOverlays
+	idle: harv
+		Facings: 32
+		UseClassicFacings: True
+	harvest: harv
+		Start: 32
+		Length: 8
+		Facings: 8
+	dock: harv
+		Start: 96
+		Length: 8
+	dock-loop: harv
+		Start: 104
+		Length: 7
+	icon: harvicon
+
+harvempty:
+	Inherits: harv
+
+harvhalf:
+	Inherits: harv
+
+hhusk:
+	Inherits: ^VehicleOverlays
+	idle: hhusk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -1023
+
+hhusk2:
+	Inherits: ^VehicleOverlays
+	idle: hhusk2
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -1023
+
+charv:
+	Inherits: ^VehicleOverlays
+	idle: charv
+		Facings: 32
+		UseClassicFacings: True
+	harvest: charv
+		Start: 32
+		Length: 8
+		Facings: 8
+	dock: charv
+		Start: 96
+		Length: 8
+	dock-loop: charv
+		Start: 104
+		Length: 7
+	icon: charvicon
+
+charv.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: charv
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+1tnk:
+	Inherits: ^VehicleOverlays
+	idle: 1tnk
+		Facings: 32
+		UseClassicFacings: True
+	idle-water: 1tnkwater
+		Facings: 32
+		UseClassicFacings: True
+	turret: 1tnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 2
+	icon: 1tnkicon
+
+1tnk.pld:
+	Inherits: 1tnk
+	icon: scouttankpldicon
+
+1tnk.reflector:
+	Inherits: 1tnk
+	icon: scouttankreflectoricon
+
+1tnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: 1tnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: 1tnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+2tnk:
+	Inherits: ^VehicleOverlays
+	idle: 2tnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: 2tnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: 2tnkicon
+
+gtnk:
+	Inherits: ^VehicleOverlays
+	idle: gtnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: 2tnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: gtnkicon
+
+2tnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: 2tnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: 2tnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+gtnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: gtnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: 2tnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+3tnk:
+	Inherits: ^VehicleOverlays
+	idle: 3tnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: 3tnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: 3tnkicon
+
+3tnk.ap:
+	Inherits: 3tnk
+	icon: 3tnkapicon
+
+3tnk.pld:
+	Inherits: 3tnk
+	icon: 3tnkpldicon
+
+3tnk.reflector:
+	Inherits: 3tnk
+	icon: 3tnkreflectoricon
+
+3tnki:
+	Inherits: ^VehicleOverlays
+	idle: 3tnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: 3tnki
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: 3tnkiicon
+
+3tnki.pld:
+	Inherits: 3tnki
+	icon: 3tnkipldicon
+
+3tnki.ap:
+	Inherits: 3tnki
+	icon: 3tnkiapicon
+
+3tnki.reflector:
+	Inherits: 3tnki
+	icon: 3tnkireflectoricon
+
+3tnk.yuri:
+	Inherits: ^VehicleOverlays
+	idle: 3tnky
+		Facings: 32
+		UseClassicFacings: True
+	idle2: 3tnky
+		Facings: 32
+		UseClassicFacings: True
+	turret: 3tnky
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: 3tnkyicon
+
+3tnk.yuri.ap:
+	Inherits: 3tnk.yuri
+	icon: 3tnkyapicon
+
+3tnk.yuri.pld:
+	Inherits: 3tnk.yuri
+	icon: 3tnkypldicon
+
+3tnk.yuri.reflector:
+	Inherits: 3tnk.yuri
+	icon: 3tnkyreflectoricon
+
+3tnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: 3tnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: 3tnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+3tnky.destroyed:
+	Inherits: 3tnk.yuri
+	idle: 3tnky
+		ZOffset: -512
+	turret: 3tnky
+		Start: 32
+		ZOffset: -512
+
+4tnk:
+	Inherits: ^VehicleOverlays
+	idle: 4tnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: 4tnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: 4tnkicon
+
+4tnk.speaker:
+	Inherits: 4tnk
+	icon: 4tnkspeakericon
+
+4tnk.speaker.reflector:
+	Inherits: 4tnk
+	icon: 4tnkspeakerreflectoricon
+
+4tnk.speaker.pld:
+	Inherits: 4tnk
+	icon: 4tnkspeakerpldicon
+
+4tnk.tesla:
+	Inherits: ^VehicleOverlays
+	idle: 4tnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: 4tnkteslatur
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: 4tnkteslaicon
+
+4tnk.tesla.reflector:
+	Inherits: 4tnk.tesla
+	icon: 4tnkteslareflectoricon
+
+4tnk.tesla.pld:
+	Inherits: 4tnk.tesla
+	icon: 4tnkteslapldicon
+
+4tnk.nuke:
+	Inherits: 4tnki
+	icon: 4tnknukeshellsicon
+
+4tnk.nuke.reflector:
+	Inherits: 4tnki
+	icon: 4tnknukereflectoricon
+
+4tnk.nuke.pld:
+	Inherits: 4tnki
+	icon: 4tnknukepldicon
+
+4tnki:
+	Inherits: ^VehicleOverlays
+	idle: 4tnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: 4tnki
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: 4tnkiicon
+
+4tnki.pld:
+	Inherits: 4tnki
+	icon: 4tnkpldicon
+
+4tnki.pld.reflector:
+	Inherits: 4tnki
+	icon: 4tnkpldreflectoricon
+
+4tnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: 4tnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: 4tnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+v2rl:
+	Inherits: ^VehicleOverlays
+	idle: v2rl
+		Facings: 32
+		UseClassicFacings: True
+	empty-idle: v2rl
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	aim: v2rl
+		Facings: 32
+		UseClassicFacings: True
+	empty-aim: v2rl
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	icon: v2rlicon
+
+arty:
+	Inherits: ^VehicleOverlays
+	idle: arty
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	icon: artyicon
+
+artynod:
+	Inherits: ^VehicleOverlays
+	idle: artynod
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	icon: artyicnh
+
+howi:
+	Inherits: ^VehicleOverlays
+	idle: howi
+		Facings: 32
+		UseClassicFacings: True
+	turret: howi
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	icon: howiicnh
+
+2s3:
+	Inherits: ^VehicleOverlays
+	idle: 2s3
+		Facings: 32
+		UseClassicFacings: True
+	turret: 2s3
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	icon: 2s3icnh
+
+2s3.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: 2s3
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: 2s3
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+jeep:
+	Inherits: ^VehicleOverlays
+	idle: jeep
+		Facings: 32
+		UseClassicFacings: True
+	turret: jeep
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: jeepicon
+
+apc:
+	Inherits: ^VehicleOverlays
+	idle: apc
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	turret: jeep
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	open: apc
+		Start: 32
+		Length: 3
+	unload: apc
+		Start: 32
+	icon: apcicon
+
+apc.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: apc
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	turret: jeep
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+
+mnly:
+	Inherits: ^VehicleOverlays
+	idle: mnly
+		Facings: 32
+		UseClassicFacings: True
+	icon: mnlyicon
+
+mrj:
+	Inherits: ^VehicleOverlays
+	idle: mrj
+		Facings: 32
+		UseClassicFacings: True
+	spinner: mrj
+		Start: 32
+		Length: 32
+	icon: mrjicon
+
+mgg:
+	Inherits: ^VehicleOverlays
+	idle: mgg
+		Facings: 32
+		UseClassicFacings: True
+	spinner: mgg
+		Start: 32
+		Length: 8
+	spinner-idle: mgg
+		Start: 32
+		Length: 1
+	icon: mggicon
+
+mgg.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: mgg
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	spinner: mgg
+		Start: 32
+		Length: 8
+		ZOffset: -512
+	spinner-idle: mgg
+		Start: 32
+
+msg:
+	Inherits: ^VehicleOverlays
+	idle: msg
+		Facings: 32
+		UseClassicFacings: True
+	make: msg
+		Start: 32
+		Length: 10
+		Tick: 80
+	idle-deployed: msg
+		Frames: 42,43,44,45,46,47,48,48,47,46,45,44,43,42
+		Length: 14
+		Tick: 120
+	icon: msgicon
+
+msg.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: msg
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+ttra:
+	Inherits: ^VehicleOverlays
+	idle: ttnk
+		Facings: 32
+		UseClassicFacings: True
+	spinner: ttnk
+		Start: 32
+		Length: 32
+	icon: ttraicon
+
+ttra.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: ttnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+ttnk:
+	Inherits: ^VehicleOverlays
+	idle: ttnk
+		Facings: 32
+		UseClassicFacings: True
+	spinner: ttnk
+		Start: 32
+		Length: 32
+	icon: ttnkicon
+
+ttnk.arc:
+	Inherits: ttnk
+	icon: teslatankicon
+
+ttnk.ra2:
+	Inherits: ^VehicleOverlays
+	idle: ttnk2
+		Facings: 32
+		UseClassicFacings: True
+	turret: ttnk2
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: litningmuzzle
+		Length: 8
+	icon: ttnk2icon
+
+ttnk.ra2.arc:
+	Inherits: ttnk.ra2
+
+ttnk.ra2.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: ttnk2
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: ttnk2
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+ttnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: ttnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+dtrk:
+	Inherits: ^VehicleOverlays
+	idle: dtrk
+		Facings: 32
+		UseClassicFacings: True
+	icon: dtrkicon
+
+ctnk:
+	Inherits: ^VehicleOverlays
+	idle: ctnk
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: ctnkicon
+
+ctnk.pld:
+	Inherits: ctnk
+	icon: ctnkpldicon
+
+ctnk.reflector:
+	Inherits: ctnk
+	icon: ctnkreflectoricon
+
+apc2:
+	Inherits: ^VehicleOverlays
+	idle: apc2
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	turret: hmmv
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	open: apc2
+		Start: 32
+		Length: 3
+	unload: apc2
+		Start: 35
+		Length: 3
+	icon: apc2icnh
+
+apc2.nod:
+	Inherits: ^VehicleOverlays
+	idle: apc2
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	turret: hmmv
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	open: apc2
+		Start: 32
+		Length: 3
+	unload: apc2
+		Start: 35
+		Length: 3
+	icon: apc2nodicnh
+
+apc2.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: apc2
+		Facings: 32
+		UseClassicFacings: True
+	turret: jeep
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+
+vulc:
+	Inherits: ^VehicleOverlays
+	idle: apc2
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	turret: vulc
+		Facings: 32
+		UseClassicFacings: True
+	turret-ground: vulc
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	open: apc2
+		Start: 32
+		Length: 3
+	unload: apc2
+		Start: 35
+		Length: 3
+	icon: vulcicnh
+
+amcv:
+	Inherits: ^VehicleOverlays
+	idle: amcv
+		Facings: 32
+		UseClassicFacings: True
+	icon: amcvicnh
+
+amcv.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: amcv
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -1023
+
+hmmv:
+	Inherits: ^VehicleOverlays
+	idle: hmmv
+		Facings: 32
+		UseClassicFacings: True
+	turret: hmmv
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	unload: hmmv
+		Facings: 32
+		UseClassicFacings: True
+	icon: jeepicnh
+
+hmmv.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: hmmv
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: hmmv
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+gdrn:
+	Inherits: ^VehicleOverlays
+	idle: gdrn
+		Facings: 32
+		UseClassicFacings: True
+	turret: gdrn
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turrettow: gdrn
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun16
+		Length: 6
+		Facings: 16
+	icon: gdrnicon
+
+bggy:
+	Inherits: ^VehicleOverlays
+	idle: bggy
+		Facings: 32
+		UseClassicFacings: True
+	turret: bggy
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	unload: bggy
+		Facings: 32
+		UseClassicFacings: True
+	icon: bggyicnh
+
+bggy.pld:
+	Inherits: ^VehicleOverlays
+	idle: bggy
+		Facings: 32
+		UseClassicFacings: True
+	turret: bggy
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	unload: bggy
+		Facings: 32
+		UseClassicFacings: True
+	icon: bggypldicon
+
+bggy.aa:
+	Inherits: ^VehicleOverlays
+	idle: bggy
+		Facings: 32
+		UseClassicFacings: True
+	turret: bggy
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	unload: bggy
+		Facings: 32
+		UseClassicFacings: True
+	icon: bggyaaicon
+
+bggy.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: bggy
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: bggy
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+mtnk:
+	Inherits: ^VehicleOverlays
+	idle: mtnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: mtnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turretpd: mtnk
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: mtnkicnh
+
+mtnk.pld:
+	Inherits: mtnk
+	icon: mtnkpldicon
+
+mtnk.reflector:
+	Inherits: mtnk
+	icon: mtnkreflectoricon
+
+mtnk.nod:
+	Inherits: ^VehicleOverlays
+	idle: mtnknod
+		Facings: 32
+		UseClassicFacings: True
+	turret: mtnknod
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turretpd: mtnk
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: mtnknodicnh
+
+mtnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: mtnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: mtnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turretpd: mtnk
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+mtnk.drone:
+	Inherits: ^VehicleOverlays
+	idle: mtnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: dronet
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	spinner: drad
+		Length: *
+	icon: droneicnh
+
+mtnk.drone.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: mtnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: dronet
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+mdrn:
+	Inherits: ^VehicleOverlays
+	idle: mdrn
+		Facings: 1
+		Start: 64
+	turret: mdrn
+		Facings: 32
+		UseClassicFacings: True
+	turret-attached: mdrn
+		Facings: 32
+		Start: 32
+		UseClassicFacings: True
+	muzzle: minigun16
+		Length: 6
+		Facings: 16
+	icon: mdrnicon
+
+mtnk.drone.pld:
+	Inherits: mtnk.drone
+	icon: battledronepldicon
+
+mtnk.drone.reflector:
+	Inherits: mtnk.drone
+	icon: battledronereflectoricon
+
+htnk:
+	Inherits: ^VehicleOverlays
+	idle: htnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: htnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: htnkicnh
+
+htnk.ion:
+	Inherits: htnk
+	turret: htnktion
+		Start: 0
+		Facings: 32
+		UseClassicFacings: True
+	icon: htnkionicon
+
+htnk.ion.reflector:
+	Inherits: htnk.ion
+	icon: htnkionreflectoricon
+
+htnk.ion.pld:
+	Inherits: htnk.ion
+	icon: htnkionpldicon
+
+htnk.hover:
+	Inherits: ^VehicleOverlays
+	idle: htnkhover
+		Facings: 32
+		UseClassicFacings: True
+	turret: htnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: htnkhovericon
+
+htnk.hover.reflector:
+	Inherits: htnk.hover
+	icon: htnkhoverreflectoricon
+
+htnk.hover.pld:
+	Inherits: htnk.hover
+	icon: htnkhoverpldicon
+
+htnk.nanite:
+	Inherits: htnk
+	icon: htnknaniterepairicon
+
+htnk.nanite.reflector:
+	Inherits: htnk
+	icon: htnknaniterepairreflectoricon
+
+htnk.nanite.pld:
+	Inherits: htnk
+	icon: htnknaniterepairpldicon
+
+htnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: htnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	idle-hover: htnkhover
+		Facings: 32
+		UseClassicFacings: True
+	turret: htnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret-ion: htnktion
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+msam:
+	Inherits: ^VehicleOverlays
+	idle: msam
+		Facings: 32
+		UseClassicFacings: True
+	turret: msam
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	empty-aim: msam
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	aim: msam
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	icon: msamicnh
+
+msam.hailstorm:
+	Inherits: msam
+	icon: hailstormicon
+
+msam.nod:
+	Inherits: ^VehicleOverlays
+	idle: msam
+		Facings: 32
+		UseClassicFacings: True
+	turret: msam
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	empty-aim: msam
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	aim: msam
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	icon: msamnodicnh
+
+msam.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: msam
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: msam
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+mlrs:
+	Inherits: ^VehicleOverlays
+	idle: mlrs
+		Facings: 32
+		UseClassicFacings: True
+	turret: mlrs
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turret1: mlrs
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	turret0: mlrs
+		Start: 96
+		Facings: 32
+		UseClassicFacings: True
+	icon: mlrsicnh
+
+mlrs.toxin:
+	Inherits: ^VehicleOverlays
+	idle: mlrs
+		Facings: 32
+		UseClassicFacings: True
+	turret: mlrs
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turret1: mlrs
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	turret0: mlrs
+		Start: 96
+		Facings: 32
+		UseClassicFacings: True
+	icon: ssmchemicon
+
+mlrs.multi:
+	Inherits: ^VehicleOverlays
+	idle: mlrs
+		Facings: 32
+		UseClassicFacings: True
+	turret: mlrs
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turret1: mlrs
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	turret0: mlrs
+		Start: 96
+		Facings: 32
+		UseClassicFacings: True
+	icon: ssmmultiicon
+
+mlrs.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: mlrs
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: mlrs
+		Start: 96
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+stnk:
+	Inherits: ^VehicleOverlays
+	idle: stnktnod
+		Facings: 32
+		UseClassicFacings: True
+	turret: stnktnod
+		Start: 32
+		Facings: 32
+	icon: stnkicnh
+
+stnk.ap:
+	Inherits: stnk
+	icon: stealthtankapicon
+
+stnk.ap.pld:
+	Inherits: stnk
+	icon: stealthtankappldicon
+
+stnk.ap.reflector:
+	Inherits: stnk
+	icon: stealthtankapreflectoricon
+
+stnk.scrin:
+	Inherits: stnk
+	icon: stealthtankscrinicon
+
+stnk.scrin.pld:
+	Inherits: stnk
+	icon: stealthtankscrinpldicon
+
+stnk.scrin.reflector:
+	Inherits: stnk
+	icon: stealthtankscrinreflectoricon
+
+stnk.he:
+	Inherits: stnk
+	icon: stealthtankrocketsicon
+
+stnk.he.pld:
+	Inherits: stnk
+	icon: stealthtankrocketspldicon
+
+stnk.he.reflector:
+	Inherits: stnk
+	icon: stealthtankrocketsreflectoricon
+
+stnk.pld:
+	Inherits: stnk
+	icon: stealthtankpldicon
+
+stnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: stnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: stnk
+		Start: 38
+		Facings: 32
+
+stnknod:
+	Inherits: ^VehicleOverlays
+	idle: stnknod
+		Facings: 32
+		UseClassicFacings: True
+	icon: stnkicnh
+
+stnknod.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: stnknod
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+bike:
+	Inherits: ^VehicleOverlays
+	idle: bike
+		Facings: 32
+		UseClassicFacings: True
+	icon: bikeicnh
+
+bike.explosive:
+	Inherits: bike
+	icon: bikeexplosiveicon
+
+bike.explosive.reflector:
+	Inherits: bike
+	icon: bikeexplosivereflectoricon
+
+bike.explosive.pld:
+	Inherits: bike
+	icon: bikeexplosivepldicon
+
+bike.scrin:
+	Inherits: bike
+	icon: bikescrinicon
+
+bike.scrin.reflector:
+	Inherits: bike
+	icon: bikescrinreflectoricon
+
+bike.scrin.pld:
+	Inherits: bike
+	icon: bikescrinpldicon
+
+bike.rockethail:
+	Inherits: bike
+	icon: bikerocketicon
+
+bike.rockethail.reflector:
+	Inherits: bike
+	icon: bikerocketreflectoricon
+
+bike.rockethail.pld:
+	Inherits: bike
+	icon: bikerocketpldicon
+
+bike.pld:
+	Inherits: bike
+	icon: bikepldicon
+
+bike.pld.reflector:
+	Inherits: bike.pld
+	icon: bikepldreflectoricon
+
+bike.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: bike
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+ftnk:
+	Inherits: ^VehicleOverlays
+	idle: ftnk
+		Facings: 32
+		UseClassicFacings: True
+	muzzle:
+		Combine:
+			flame-n:
+				Length: *
+				Offset: 3,6
+			flame-nw:
+				Length: *
+				Offset: 8,7
+			flame-w:
+				Length: *
+				Offset: 8,2
+			flame-sw:
+				Length: *
+				Offset: 7,-2
+			flame-s:
+				Length: *
+				Offset: 3,-2
+			flame-se:
+				Length: *
+				Offset: -5,-2
+			flame-e:
+				Length: *
+				Offset: -7,2
+			flame-ne:
+				Length: *
+				Offset: -7,8
+		Facings: 8
+		Length: 13
+	icon: ftnkicnh
+
+ftnk.pld:
+	Inherits: ftnk
+	icon: flametankpldicon
+
+ftnk.reflector:
+	Inherits: ftnk.pld
+	icon: flametankreflectoricon
+
+ftnk.pld.fireball:
+	Inherits: ^VehicleOverlays
+	idle: ftnk
+		Facings: 32
+		UseClassicFacings: True
+	icon: fireballtankpldicon
+
+ftnk.reflector.fireball:
+	Inherits: ftnk
+	icon: fireballtankreflectoricon
+
+ftnk.pld.chem:
+	Inherits: ^VehicleOverlays
+	idle: ftnk
+		Facings: 32
+		UseClassicFacings: True
+	icon: chemtankpldicon
+
+ftnk.reflector.chem:
+	Inherits: ftnk
+	icon: chemtankreflectoricon
+
+ftnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: ftnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+hftk:
+	Inherits: ^VehicleOverlays
+	idle: hftk
+		Facings: 32
+		UseClassicFacings: True
+	turret: hftk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle:
+		Combine:
+			flame-n:
+				Length: *
+				Offset: 3,6
+			flame-nw:
+				Length: *
+				Offset: 8,7
+			flame-w:
+				Length: *
+				Offset: 8,2
+			flame-sw:
+				Length: *
+				Offset: 7,-2
+			flame-s:
+				Length: *
+				Offset: 3,-2
+			flame-se:
+				Length: *
+				Offset: -5,-2
+			flame-e:
+				Length: *
+				Offset: -7,2
+			flame-ne:
+				Length: *
+				Offset: -7,8
+		Facings: 8
+		Length: 13
+	icon: hftkicnh
+
+hftk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: hftk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: hftk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+ltnk:
+	Inherits: ^VehicleOverlays
+	idle: ltnk
+		Facings: 32
+		UseClassicFacings: True
+	idle-water: ltnkwater
+		Facings: 32
+		UseClassicFacings: True
+	turret: ltnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 2
+	icon: ltnkicnh
+
+
+ltnk.laser:
+	Inherits: ^VehicleOverlays
+	idle: sherman
+		Start: 32
+		Facings: 32
+		Offset: 0,7
+		UseClassicFacings: True
+	idle-water: ltnkwater
+		Facings: 32
+		UseClassicFacings: True
+	turret: sherman
+		Offset: 0,8
+		Start: 1
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: redlasermuzzle
+		Length: 3
+	icon: laserltnkicon
+
+ltnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: ltnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: ltnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+ltnk.laser.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: sherman
+		Start: 32
+		Facings: 32
+		Offset: 0,7
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: sherman
+		Start: 1
+		Facings: 32
+		Offset: 0,8
+		UseClassicFacings: True
+		ZOffset: -512
+
+harv2:
+	Inherits: ^VehicleOverlays
+	idle: harv2
+		Facings: 32
+		UseClassicFacings: True
+	harvest: harv2
+		Start: 32
+		Length: 4
+		Facings: 8
+		Tick: 60
+	dock: harv2dump
+		Length: 7
+	dock-loop: harv2dump
+		Start: 7
+	icon: harv2icnh
+
+harv2.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: harv2
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+btr:
+	Inherits: ^VehicleOverlays
+	idle: btr
+		Facings: 32
+		UseClassicFacings: True
+	turret: stnk
+		Start: 38
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: gunfire2
+		Length: 2
+	icon: btricon2
+
+btr.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: btr
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: samtur
+		Facings: 32
+		UseClassicFacings: True
+
+btr.surveillance:
+	Inherits: btr
+	spinner: mrj
+		Start: 32
+		Length: 32
+	icon: btrsurveillanceicon
+
+nonasvk:
+	Inherits: btr
+	turret: artytur
+		Start: 0
+		Facings: 32
+		UseClassicFacings: True
+	icon: nonasvkicon
+
+ifv:
+	Inherits: ^VehicleOverlays
+	idle: ifv
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	muzzle2: gunfire2
+		Length: 2
+	spinner: mrj
+		Start: 32
+		Length: 32
+	medic: mouse
+		Start: 194
+		Length: 1
+	tesla: bttnk
+		Start: 32
+		Length: 32
+	turret: ifvtur
+		Facings: 32
+		UseClassicFacings: True
+	turret2: ifvtur
+		Start: 320
+		Facings: 32
+		UseClassicFacings: True
+	turret3: ifvtur
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	turret4: ifvtur
+		Start: 96
+		Facings: 32
+		UseClassicFacings: True
+	turret5: ifvtur
+		Start: 128
+		Facings: 32
+		UseClassicFacings: True
+	turret6: ifvtur
+		Start: 160
+		Facings: 32
+		UseClassicFacings: True
+	turret7: ifvtur
+		Start: 192
+		Facings: 32
+		UseClassicFacings: True
+	turret8: ifvtur
+		Start: 224
+		Facings: 32
+		UseClassicFacings: True
+	turret9: ifvtur
+		Start: 256
+		Facings: 32
+		UseClassicFacings: True
+	turret10: ifvtur
+		Start: 288
+		Facings: 32
+		UseClassicFacings: True
+	open: ifv
+		Start: 32
+		Length: 3
+	unload: ifv
+		Start: 32
+	icon: ifvicon
+
+ifv.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: ifv
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: 1tnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+
+xo:
+	Inherits: ^VehicleOverlays
+	Defaults: xo
+		Offset: 0, 0
+	idle: xo
+		Facings: 8
+	move: xo
+		Start: 8
+		Length: 4
+		Facings: 8
+		Tick: 200
+	shoot: xo
+		Start: 40
+		Length: 2
+		Facings: 8
+		Tick: 40
+	descend: xo
+		Start: 56
+		Facings: 8
+		Length: 3
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	chrono-overlay: chronofade_small
+		Length: *
+		BlendMode: Additive
+		UseTilesetCode: false
+		ZOffset: 512
+		Tick: 80
+	icon: xoicon
+
+titn:
+	Inherits: ^VehicleOverlays
+	stand: titanlegs
+		Facings: 16
+	run: titanlegs
+		Start: 16
+		Facings: 16
+		Length: 14
+		Tick: 90
+	turret: titanturr
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	icon: titanicnh
+
+titn.battle:
+	Inherits: titn
+	icon: titanbattleicon
+
+titn.battle.pld:
+	Inherits: titn
+	icon: titanbattlepldicon
+
+titn.battle.reflector:
+	Inherits: titn
+	icon: titanbattlereflectoricon
+
+titn.railgun:
+	Inherits: titn
+	turret: titantrail
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: lightbluelasermuzzle
+		Length: 3
+	icon: titanrailgunicon
+
+titn.railgun.pld:
+	Inherits: titn.railgun
+	icon: titanrailgunpldicon
+
+titn.railgun.reflector:
+	Inherits: titn.railgun
+	icon: titanrailgunreflectoricon
+
+jugg:
+	Inherits: ^VehicleOverlays
+	stand: titanlegs
+		Facings: 16
+	run: titanlegs
+		Start: 16
+		Facings: 16
+		Length: 14
+		Tick: 90
+	turret: juggt
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	icon: juggicnh
+
+ttrk:
+	Inherits: ^VehicleOverlays
+	idle: ttrk
+		Facings: 32
+		UseClassicFacings: True
+	icon: ttrkicon
+
+disr:
+	Inherits: ^VehicleOverlays
+	idle: disr
+		Facings: 32
+		UseClassicFacings: True
+	turret: sonict
+		Facings: 32
+		UseClassicFacings: True
+	icon: disricon
+
+disr.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: disr
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: sonict
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+hmlrs:
+	Inherits: ^VehicleOverlays
+	idle: hvrhull
+		Facings: 32
+		UseClassicFacings: True
+	turret: hvrtur
+		Facings: 32
+		UseClassicFacings: True
+	icon: hmlrsicnh
+
+hmlrs.reflector:
+	Inherits: hmlrs
+	icon: hmlrsreflectoricon
+
+hmlrs.pld:
+	Inherits: hmlrs
+	icon: hmlrspldicon
+
+tnkd:
+	Inherits: ^VehicleOverlays
+	idle: tnkd
+		Facings: 32
+		UseClassicFacings: True
+	turret: tnkd
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 2
+	icon: tnkdicon
+
+tnkd2:
+	Inherits: ^VehicleOverlays
+	idle: tnkd2
+		Facings: 32
+		Offset: 0,7
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: tnkdicon
+
+tnkd2.destroyed:
+	idle: tnkd2
+		Facings: 32
+		Offset: 0,7
+		UseClassicFacings: True
+		ZOffset: -512
+
+tnkd2.old:
+	Inherits: ^VehicleOverlays
+	idle: tnkd2
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 2
+	icon: tnkdicon
+
+tnkd2.burstfire:
+	Inherits: tnkd2
+	icon: tnkdbursticon
+
+tnkd2.pld:
+	Inherits: tnkd2
+	icon: tnkdpldicon
+
+tnkd2.reflector:
+	Inherits: tnkd2
+	icon: tnkdreflectoricon
+
+tnkd.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: tnkd
+		Facings: 32
+		UseClassicFacings: True
+	turret: tnkd
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+
+v3rl:
+	Inherits: ^VehicleOverlays
+	idle: v3rl
+		Facings: 32
+		UseClassicFacings: True
+	empty-idle: v3rl
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	icon: v3rlicon
+
+rtnk:
+	Inherits: ^VehicleOverlays
+	idle: rtnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: rtnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: rtnkicon
+
+rtnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: rtnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: rtnk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+rtnk.pld:
+	Inherits: rtnk
+	icon: miragepldicon
+
+rtnk.firerate:
+	Inherits: rtnk
+	icon: miragefirerateicon
+
+rtnk.reflector:
+	Inherits: rtnk
+	icon: miragereflectoricon
+
+msar:
+	Inherits: ^VehicleOverlays
+	idle: msar
+		Facings: 32
+		UseClassicFacings: True
+	spinner: msarspinner
+		Length: 32
+	make: msarmake
+		Length: *
+		Tick: 50
+	idle-static: msardeployed
+		Length: 14
+		Tick: 80
+	icon: msaricnh
+
+msar.nod:
+	Inherits: msar
+
+msar.pld:
+	Inherits: msar
+	icon: msarpldicon
+
+msar.pld.nod:
+	Inherits: msar.pld
+
+ptnk:
+	Inherits: ^VehicleOverlays
+	idle: ptnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: ptnkt
+		Facings: 32
+		UseClassicFacings: True
+	icon: ptnkicon
+
+ptnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: ptnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: ptnkt
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+pblaster:
+	Inherits: ptnk
+	icon: prismblastericon
+
+pblaster.destroyed:
+	Inherits: ptnk.destroyed
+
+mwtnk:
+	Inherits: ^VehicleOverlays
+	idle: mwtnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: mwtnkt
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: emp_fx02
+		Length: *
+		BlendMode: Additive
+		Offset: 0, 0
+		UseTilesetCode: false
+		ZOffset: 512
+	icon: mwtnkicnh
+
+mwtnk.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: mwtnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: mwtnkt
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+batf:
+	Inherits: ^VehicleOverlays
+	idle: batf
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	turret: batf
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turret2: stnk
+		Start: 38
+		Facings: 32
+		UseClassicFacings: True
+	icon: batfmissileicon
+
+batf.pld:
+	Inherits: batf
+
+batf.reflector:
+	Inherits: batf
+
+batf.prism:
+	Inherits: ^VehicleOverlays
+	idle: batf
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	turret: ifvtur
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	turret2: ptnkt
+		Facings: 32
+		UseClassicFacings: True
+	icon: batfprismicon
+
+batf.prism.pld:
+	Inherits: batf.prism
+
+batf.prism.reflector:
+	Inherits: batf.prism
+
+batf.artillery:
+	Inherits: ^VehicleOverlays
+	idle: batf
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	turret: batf
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turret2: artytur
+		Start: 0
+		Facings: 32
+		UseClassicFacings: True
+	icon: batfartyicon
+
+batf.artillery.pld:
+	Inherits: batf.artillery
+
+batf.artillery.reflector:
+	Inherits: batf.artillery
+
+batf.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: batf
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	turret: batf
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turret2: stnk
+		Start: 38
+		Facings: 32
+		UseClassicFacings: True
+
+batf.arty:
+	Inherits: ^VehicleOverlays
+	idle: batfold
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: batfartyicon
+
+batf.bunker:
+	Inherits: ^VehicleOverlays
+	idle: batfold
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: batficon
+
+spec:
+	Inherits: ^VehicleOverlays
+	idle: spec
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	icon: specicnh
+
+sapc:
+	Inherits: ^VehicleOverlays
+	idle: sapc
+		Facings: 32
+		UseClassicFacings: True
+	icon: sapcicon
+
+sapc.napalm:
+	Inherits: sapc
+
+sapc.laser:
+	Inherits: sapc
+
+memp:
+	Inherits: ^VehicleOverlays
+	idle: memp
+		Facings: 32
+		UseClassicFacings: True
+	charging: memp
+		Facings: 32
+	idle-overlay: pulsball
+		Length: 23
+		BlendMode: Additive
+		Tick: 40
+		ZOffset: 511
+	icon: mempicnh
+
+memp.volatile:
+	Inherits: memp
+	icon: mempvolatileicon
+
+memp.stable:
+	Inherits: memp
+	icon: mempstableicon
+
+cdrone:
+	Inherits: ^VehicleOverlays
+	idle: cdrone
+		Facings: 32
+		UseClassicFacings: True
+	icon: cdroneicnh
+
+katy:
+	Inherits: ^VehicleOverlays
+	idle: katy
+		Facings: 32
+		UseClassicFacings: True
+	icon: katyicnh
+
+chpr:
+	Inherits: ^VehicleOverlays
+	idle: chpr
+		Facings: 32
+		UseClassicFacings: True
+	turretactive: chpr
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turret: chpr
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	icon: chpricnh
+
+chpr.range:
+	Inherits: ^VehicleOverlays
+	idle: chpr
+		Facings: 32
+		UseClassicFacings: True
+	turretactive: chpr
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turret: chpr
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	icon: chprrangeicon
+
+chpr.aa:
+	Inherits: ^VehicleOverlays
+	idle: chpr
+		Facings: 32
+		UseClassicFacings: True
+	turretactive: chpr
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	turret: chpr
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+	icon: chpraaicon
+
+chpr.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: chpr
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: chpr
+		Start: 64
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+chpr.aa.destroyed:
+	Inherits: chpr.destroyed
+
+chpr.range.destroyed:
+	Inherits: chpr.destroyed
+
+pcan:
+	Inherits: ^VehicleOverlays
+	idle: pcan
+		Facings: 32
+		UseClassicFacings: True
+	icon: pcanicnh
+
+cryo:
+	Inherits: ^VehicleOverlays
+	idle: cryol
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	icon: cryolicnh
+
+slng:
+	Inherits: ^VehicleOverlays
+	idle: slng
+		Facings: 32
+		UseClassicFacings: True
+	turret: slng
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: slngmz
+		Length: 6
+		Facings: 8
+	icon: slngicnh
+
+ftrk:
+	Inherits: ^VehicleOverlays
+	idle: ftrk
+		Facings: 32
+		UseClassicFacings: True
+	turret: ftrk
+		Start: 32
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 2
+	icon: ftrkicon
+
+ftrk.barrage:
+	Inherits: ftrk
+	icon: flaktrackbarrageicon
+
+isu:
+	Inherits: ^VehicleOverlays
+	idle: isu
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	icon: isuicon
+
+isu.concussion:
+	Inherits: ^VehicleOverlays
+	idle: isu
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: smokeygun
+		Length: 12
+		Tick: 30
+	icon: isuconcussionicon
+
+isu.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: isu
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+coordinator:
+	Inherits: ^VehicleOverlays
+	idle: 0tnk
+		Facings: 32
+		UseClassicFacings: True
+	spinner: mrj
+		Start: 32
+		Length: 32
+	icon: coordinatoricon
+
+beam_cannon:
+	Inherits: ^VehicleOverlays
+	idle: 0tnk
+		Facings: 32
+		UseClassicFacings: True
+	turret: ifvtur
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: emp_fx02
+		Length: *
+		BlendMode: Additive
+		Offset: 0, 0
+		UseTilesetCode: false
+		ZOffset: 512
+	icon: beamcannonicon
+
+beam_cannon.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: 0tnk
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: ifvtur
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+mammothmk2:
+	Inherits: ^VehicleOverlays
+	idle: invisibleitem
+	icon: mammothmk2icon
+	muzzle2: lightbluelasermuzzle
+		Length: 3
+	muzzle1: gunfire2
+		Length: 5
+
+apoc:
+	Inherits: ^VehicleOverlays
+	idle: apoc
+		Facings: 32
+		UseClassicFacings: True
+	idle2: apoci
+		Facings: 32
+		UseClassicFacings: True
+	turret: apoctur
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: apocicon
+
+apoc.destroyed:
+	Inherits: ^VehicleOverlays
+	idle: apoc
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+	turret: apoctur
+		Facings: 32
+		UseClassicFacings: True
+		ZOffset: -512
+
+apoci:
+	Inherits: ^VehicleOverlays
+	idle: apoci
+		Facings: 32
+		UseClassicFacings: True
+	idle2: apoci
+		Facings: 32
+		UseClassicFacings: True
+	turret: apoctur
+		Facings: 32
+		UseClassicFacings: True
+	muzzle: gunfire2
+		Length: 5
+	icon: apociicon

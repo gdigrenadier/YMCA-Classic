@@ -2,9 +2,9 @@
 
 @echo on
 
-set Name="Dedicated Server"
+set Name="Dedicated YMCA Classic Server"
 set ListenPort=1234
-set AdvertiseOnline=True
+set AdvertiseOnline=False
 set Password=""
 
 set RequireAuthentication=False

@@ -1,21 +1,12 @@
-The YMCA OpenRA mod has grown from a personal Combined Arms fork
-modding project, to a small, but passionate community. We are very thankful
-for the inspiration Combined Arms has given us, so that we even copied the sentence
-before this one.
-There are still many things from Combined Arms left in this mod and we do not intend
-to steal any of their original creations. If you find assets that are still in this
-mod but are taken without consent, please let us know, we will remove that.
-If you like this mod and don't know Combined
-Arms (unlikely) please go and try out their mod as well. It might also be very
-enjoyable for you (https://discord.gg/CxFYWEJ).
-In this sense, a big thanks goes to
-
-Combined Arms developers:
-	* Inq (Project lead)
-	* Darkademic (Art & Balance)
+The Combined Arms Mod has grown from a small personal
+modding project, to a small, but passionate community.
 
 However It wouldn't be what it is today without the help of the
 talented wider OpenRA community.
+
+Combined Arms developers:
+	* Inq (Project lead)
+	* Darkademic (Art & Balanace)
 
 Contributors & special thanks to:
 	* GraionDilach (C#)
@@ -44,25 +35,10 @@ Contributors & special thanks to:
 	* ra2killer (Hornet)
 	* Azri_Apoc (B2B)
 	* Creator (Splitter)
-	* Salted Old (ptnk2/sref, A-222/Spectre, V3)
+	* Salted Old (ptnk2/sref)
 	* Tony (ptnk/sref)
-	* Stygs (Disruptor)
-	* McPwny, AnimalMan, PatrickWieth (Oil Platform)
-	* DaFool, EA (Juggernaut, Cyborg Commando)
-	* CombinE (PDLT)
-	* Ronco (Heavy Tesla Tank)
-	* IVI (Scorpion)
-	* Bu7loos (Slingshot, Grand Cannon)
-	* Orac (Chronoharv)
-	* Overwatch (Heavy Flame Tank, XO/Bastion, )
-	* B.A.Znd (ISU)
-	* partyzanPaulZy (MARV)
-	* L()KI (Ogunship/Orca.Drone)
-	* 206UE, Slavack, Ackron (Titan)
-	* Kiriha (prmd/Tankd)
-	* Yuriko222 (arty/howi)
 
-Of course YMCA wouldn't exist today without OpenRA & the
+Of course Combined Arms wouldn't exist today without OpenRA & the
 hard work of the many OpenRA contributors.
 
 The OpenRA developers are:
@@ -271,6 +247,3 @@ available from http://www.ip2location.com.
 Finally, special thanks goes to the original teams
 at Westwood Studios and EA for creating the classic
 games which OpenRA aims to reimagine.
-
-
-snct.shp - DarkStar

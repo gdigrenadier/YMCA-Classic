@@ -1,0 +1,144 @@
+ss:
+	Inherits: ^VehicleOverlays
+	idle: ss
+		Facings: 16
+	icon: ss2icon
+
+ca:
+	Inherits: ^VehicleOverlays
+	idle: ca
+		Facings: 16
+	turret: turr
+		Facings: 32
+	muzzle: smokeygun
+		Length: 12
+		Tick: 45
+	icon: caicon
+
+dd:
+	Inherits: ^VehicleOverlays
+	idle: dd
+		Facings: 16
+	turret: ssam
+		Facings: 32
+	turret2: mgun
+		Facings: 32
+	muzzle: samfire
+		Length: 18
+		Facings: 8
+		Offset: -2,-2
+	muzzle2: gunfire2
+		Length: 5
+	icon: ddicon
+
+aegis_cruiser:
+	Inherits: ^VehicleOverlays
+	idle: usabattleship
+		Facings: 32
+	samturret: samtur
+	turret: samtur
+		Facings: 32
+		Offset: 0, 1
+	muzzle: samfire
+		Length: 18
+		Facings: 8
+		Offset: -2,-2
+	muzzle2: gunfire2
+		Length: 5
+	icon: usabattleshipicon
+
+subchaser:
+	Inherits: ^VehicleOverlays
+	idle: pt
+		Facings: 16
+	turret: mgun
+		Facings: 32
+	muzzle: gunfire2
+		Length: 5
+	icon: pticon
+
+lst:
+	Inherits: ^VehicleOverlays
+	idle: lst
+	open: lst
+		Start: 1
+		Length: 4
+		Tick: 150
+	close: lst
+		Frames: 4, 3, 2, 1
+		Length: 4
+		Tick: 150
+	unload: lst
+		Start: 4
+		ZOffset: -511
+	icon: lsticon
+
+msub:
+	Inherits: ^VehicleOverlays
+	idle: msub
+		Facings: 16
+	icon: msubicon
+
+ss2:
+	Inherits: ^VehicleOverlays
+	idle: nsub
+		Facings: 16
+	icon: ssicon
+
+isub:
+	Inherits: ^VehicleOverlays
+	idle: isub
+		Facings: 16
+	icon: isubicon
+
+dd2:
+	Inherits: ^VehicleOverlays
+	idle: dd2
+		Facings: 16
+	turret: rturr
+		Facings: 32
+	turret2: mgun
+		Facings: 32
+	muzzle: smokeygun
+		Length: 12
+		Tick: 45
+	spinner: mrj
+		Start: 32
+		Length: 32
+	icon: dd2icnh
+
+pt2:
+	Inherits: ^VehicleOverlays
+	idle: pt2
+		Facings: 16
+	turret: ssam2
+		Facings: 32
+	muzzle: samfire
+		Length: *
+	spinner: mrj
+		Start: 32
+		Length: 32
+	icon: boaticnh
+
+cv:
+	Inherits: ^VehicleOverlays
+	idle: usacarrier
+		Facings: 32
+		ZOffset: 511
+	icon: usacarriericon
+
+sb:
+	Inherits: ^VehicleOverlays
+	idle: sb
+		Facings: 16
+	muzzle: samfire
+		Length: *
+	icon: sbicnh
+
+seas:
+	Inherits: ^VehicleOverlays
+	idle: seas
+		Facings: 16
+	muzzle: gunfire2
+		Length: 5
+	icon: seasicon

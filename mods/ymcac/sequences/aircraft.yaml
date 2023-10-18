@@ -1,0 +1,604 @@
+mig:
+	Inherits: ^VehicleOverlays
+	idle: mig
+		Facings: 16
+	icon: migicon
+
+su47:
+	Inherits: ^VehicleOverlays
+	idle: su47
+		Facings: 32
+	icon: migaaicon
+
+mig.tesla:
+	Inherits: mig
+	icon: migteslaicon
+
+mig.nuke:
+	Inherits: mig
+	icon: mignukeicon
+
+yak:
+	Inherits: ^VehicleOverlays
+	idle: yak
+		Facings: 16
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: yakicon
+
+chemyak:
+	Inherits: yak
+	icon: chemyakicon
+
+chemyak.volatile:
+	Inherits: yak
+	icon: chemyakvolatileicon
+
+p51:
+	Inherits: ^VehicleOverlays
+	idle: p51
+		Facings: 32
+	muzzle: minigun16
+		Length: 6
+		Facings: 16
+	icon: yakicon
+
+heli:
+	Inherits: ^VehicleOverlays
+	idle: heli
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lbrotor
+		Length: 4
+	slow-rotor: lbrotor
+		Start: 4
+		Length: 8
+	icon: heliicon
+
+heli.cryo:
+	Inherits: heli
+	icon: longbowcryoicon
+
+heli.artillery:
+	Inherits: heli
+	icon: longbowartilleryicon
+
+heli.payload:
+	Inherits: heli
+	icon: longbowpayloadicon
+
+heli.torp:
+	Inherits: heli
+	icon: longbowtorpicon
+
+hind:
+	Inherits: ^VehicleOverlays
+	idle: hind
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotorlg
+		Length: 4
+	slow-rotor: lrotorlg
+		Start: 4
+		Length: 8
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: hindicon
+
+hind.torp:
+	Inherits: hind
+	icon: hindtorpicon
+
+hind.missile:
+	Inherits: hind
+	icon: hindmissileicon
+
+hind.radcannon:
+	Inherits: hind
+	icon: hindradicon
+
+huey:
+	Inherits: ^VehicleOverlays
+	idle: huey
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotorlg2blade
+		Length: 4
+	slow-rotor: lrotorlg2blade
+		Start: 4
+		Length: 8
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: hueyicon
+
+huey.cryo:
+	Inherits: huey
+	icon: hueycryoicon
+
+huey.grenade:
+	Inherits: huey
+	icon: hueygrenadeicon
+
+huey.recon:
+	Inherits: ^VehicleOverlays
+	idle: gazl
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotorlg2blade
+		Length: 4
+	slow-rotor: lrotorlg2blade
+		Start: 4
+		Length: 8
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: hueyicon
+	icon: hueyreconicon
+
+hind.tesla:
+	Inherits: ^VehicleOverlays
+	idle: hind
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotorlg
+		Length: 4
+	slow-rotor: lrotorlg
+		Start: 4
+		Length: 8
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: hindteslaicon
+
+hind.torp:
+	Inherits: hind
+	icon: hindtorpicon
+
+hindoriginal:
+	Inherits: ^VehicleOverlays
+	idle: hindoriginal
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotorlg
+		Length: 4
+	slow-rotor: lrotorlg
+		Start: 4
+		Length: 8
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: hindicon
+
+
+tran:
+	Inherits: ^VehicleOverlays
+	idle: tran
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotor
+		Length: 4
+	rotor2: rrotor
+		Length: 4
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+	slow-rotor2: rrotor
+		Start: 4
+		Length: 8
+	open: tran
+		Start: 32
+		Length: 4
+	close:
+		Frames: 35, 34, 33, 32
+		Length: 4
+	unload: tran
+		Start: 35
+	icon: tranicon
+
+
+tran2:
+	Inherits: ^VehicleOverlays
+	idle: tran2
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotor
+		Length: 4
+	rotor2: rrotor
+		Length: 4
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+	slow-rotor2: rrotor
+		Start: 4
+		Length: 8
+	open: tran2
+		Start: 32
+		Length: 4
+	close:
+		Frames: 35, 34, 33, 32
+		Length: 4
+	unload: tran2
+		Start: 35
+	icon: tranicnh
+
+
+tran3:
+	Inherits: ^VehicleOverlays
+	idle: tran3
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotor
+		Length: 4
+	rotor2: rrotor
+		Length: 4
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+	slow-rotor2: rrotor
+		Start: 4
+		Length: 8
+	open: tran3
+		Start: 32
+		Length: 4
+	close:
+		Frames: 35, 34, 33, 32
+		Length: 4
+	unload: tran3
+		Start: 35
+	icon: tranicon
+
+
+ctran:
+	Inherits: ^VehicleOverlays
+	idle: tran3
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotor
+		Length: 4
+	rotor2: rrotor
+		Length: 4
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+	slow-rotor2: rrotor
+		Start: 4
+		Length: 8
+	open: tran3
+		Start: 32
+		Length: 4
+	close: tran3
+		Frames: 35, 34, 33, 32
+		Length: 4
+	unload: tran3
+		Start: 35
+	icon: ctranicnh
+
+
+tran1husk:
+	Inherits: ^VehicleOverlays
+	idle: tran1husk
+
+
+tran2husk:
+	Inherits: ^VehicleOverlays
+	idle: tran2husk
+
+
+u2:
+	Inherits: ^VehicleOverlays
+	idle: u2
+		Facings: 16
+
+nhaw:
+	Inherits: ^VehicleOverlays
+	idle: bhwk
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotor
+		Length: 4
+	rotor2: rrotor
+		Length: 4
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+	slow-rotor2: rrotor
+		Start: 4
+		Length: 8
+	muzzle: minigun16
+		Length: 6
+		Facings: 16
+	icon: nhawicon
+
+badr:
+	Inherits: ^VehicleOverlays
+	idle: badr
+		Facings: 16
+
+
+b2b:
+	Inherits: ^VehicleOverlays
+	idle: b2b
+		Facings: 32
+
+
+a10:
+	Inherits: ^VehicleOverlays
+	idle: a10
+		Facings: 32
+		UseClassicFacings: True
+	icon: a10icnh
+
+
+c17:
+	Inherits: ^VehicleOverlays
+	idle: c17
+		Facings: 32
+		UseClassicFacings: True
+
+orca:
+	Inherits: ^VehicleOverlays
+	idle: orca
+		Facings: 32
+		UseClassicFacings: True
+	move: orca
+		Start: 32
+		Facings: 32
+	icon: orcaicnh
+
+orca.ap:
+	Inherits: orca
+	icon: orcaarmorpiercingicon
+
+orca.he:
+	Inherits: orca
+	icon: orcahighexplosiveicon
+
+orca.payload:
+	Inherits: orca
+	icon: orcapayloadicon
+
+orca.torp:
+	Inherits: orca
+	icon: orcatorpicon
+
+orcab:
+	Inherits: ^VehicleOverlays
+	idle: orcabomber
+		Facings: 32
+		UseClassicFacings: True
+	move: orcabomber
+		Facings: 32
+	icon: orcabicnh
+
+
+apch:
+	Inherits: ^VehicleOverlays
+	idle: harpy
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotor
+		Length: 4
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: apchicnh
+
+apch.flyby:
+	Inherits: apch
+	icon: apacheflybyicon
+
+apch.torp:
+	Inherits: apch
+	icon: apachetorpicon
+
+uav:
+	Inherits: ^VehicleOverlays
+	idle: uav
+		Facings: 32
+		UseClassicFacings: True
+
+rah66:
+	Inherits: ^VehicleOverlays
+	idle: chcomanche
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotorlg2blade
+		Length: 4
+	slow-rotor: lrotorlg2blade
+		Start: 4
+		Length: 8
+	icon: rah66icnh
+
+rah66.bomber:
+	Inherits: rah66
+	icon: comanchebombericon
+
+kirov:
+	Inherits: ^VehicleOverlays
+	idle: kirov
+		Facings: 32
+		UseClassicFacings: True
+	rotor: krotor
+		Length: 4
+	slow-rotor: krotor
+		Start: 4
+		Length: 8
+	icon: kirovicon
+
+blimp:
+	Inherits: ^VehicleOverlays
+	idle: blimp
+		Facings: 32
+		UseClassicFacings: True
+	icon: airshipicon
+
+frog:
+	Inherits: ^VehicleOverlays
+	idle: frog
+		Facings: 32
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: frogicon
+
+frogdirty:
+	Inherits: frog
+	icon: frogdirtyicon
+
+suk:
+	Inherits: ^VehicleOverlays
+	idle: su27
+		Facings: 32
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: sukicon
+
+suk.conc:
+	Inherits: suk
+	icon: sukhoiconcussionicon
+
+orcaca:
+	Inherits: ^VehicleOverlays
+	idle: v22
+		Facings: 32
+		UseClassicFacings: True
+	move: v22
+		Start: 32
+		Facings: 32
+	icon: orcacaicnh
+
+
+harr:
+	Inherits: ^VehicleOverlays
+	idle: harrier
+		Facings: 32
+		UseClassicFacings: True
+	icon: harricon
+
+harr.avionics:
+	Inherits: harr
+	icon: harrieravionicsicon
+
+harr.payload:
+	Inherits: harr
+	icon: harrierpayloadicon
+
+raptor:
+	Inherits: ^VehicleOverlays
+	idle: f22
+		Facings: 32
+		UseClassicFacings: True
+	icon: raptoricon
+
+
+horn:
+	Inherits: ^VehicleOverlays
+	idle: horn
+		Facings: 32
+		UseClassicFacings: True
+	icon: harricon
+
+scrn:
+	Inherits: ^VehicleOverlays
+	idle: banshee
+		Facings: 32
+		UseClassicFacings: True
+	icon: scrinicnh
+
+scrn.bomber:
+	Inherits: scrn
+	icon: bansheebombericon
+
+scrn.payload:
+	Inherits: scrn
+	icon: bansheepayloadicon
+
+yf23:
+	Inherits: ^VehicleOverlays
+	idle: yf-23
+		Facings: 32
+		UseClassicFacings: True
+	icon: a10icnh
+
+pod:
+	Inherits: ^VehicleOverlays
+	idle: pod
+		Start: 1
+		Length: 1
+
+pod2:
+	Inherits: ^VehicleOverlays
+	idle: pod
+		Length: 1
+
+mh60:
+	Inherits: ^VehicleOverlays
+	idle: mh60
+		Facings: 32
+		UseClassicFacings: True
+	rotor: lrotorlg
+		Length: 4
+	slow-rotor: lrotorlg
+		Start: 4
+		Length: 8
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: mh60icon
+
+venm:
+	Inherits: ^VehicleOverlays
+	idle: venom
+		Facings: 32
+		UseClassicFacings: True
+	move: venom
+		Facings: 32
+	muzzle: redlasermuzzle
+		Length: 3
+	icon: venomicon
+
+venm.heavylaser:
+	Inherits: venm
+	icon: venomheavylasericon
+
+venm.payload:
+	Inherits: venm
+	icon: venompayloadicon
+
+stealth_fighter:
+	Inherits: ^VehicleOverlays
+	idle: stealth_fighter
+		Facings: 32
+		UseClassicFacings: True
+	icon: sthlicon
+
+stealth_fighter.payload:
+	Inherits: stealth_fighter
+	icon: stealthfighterpayloadicon
+
+dropship:
+	Inherits: ^VehicleOverlays
+	idle: badr
+		Facings: 16
+	icon: dropshipicon
+
+auro:
+	Inherits: ^VehicleOverlays
+	idle: auro
+		Facings: 32
+		UseClassicFacings: True
+	icon: auroicnh
+
+aurora:
+	Inherits: ^VehicleOverlays
+	idle: auro
+		Facings: 32
+		UseClassicFacings: True
+	icon: auroraicon

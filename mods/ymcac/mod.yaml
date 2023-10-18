@@ -1,0 +1,369 @@
+Metadata:
+	Title: YMCA Classic
+	Version: Release
+	Website: 
+	WebIcon32: 
+
+PackageFormats: Mix
+
+Packages:
+	~^SupportDir|Content/ymcac
+	~^SupportDir|Content/ymcac/expand
+	~^SupportDir|Content/ymcac/ra
+	~^SupportDir|Content/ymcac/cnc
+	~^SupportDir|Content/ymcac/ts
+	~^SupportDir|Content/ymcac/firestorm
+	~^SupportDir|Content/ymcac/ra2
+	~^SupportDir|Content/ymcac/movies
+	^EngineDir
+	^EngineDir|mods/common: common
+	$ymcac: ymcac
+	~main.mix
+	~conquer.mix
+	~lores.mix: lores
+	~hires.mix
+	~local.mix
+	~sounds.mix
+	~speech.mix
+	~allies.mix
+	~russian.mix
+	~temperat.mix
+	~snow.mix
+	~interior.mix
+	~./ra/scores.mix
+	~./cnc/scores.mix
+	~./ts/scores.mix
+	~./ts/scores01.mix
+	~./ra2/theme.mix
+	~./ra2/thememd.mix
+	~expand2.mix
+	~hires1.mix
+	~desert.mix
+	ymcac|bits
+	ymcac|bits/desert
+	ymcac|bits/jungle
+	ymcac|bits/winter
+	ymcac|bits/barren
+	ymcac|bits/temp
+	ymcac|bits/int
+	ymcac|bits/snow
+	ymcac|bits/audio
+	ymcac|bits/scripts
+	ymcac|uibits
+	ymcac|bits/scrin
+	ymcac|bits/scrin/audio
+	ymcac|bits/misc
+	ymcac|bits/soviet
+	ymcac|bits/allies
+	ymcac|bits/gdi
+	ymcac|bits/nod
+	ymcac|bits/generals
+
+MapFolders:
+	ymcac|maps: System
+	~^SupportDir|maps/ymcac/Release: User
+
+Rules:
+	ymcac|rules/misc.yaml
+	ymcac|rules/ai.yaml
+	ymcac|rules/player.yaml
+	ymcac|rules/palettes.yaml
+	ymcac|rules/world.yaml
+	ymcac|rules/defaults.yaml
+	ymcac|rules/vehicles.yaml
+	ymcac|rules/husks.yaml
+	ymcac|rules/structures.yaml
+	ymcac|rules/infantry.yaml
+	ymcac|rules/civilian.yaml
+	ymcac|rules/decoration.yaml
+	ymcac|rules/aircraft.yaml
+	ymcac|rules/ships.yaml
+	ymcac|rules/fakes.yaml
+	ymcac|rules/bridges.yaml
+	ymcac|rules/commander-tree.yaml
+	ymcac|rules/scrin.yaml
+	ymcac|rules/soviet/structures.yaml
+	ymcac|rules/soviet/vehicles.yaml
+	ymcac|rules/world.yaml
+
+Sequences:
+	ymcac|sequences/ships.yaml
+	ymcac|sequences/vehicles.yaml
+	ymcac|sequences/structures.yaml
+	ymcac|sequences/infantry.yaml
+	ymcac|sequences/aircraft.yaml
+	ymcac|sequences/misc.yaml
+	ymcac|sequences/decorations.yaml
+	ymcac|sequences/commander-tree.yaml
+	ymcac|sequences/scrin.yaml
+	ymcac|sequences/soviet.yaml
+
+ModelSequences:
+	ymcac|sequences/voxels.yaml
+
+TileSets:
+	ymcac|tilesets/snow.yaml
+	ymcac|tilesets/interior.yaml
+	ymcac|tilesets/temperat.yaml
+	ymcac|tilesets/desert.yaml
+	ymcac|tilesets/jungle.yaml
+	ymcac|tilesets/winter.yaml
+	ymcac|tilesets/barren.yaml
+
+Cursors:
+	ymcac|cursors.yaml
+
+Chrome:
+	ymcac|chrome.yaml
+
+Assemblies:
+	^BinDir|OpenRA.Mods.Common.dll
+	^BinDir|OpenRA.Mods.Cnc.dll
+	^BinDir|OpenRA.Mods.YMCAC.dll
+
+ChromeLayout:
+	common|chrome/ingame.yaml
+	common|chrome/ingame-chat.yaml
+	common|chrome/ingame-fmvplayer.yaml
+	common|chrome/ingame-info.yaml
+	common|chrome/ingame-infoscripterror.yaml
+	common|chrome/ingame-infobriefing.yaml
+	common|chrome/ingame-infoobjectives.yaml
+	common|chrome/ingame-infostats.yaml
+	ymcac|chrome/ingame-menu.yaml
+	ymcac|chrome/ingame-observer.yaml
+	ymcac|chrome/ingame-player.yaml
+	common|chrome/ingame-perf.yaml
+	common|chrome/ingame-debug.yaml
+	common|chrome/ingame-debuginfo.yaml
+	common|chrome/ingame-infochat.yaml
+	ymcac|chrome/mainmenu.yaml
+	common|chrome/settings.yaml
+	ymcac|chrome/settings-display.yaml
+	common|chrome/settings-audio.yaml
+	common|chrome/settings-input.yaml
+	common|chrome/settings-hotkeys.yaml
+	common|chrome/settings-advanced.yaml
+	common|chrome/credits.yaml
+	common|chrome/lobby.yaml
+	common|chrome/lobby-mappreview.yaml
+	common|chrome/lobby-players.yaml
+	common|chrome/lobby-options.yaml
+	common|chrome/lobby-music.yaml
+	common|chrome/lobby-servers.yaml
+	common|chrome/lobby-kickdialogs.yaml
+	common|chrome/color-picker.yaml
+	common|chrome/mainmenu-prompts.yaml
+	common|chrome/map-chooser.yaml
+	common|chrome/multiplayer-browser.yaml
+	common|chrome/multiplayer-browserpanels.yaml
+	common|chrome/multiplayer-createserver.yaml
+	common|chrome/multiplayer-directconnect.yaml
+	common|chrome/connection.yaml
+	common|chrome/replaybrowser.yaml
+	common|chrome/gamesave-browser.yaml
+	ymcac|chrome/gamesave-loading.yaml
+	common|chrome/dropdowns.yaml
+	common|chrome/musicplayer.yaml
+	ymcac|chrome/tooltips.yaml
+	common|chrome/assetbrowser.yaml
+	common|chrome/missionbrowser.yaml
+	common|chrome/confirmation-dialogs.yaml
+	common|chrome/editor.yaml
+	common|chrome/playerprofile.yaml
+
+Weapons:
+	ymcac|weapons/explosions.yaml
+	ymcac|weapons/ballistics.yaml
+	ymcac|weapons/missiles.yaml
+	ymcac|weapons/other.yaml
+	ymcac|weapons/smallcaliber.yaml
+	ymcac|weapons/superweapons.yaml
+	ymcac|weapons/weapontypes.yaml
+	ymcac|weapons/scrin.yaml
+	ymcac|rules/soviet/weapons.yaml
+
+Voices:
+	ymcac|audio/voices.yaml
+
+Notifications:
+	ymcac|audio/notifications.yaml
+
+Music:
+	ymcac|audio/music.yaml
+
+Translations:
+	ymcac|languages/english.yaml
+
+Hotkeys:
+	common|hotkeys/game.yaml
+	common|hotkeys/observer.yaml
+	common|hotkeys/production-common.yaml
+	common|hotkeys/supportpowers.yaml
+	common|hotkeys/viewport.yaml
+	ymcac|hotkeys.yaml
+
+LoadScreen: LogoStripeLoadScreen
+	Image: ymcac|uibits/logo.png
+	Image2x: ymcac|uibits/logo-2x.png
+	Image3x: ymcac|uibits/logo-3x.png
+	Text: Shitting...,Pissing...,Cumming...,Loading...,Fixing YMCA...,I hate LUA...,My balls are itchy...,Scrin fucking sucks...,Who needs epic units...,Nerfing England straight to hell...,Ion Mammoth supremacy...,What the hell is wrong with you...,I hate you ImageYMCAWidget...,Fondling Kane's balls...,Cock and ball torture (CBT) is a sexual activity involving the application of pain or constriction to the penis or testicles...,Building another Mammoth Tank...,Disabling Scrin...,What the tank doin...,Double Zeta Breaking Deez Nuts...,Sayed says "Fuck you!"...,SkyFix is not fixing the sky...,GDI and Soviet OP please nerf...,Adding Anime billboards (not)...,Putting da tiddies on the hood...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,The game stopped loading...,Warning: Couldn't load your will to live...,You Must Construct Additional Bitches...,You Must Construct Additional NILS...,You Must Construct Additional Goobers...,You Must Construct Additional Ion Mammoths...,You Must Construct Additional Nerds...,Sayedmamdeez nuts...,Adding too much ore...,Making shitty maps...,Insert loading screen quote here...,Dm gdigrenadier on discord to add more funny loading screen messages...,James is a massive racist...,Getting NFHAVOC a life challenge (impossible)...,NILS try not to be autistic challenge (impossible)...,Creating Kirov Fursona (Likes helium inflation)...,Procrastinating by playing FlatOut 2 instead of modding...,Creating infantry (food) for Viceroids...,Predicting AI will get stuck...,AI can't build naval lmao...,Chokepoint garantueed...,Insulting C&C with another mobile game again...,Exploding inside Skyfix...,Exploiting production speeds...,Making sure the AI can't cheat :troll:...,A quote from NILS: "BOYS LATS INVAIND FRANCE"...,Renaming Brotherhood of Nod to Brotherhood of Freedom (maybe)...,GDI loves to use their FREEDOM GAS(tm)...,GDI Grenadeez nutz...,Skyfix my balls...,Mehdiepeeznuts600...,Mehdiepic does make good models...,I forgot I'm a cracker...,Sometimes the D slips out...,Holy shit Cloud I've done the fuck...,The way he said that makes it sound like he owns me...,Imma hit that viceroidussy...,Patience required... results guaranteed...,Life is a loading screen... make the most of the wait...,Remember to stretch and hydrate...,Just a few more seconds of anticipation...,Enjoy the ride... it's worth the wait...,Remember... every loading screen brings new adventures...,Are you calling me flat???...,We're leaving for Penis...,Send me feet pics...,Come. Now...,Five Nights at Filthyballsacks...,First degree murder...,Spare me the Rod...,Lexussy...,I never run out of bombs. Put that on my gravestone...,ᴳᵒᵈᵈᵃᵐⁿ...,OH MY SWEET LORD WHERE WE ARE GOING WE DONT NEED PANTS...,Shut up you’re racist and sexist...,Kicking NFHAVOC straight in the balls...,ZOCOM? More like ZOCOOM...,Kick NFHAVOC if he joins your lobby...
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+	LobbySettingsNotification
+
+ChromeMetrics:
+	common|metrics.yaml
+	ymcac|metrics.yaml
+
+Fonts:
+	Tiny:
+		Font: common|FreeSans.ttf
+		Size: 10
+		Ascender: 8
+	TinyBold:
+		Font: common|FreeSansBold.ttf
+		Size: 10
+		Ascender: 8
+	Small:
+		Font: common|FreeSans.ttf
+		Size: 12
+		Ascender: 9
+	Regular:
+		Font: common|FreeSans.ttf
+		Size: 14
+		Ascender: 11
+	Bold:
+		Font: common|FreeSansBold.ttf
+		Size: 14
+		Ascender: 11
+	MediumBold:
+		Font: common|FreeSansBold.ttf
+		Size: 18
+		Ascender: 14
+	BigBold:
+		Font: common|FreeSansBold.ttf
+		Size: 24
+		Ascender: 18
+	Title:
+		Font: ymcac|ZoodRangmah.ttf
+		Size: 48
+		Ascender: 26
+
+Missions:
+	ymcac|missions.yaml
+
+MapGrid:
+	TileSize: 24,24
+	Type: Rectangular
+
+SupportsMapsFrom: ymcac, ra, ca
+
+SoundFormats: Aud, Wav
+
+SpriteFormats: ShpD2, R8, ShpTD, TmpRA, TmpTD, ShpTS
+
+SpriteSequenceFormat: ClassicTilesetSpecificSpriteSequence
+	TilesetExtensions:
+		TEMPERAT: .tem
+		SNOW: .sno
+		INTERIOR: .int
+		DESERT: .des
+		JUNGLE: .jun
+		WINTER: .win
+		BARREN: .bar
+
+ModelSequenceFormat: VoxelModelSequence
+
+AssetBrowser:
+	SupportedExtensions: .r8, .shp, .tmp, .tem, .des, .sno, .int, .vqa
+
+GameSpeeds:
+	slowest:
+		Name: Slowest
+		Timestep: 80
+		OrderLatency: 2
+	slower:
+		Name: Slower
+		Timestep: 50
+		OrderLatency: 3
+	default:
+		Name: Normal
+		Timestep: 40
+		OrderLatency: 3
+	fast:
+		Name: Fast
+		Timestep: 35
+		OrderLatency: 4
+	faster:
+		Name: Faster
+		Timestep: 30
+		OrderLatency: 4
+	fastest:
+		Name: Fastest
+		Timestep: 20
+		OrderLatency: 6
+
+ColorValidator:
+	TeamColorPresets: FE1100, 981f1f, f57606, F5D378, f8e947, f861a4, da06f3, 502048, 06f739, 35bb35, 94b319, 12b572, 0e48f6, 2f86f2, 77d8f8, abb7e4
+
+ModContent:
+	InstallPromptMessage: YMCA Classic requires artwork and audio from the original games.\n\nQuick Install will automatically download this content (without music\nor videos) from a mirror of the 2008 Command & Conquer/Red Alert freeware release.\n\nAdvanced Install includes options for downloading the music and for\ncopying the videos and other content from an original game disc.
+	QuickDownload: quickinstall
+	HeaderMessage: Game content may be extracted from the original game discs or an\nexisting digital install. OpenRA can also download the base game\nfiles from an online mirror of the 2008 freeware release of RA.
+	Packages:
+		base: Base Game Files
+			TestFiles: ^SupportDir|Content/ymcac/allies.mix, ^SupportDir|Content/ymcac/conquer.mix, ^SupportDir|Content/ymcac/interior.mix, ^SupportDir|Content/ymcac/hires.mix, ^SupportDir|Content/ymcac/lores.mix, ^SupportDir|Content/ymcac/local.mix, ^SupportDir|Content/ymcac/speech.mix, ^SupportDir|Content/ymcac/russian.mix, ^SupportDir|Content/ymcac/snow.mix, ^SupportDir|Content/ymcac/sounds.mix, ^SupportDir|Content/ymcac/temperat.mix
+			Sources: allied, allied-linux, soviet, soviet-linux, tfd, origin-ra
+			Required: true
+			Download: basefiles
+		aftermathbase: Aftermath Expansion Files
+			TestFiles: ^SupportDir|Content/ymcac/expand/expand2.mix
+			Sources: aftermath, aftermath-linux, tfd, origin-ra
+			Required: true
+			Download: aftermath
+		cncdesert: C&C Desert Tileset
+			TestFiles: ^SupportDir|Content/ymcac/cnc/desert.mix
+			Sources: tfd, origin-cnc, cnc95, cnc95-linux
+			Required: true
+			Download: cncdesert
+		music: Red Alert Music
+			TestFiles: ^SupportDir|Content/ymcac/ra/scores.mix
+			Sources: allied, allied-linux, soviet, soviet-linux, tfd, origin-ra
+			Download: music
+		cncmusic: C&C Music
+			TestFiles: ^SupportDir|Content/ymcac/cnc/scores.mix
+			Download: cncmusic
+			Sources: origin-cnc, tfd, cnc95
+		tsmusic: TibSun Music
+			TestFiles: ^SupportDir|Content/ymcac/ts/scores.mix
+			Download: tsmusic
+			Sources: origin-ts, tfd
+		fsmusic: Firestorm Music
+			TestFiles: ^SupportDir|Content/ymcac/firestorm/linkup.aud, ^SupportDir|Content/ymcac/firestorm/hacker.aud
+			Download: fsmusic
+			Sources: tfd, origin-ts, fstorm
+		ra2music: RA2 Music
+			TestFiles: ^SupportDir|Content/ymcac/ra2/theme.mix
+			Sources: ra2, origin-ra2, tfd
+		yrmusic: YR Music
+			TestFiles: ^SupportDir|Content/ymcac/ra2/thememd.mix
+			Sources: ra2yr, origin-yr, tfd
+	Downloads:
+		ymcac|installer/downloads.yaml
+	Sources:
+		ymcac|installer/aftermath.yaml
+		ymcac|installer/allies95.yaml
+		ymcac|installer/cnc95.yaml
+		ymcac|installer/counterstrike.yaml
+		ymcac|installer/firstdecade.yaml
+		ymcac|installer/origin.yaml
+		ymcac|installer/ra2.yaml
+		ymcac|installer/ra2yr.yaml
+		ymcac|installer/firestorm.yaml
+		ymcac|installer/soviet95.yaml
+
+DiscordService:
+	ApplicationId: 1114578916733096059

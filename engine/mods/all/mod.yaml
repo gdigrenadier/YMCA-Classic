@@ -1,0 +1,37 @@
+Metadata:
+	Title: All mods
+	Version: 40859fab4043cfb3298e107ed1131a1e4fe997c9
+	Hidden: true
+
+Packages:
+	^EngineDir
+
+Cursors:
+
+Chrome:
+
+Assemblies:
+	^BinDir|OpenRA.Mods.Common.dll
+	^BinDir|OpenRA.Mods.Cnc.dll
+	^BinDir|OpenRA.Mods.D2k.dll
+
+ChromeLayout:
+
+Notifications:
+
+LoadScreen: BlankLoadScreen
+
+ChromeMetrics:
+
+Fonts:
+
+SoundFormats:
+
+SpriteFormats:
+
+SpriteSequenceFormat: DefaultSpriteSequence
+
+ModelSequenceFormat: PlaceholderModelSequence
+
+DiscordService:
+	ApplicationId: 699222659766026240

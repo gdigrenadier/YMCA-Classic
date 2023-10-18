@@ -1,0 +1,592 @@
+^AllWeapons:
+	Warhead@anyhit: GrantExternalCondition
+		Range: 0c128
+		Duration: 8
+		Condition: weaponhit
+		ValidTargets: Ground, Structure, Vehicle, Air, Ship
+
+^ABCPrototype:
+	Inherits: ^AllWeapons
+
+^BombPrototype:
+	Inherits: ^AllWeapons
+
+^Fire:
+	Inherits: ^ABCPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 180
+			Light: 50
+			Reflector: 50
+			Heavy: 25
+			Wood: 100
+			Concrete: 30
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath, Incendiary
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Scorch
+		InvalidTargets: Structure, Wall
+	Warhead@3Eff: CreateEffect
+		Explosions: napalm
+		ImpactSounds: firetrt1.aud
+		ImpactActors: false
+	Warhead@Flames: FireCluster
+		Weapon: BurnFx
+		RandomClusterCount: 3
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+^Napalm:
+	Inherits: ^ABCPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 180
+			Light: 100
+			Reflector: 100
+			Heavy: 25
+			Wood: 100
+			Concrete: 35
+			Brick: 20
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Scorch
+	Warhead@3Eff: CreateEffect
+		Explosions: napalm
+		ImpactSounds: firebl3.aud
+	Warhead@Flames: FireCluster
+		Weapon: BurnFx
+		RandomClusterCount: 1
+		Dimensions: 1,1
+		Footprint: X
+
+^NapalmBomb:
+	Inherits: ^BombPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 90
+			Light: 85
+			Reflector: 85
+			Heavy: 55
+			Wood: 75
+			Concrete: 25
+			Brick: 25
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Scorch
+	Warhead@3Eff: CreateEffect
+		Explosions: napalm
+		ImpactSounds: flamer2.aud
+	Warhead@Flames: FireCluster
+		Weapon: BurnFx
+		RandomClusterCount: 3
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+
+^Bomb:
+	Inherits: ^BombPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 70
+			Light: 75
+			Reflector: 75
+			Heavy: 65
+			Wood: 100
+			Concrete: 55
+			Brick: 25
+
+^Chemical:
+	Inherits: ^ABCPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 130
+			Light: 100
+			Reflector: 125
+			Heavy: 50
+			Wood: 75
+			Concrete: 30
+			Brick: 20
+		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
+
+^Radiation:
+	Inherits: ^ABCPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 250
+			Light: 45
+			Reflector: 20
+			Heavy: 30
+			Wood: 12
+			Concrete: 12
+			Brick: 0
+		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
+
+^BulletPrototype:
+	Inherits: ^AllWeapons
+
+^Bullet:
+	Inherits: ^BulletPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 140
+			Light: 40
+			Reflector: 50
+			Heavy: 10
+			Wood: 10
+			Concrete: 5
+			Brick: 5
+
+^BulletHeavy:
+	Inherits: ^BulletPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 110
+			Light: 75
+			Reflector: 100
+			Heavy: 30
+			Wood: 60
+			Concrete: 10
+			Brick: 5
+
+^ShellPrototype:
+	Inherits: ^AllWeapons
+
+^Shell:
+	Inherits: ^ShellPrototype
+	Report: cannon2.aud
+	Projectile: BulletCA
+		Speed: 682
+		Image: 120MM
+		Shadow: True
+		PointDefenseType: Bullet
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 10
+			Light: 100
+			Reflector: 100
+			Heavy: 75
+			Wood: 50
+			Concrete: 25
+			Brick: 45
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees
+	Warhead@3Eff: CreateEffect
+		Explosions: small_explosion
+		ImpactSounds: kaboom12.aud
+		ValidTargets: Ground, Ship, Trees
+	Warhead@4EffWater: CreateEffect
+		Explosions: small_splash
+		ImpactSounds: splash9.aud
+		ValidTargets: Water, Underwater
+		InvalidTargets: Ship, Structure, Bridge
+
+^ShellHeavy:
+	Inherits: ^ShellPrototype
+	Report: cannon1.aud
+	Projectile: BulletCA
+		Speed: 682
+		Image: 120MM
+		Shadow: True
+		PointDefenseType: Bullet
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 10
+			Light: 100
+			Reflector: 100
+			Heavy: 120
+			Wood: 50
+			Concrete: 50
+			Brick: 45
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees
+	Warhead@3Eff: CreateEffect
+		Explosions: med_explosion
+		ImpactSounds: kaboom15.aud
+		ValidTargets: Ground, Ship, Trees
+	Warhead@4EffWater: CreateEffect
+		Explosions: small_splash
+		ImpactSounds: splash9.aud
+		ValidTargets: Water, Underwater
+		InvalidTargets: Ship, Structure, Bridge
+
+^ShellHE:
+	Inherits: ^ShellPrototype
+	Report: tnkfire3.aud
+	Projectile: BulletCA
+		Speed: 582
+		Image: 120MMHEATN
+		Shadow: True
+		PointDefenseType: Bullet
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 80
+			Light: 150
+			Reflector: 150
+			Heavy: 50
+			Wood: 100
+			Concrete: 25
+			Brick: 45
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees
+	Warhead@3Eff: CreateEffect
+		Explosions: artillery_explosion
+		ImpactSounds: xplosml2.aud
+		ValidTargets: Ground, Ship, Trees
+	Warhead@4EffWater: CreateEffect
+		Explosions: small_splash
+		ImpactSounds: splash9.aud
+		ValidTargets: Water, Underwater
+		InvalidTargets: Ship, Structure, Bridge
+
+^ShellAP:
+	Inherits: ^ShellPrototype
+	Report: tnkd2_fire.aud
+	Projectile: BulletCA
+		Speed: 768
+		Image: 183MM
+		Shadow: True
+		PointDefenseType: Bullet
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 10
+			Light: 75
+			Reflector: 75
+			Heavy: 200
+			Wood: 50
+			Concrete: 25
+			Brick: 35
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees
+	Warhead@3Eff: CreateEffect
+		Explosions: small_explosion
+		ImpactSounds: firetrt1.aud
+		ValidTargets: Ground, Ship, Trees
+	Warhead@4EffWater: CreateEffect
+		Explosions: small_splash
+		ImpactSounds: splash9.aud
+		ValidTargets: Water, Underwater
+		InvalidTargets: Ship, Structure, Bridge
+
+^ShellArtillery:
+	Inherits: ^ShellPrototype
+	Report: tank5.aud
+	Range: 14c0
+	Projectile: BulletCA
+		Speed: 204
+		Blockable: false
+		LaunchAngle: 62
+		Inaccuracy: 2c938
+		PointDefenseType: Bullet
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Falloff: 100, 55, 20, 5
+		Versus:
+			None: 60
+			Light: 100
+			Reflector: 100
+			Heavy: 45
+			Wood: 100
+			Concrete: 100
+			Brick: 100
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@3Eff: CreateEffect
+		Explosions: large_explosion
+		ImpactSounds: kaboom25.aud
+	Warhead@4EffWater: CreateEffect
+		Explosions: med_splash
+
+^MissilePrototype:
+	Inherits: ^AllWeapons
+
+^Missile:
+	Inherits: ^MissilePrototype
+	Report: missile6.aud
+	Projectile: MissileCA
+		Speed: 213
+		Arm: 2
+		Blockable: false
+		Inaccuracy: 128
+		Image: DRAGON
+		TrailImage: smokey
+		Shadow: True
+		HorizontalRateOfTurn: 20
+		RangeLimit: 8c0
+		PointDefenseType: Missile
+		LockOnProbability: 80
+		LockOnInaccuracy: 128
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 10
+			Light: 75
+			Reflector: 75
+			Heavy: 100
+			Wood: 75
+			Concrete: 75
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees
+	Warhead@3Eff: CreateEffect
+		Explosions: med_explosion
+		ImpactSounds: kaboom25.aud
+		ValidTargets: Ground, Air, Ship, Trees
+	Warhead@4EffWater: CreateEffect
+		Explosions: med_splash
+		ImpactSounds: splash9.aud
+		ValidTargets: Water, Underwater
+		InvalidTargets: Ship, Structure, Bridge
+
+^MissileAP:
+	Inherits: ^MissilePrototype
+	Report: missile6.aud
+	Projectile: MissileCA
+		Speed: 320
+		Arm: 1
+		Blockable: false
+		Inaccuracy: 128
+		Image: DRAGON
+		TrailImage: smokey
+		ContrailLength: 12
+		Shadow: True
+		HorizontalRateOfTurn: 40
+		PointDefenseType: Missile
+		LockOnProbability: 90
+		LockOnInaccuracy: 128
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 5
+			Light: 50
+			Reflector: 50
+			Heavy: 150
+			Wood: 50
+			Concrete: 50
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees
+	Warhead@3Eff: CreateEffect
+		Explosions: small_explosion
+		ImpactSounds: kaboom12.aud
+		ValidTargets: Ground, Air, Ship, Trees
+	Warhead@4EffWater: CreateEffect
+		Explosions: med_splash
+		ImpactSounds: splash9.aud
+		ValidTargets: Water, Underwater
+		InvalidTargets: Ship, Structure, Bridge
+
+^MissileHE:
+	Inherits: ^MissilePrototype
+	Report: rocket.aud
+	Projectile: MissileCA
+		Speed: 280
+		Arm: 2
+		Blockable: false
+		Inaccuracy: 128
+		Image: DRAGON
+		TrailImage: smokey
+		Shadow: True
+		HorizontalRateOfTurn: 20
+		RangeLimit: 10c0
+		PointDefenseType: Missile
+		LockOnProbability: 80
+		LockOnInaccuracy: 128
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 70
+			Light: 150
+			Reflector: 150
+			Heavy: 50
+			Wood: 100
+			Concrete: 25
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees
+	Warhead@3Eff: CreateEffect
+		Explosions: large_artillery_explosion
+		ImpactSounds: artyhit.aud, artyhit2.aud, artyhit3.aud
+		ValidTargets: Ground, Air, Ship, Trees
+	Warhead@4EffWater: CreateEffect
+		Explosions: med_splash
+		ImpactSounds: splashl1.aud, splashl2.aud
+		ValidTargets: Water, Underwater
+		InvalidTargets: Ship, Structure, Bridge
+	Warhead@5EffAir: CreateEffect
+		Explosions: med_explosion_air
+		ImpactSounds: kaboom25.aud
+		ValidTargets: Air
+
+^MissileArtillery:
+	Inherits: ^MissilePrototype
+	Projectile: BulletCA
+		Blockable: false
+		Shadow: true
+		ContrailLength: 10
+		Inaccuracy: 3c512
+		Image: dragon
+		TrailImage: smokey
+		Speed: 225
+		LaunchAngle: 75
+		PointDefenseType: Missile
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 60
+			Light: 100
+			Reflector: 100
+			Heavy: 50
+			Wood: 100
+			Concrete: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees
+	Warhead@3Eff: CreateEffect
+		Explosions: large_explosion
+		ImpactSounds: kaboom15.aud
+		ValidTargets: Ground, Ship, Trees
+	Warhead@4EffWater: CreateEffect
+		Explosions: med_splash
+		ImpactSounds: splashl1.aud, splashl2.aud
+		ValidTargets: Water, Underwater
+		InvalidTargets: Ship, Structure, Bridge
+
+^MissileCryo:
+	Inherits: ^MissilePrototype
+	Report: cryomissile.aud
+	Projectile: BulletCA
+		Blockable: false
+		Shadow: true
+		Inaccuracy: 1c341
+		Image: cryomiss
+		TrailImage: smokey
+		TrailPalette: cold1
+		TrailInterval: 1
+		TrailDelay: 1
+		Speed: 300
+		LaunchAngle: 65
+		ContrailLength: 17
+		ContrailColor: 8fc6ffaa
+		ContrailWidth: 0c48
+		PointDefenseType: Missile
+	ValidTargets: Ground, Trees, Water, Underwater, Air
+	Warhead@1Dam: SpreadDamage
+		Spread: 341
+		Falloff: 100, 50, 25, 0
+		Versus:
+			None: 50
+			Light: 90
+			Reflector: 50
+			Heavy: 70
+			Wood: 25
+			Concrete: 75
+			Brick: 1
+		DamageTypes: FrozenDeath
+	Warhead@3Eff: CreateEffect
+		Explosions: cryoblast
+		ExplosionPalette: ra2effect-ignore-lighting-alpha75
+		ImpactSounds: cryoblast.aud
+	Warhead@chill: GrantExternalCondition
+		Condition: chilled
+		Duration: 150
+		Range: 2c0
+	Warhead@cryoresidue: CreateTintedCells
+		LayerName: cryoresidue
+		Spread: 1c0
+		Level: 100
+		Falloff: 100, 75, 52, 15, 2
+		MaxLevel: 600
+
+^EnergyPrototype:
+	Inherits: ^AllWeapons
+	Warhead@energy: GrantExternalCondition
+		Range: 0c128
+		Duration: 8
+		Condition: energized
+		ValidTargets: Ground, Structure, Vehicle
+
+^Energy:
+	Inherits: ^EnergyPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 60
+			Light: 125
+			Reflector: 25
+			Heavy: 100
+			Wood: 100
+			Concrete: 25
+			Brick: 45
+	Warhead@2Dam: SpreadDamage
+		Versus:
+			None: 70
+			Light: 125
+			Reflector: 25
+			Heavy: 100
+			Wood: 100
+			Concrete: 25
+			Brick: 45
+
+^EnergyLight:
+	Inherits: ^EnergyPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 120
+			Light: 100
+			Reflector: 25
+			Heavy: 40
+			Wood: 75
+			Concrete: 15
+			Brick: 45
+	Warhead@2Dam: SpreadDamage
+		Versus:
+			None: 140
+			Light: 100
+			Reflector: 25
+			Heavy: 40
+			Wood: 75
+			Concrete: 15
+			Brick: 45
+
+^EnergyArtillery:
+	Inherits: ^EnergyPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 65
+			Light: 150
+			Reflector: 25
+			Heavy: 75
+			Wood: 100
+			Concrete: 100
+			Brick: 45
+	Warhead@2Dam: SpreadDamage
+		Versus:
+			None: 75
+			Light: 150
+			Reflector: 25
+			Heavy: 75
+			Wood: 100
+			Concrete: 100
+			Brick: 45
+
+^EnergyAP:
+	Inherits: ^EnergyPrototype
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			None: 10
+			Light: 75
+			Reflector: 25
+			Heavy: 150
+			Wood: 75
+			Concrete: 35
+			Brick: 45
+	Warhead@2Dam: SpreadDamage
+		Versus:
+			None: 15
+			Light: 75
+			Reflector: 25
+			Heavy: 150
+			Wood: 75
+			Concrete: 35
+			Brick: 45
