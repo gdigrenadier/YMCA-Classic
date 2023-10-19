@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "tpQJuniNuGrBMBPNfpEOTqTsOJUsdxJJVOPxklRiu9c9cJT2vb6ig8iwxZZFZoqCpAuGE263ZREJsP+5d21wCg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\OpenRA.Mods.YMCAC\\OpenRA.Mods.YMCAC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\smith\\.nuget\\packages\\discordrichpresence\\1.0.150\\discordrichpresence.1.0.150.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.0\\microsoft.netframework.referenceassemblies.net472.1.0.0.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\mp3sharp\\1.0.5\\mp3sharp.1.0.5.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\nuget.commandline\\4.4.1\\nuget.commandline.4.4.1.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\openra-eluant\\1.0.17\\openra-eluant.1.0.17.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\openra-fuzzylogiclibrary\\1.0.1\\openra-fuzzylogiclibrary.1.0.1.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\openra-open.nat\\1.0.0\\openra-open.nat.1.0.0.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\rix0rrr.beaconlib\\1.0.2\\rix0rrr.beaconlib.1.0.2.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\sharpziplib\\1.2.0\\sharpziplib.1.2.0.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
+    "C:\\Users\\smith\\.nuget\\packages\\taglibsharp\\2.2.0\\taglibsharp.2.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

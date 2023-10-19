@@ -1,0 +1,257 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\OpenRA.Mods.YMCAC\\OpenRA.Mods.YMCAC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Game\\OpenRA.Game.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Game\\OpenRA.Game.csproj",
+        "projectName": "OpenRA.Game",
+        "projectPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Game\\OpenRA.Game.csproj",
+        "packagesPath": "C:\\Users\\smith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Game\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\smith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "OpenRA-Eluant": {
+              "target": "Package",
+              "version": "[1.0.17, )"
+            },
+            "OpenRA-Open.NAT": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "SharpZipLib": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Cnc\\OpenRA.Mods.Cnc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Cnc\\OpenRA.Mods.Cnc.csproj",
+        "projectName": "OpenRA.Mods.Cnc",
+        "projectPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Cnc\\OpenRA.Mods.Cnc.csproj",
+        "packagesPath": "C:\\Users\\smith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Cnc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\smith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Game\\OpenRA.Game.csproj": {
+                "projectPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Game\\OpenRA.Game.csproj"
+              },
+              "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Common\\OpenRA.Mods.Common.csproj": {
+                "projectPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Common\\OpenRA.Mods.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Common\\OpenRA.Mods.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Common\\OpenRA.Mods.Common.csproj",
+        "projectName": "OpenRA.Mods.Common",
+        "projectPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Common\\OpenRA.Mods.Common.csproj",
+        "packagesPath": "C:\\Users\\smith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\smith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Game\\OpenRA.Game.csproj": {
+                "projectPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Game\\OpenRA.Game.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "DiscordRichPresence": {
+              "target": "Package",
+              "version": "[1.0.150, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "OpenRA-FuzzyLogicLibrary": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "StyleCop.Analyzers": {
+              "target": "Package",
+              "version": "[1.1.118, )"
+            },
+            "rix0rrr.BeaconLib": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\OpenRA.Mods.YMCAC\\OpenRA.Mods.YMCAC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\OpenRA.Mods.YMCAC\\OpenRA.Mods.YMCAC.csproj",
+        "projectName": "OpenRA.Mods.YMCAC",
+        "projectPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\OpenRA.Mods.YMCAC\\OpenRA.Mods.YMCAC.csproj",
+        "packagesPath": "C:\\Users\\smith\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\OpenRA.Mods.YMCAC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\smith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Game\\OpenRA.Game.csproj": {
+                "projectPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Game\\OpenRA.Game.csproj"
+              },
+              "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Cnc\\OpenRA.Mods.Cnc.csproj": {
+                "projectPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Cnc\\OpenRA.Mods.Cnc.csproj"
+              },
+              "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Common\\OpenRA.Mods.Common.csproj": {
+                "projectPath": "C:\\Users\\smith\\Downloads\\YMCA Classic\\YMCAC\\engine\\OpenRA.Mods.Common\\OpenRA.Mods.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "MP3Sharp": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "target": "Package",
+              "version": "[1.1.118, )"
+            },
+            "TagLibSharp": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+C:\Users\smith\Downloads\YMCA Classic\YMCAC\engine\bin\OpenRA.Mods.YMCAC.dll
+C:\Users\smith\Downloads\YMCA Classic\YMCAC\engine\bin\OpenRA.Mods.YMCAC.pdb
+C:\Users\smith\Downloads\YMCA Classic\YMCAC\OpenRA.Mods.YMCAC\obj\Release\OpenRA.Mods.YMCAC.csproj.AssemblyReference.cache
+C:\Users\smith\Downloads\YMCA Classic\YMCAC\OpenRA.Mods.YMCAC\obj\Release\OpenRA.Mods.YMCAC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\smith\Downloads\YMCA Classic\YMCAC\OpenRA.Mods.YMCAC\obj\Release\OpenRA.Mods.YMCAC.AssemblyInfoInputs.cache
+C:\Users\smith\Downloads\YMCA Classic\YMCAC\OpenRA.Mods.YMCAC\obj\Release\OpenRA.Mods.YMCAC.AssemblyInfo.cs
+C:\Users\smith\Downloads\YMCA Classic\YMCAC\OpenRA.Mods.YMCAC\obj\Release\OpenRA.Mods.YMCAC.csproj.CoreCompileInputs.cache
+C:\Users\smith\Downloads\YMCA Classic\YMCAC\OpenRA.Mods.YMCAC\obj\Release\OpenRA.Mods.YMCAC.csproj.CopyComplete
+C:\Users\smith\Downloads\YMCA Classic\YMCAC\OpenRA.Mods.YMCAC\obj\Release\OpenRA.Mods.YMCAC.dll
+C:\Users\smith\Downloads\YMCA Classic\YMCAC\OpenRA.Mods.YMCAC\obj\Release\OpenRA.Mods.YMCAC.pdb

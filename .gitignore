@@ -1,8 +1,8 @@
 user.config
 
-bin
-obj
+
+
 .DS_Store
 .idea
 .vs
-build/
+
