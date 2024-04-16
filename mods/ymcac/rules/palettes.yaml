@@ -149,6 +149,10 @@
 		Name: ra2unit
 		Filename: ra2unittem.pal
 		ShadowIndex: 4
+    PaletteFromFile@temperatalt:
+		Name: temperatalt
+		Filename: temperatalt.pal
+		ShadowIndex: 4
 	PaletteFromFile@colorpicker:
 		Name: colorpicker
 		Filename: temperattd.pal

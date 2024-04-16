@@ -430,6 +430,7 @@ kirov:
 		Start: 4
 		Length: 8
 	icon: kirovicon
+    Palette: temperatalt
 
 blimp:
 	Inherits: ^VehicleOverlays
