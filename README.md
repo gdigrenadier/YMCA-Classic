@@ -2,6 +2,7 @@
 A older version of YMCA, just with new maps, some stuff and maaaaaaybe unit tweaks.
 
 Of course as per usual with other OpenRA mods. download the installers on the latest releases.
+
 (Finally got those damned installers to work if you couldn't already tell.)
 
 Credits:
