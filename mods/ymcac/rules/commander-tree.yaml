@@ -1082,7 +1082,7 @@ commander_tree.Mammoth_Tank.TT:
 		BuildPaletteOrder: 120
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.soviet, stek, ~!commander_tree.mammoth_tank.ns, ~!commander_tree.mammoth_tank.pt
-		Description: The Mammoth Tank is upgraded with a Tesla Weapon System. \n  Energy based weapons systems cannot be shot down by Point Defense Systems. \n  The Mammoth can no longer shoot on aircraft.
+		Description: The Mammoth Tank is upgraded with a Tesla Weapon System. \n  Energy based weapons systems cannot be shot down by Point Defense Systems.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.sovietmammoth
 

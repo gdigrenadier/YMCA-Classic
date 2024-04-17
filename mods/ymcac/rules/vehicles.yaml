@@ -768,7 +768,7 @@ GTNK.squad:
 		IconPalette: chrometd
 		BuildPaletteOrder: 180
 		Prerequisites: stek, ~vehicles.soviet, ~commander_tree.mammoth_tank.tt, ~!filler.sovietmammoth2
-		Description: Big and slow tank with Tesla weapon.\nCan crush concrete walls.\n  Strong vs Vehicles\n  Weak vs Aircraft
+		Description: Big and slow tank with Tesla weapon.\nCan crush concrete walls.\n  Strong vs Vehicles, Infantry, Aircraft
 	Tooltip:
 		Name: Tesla Mammoth Tank
 		RequiresCondition: !iraqtank
@@ -791,7 +791,7 @@ GTNK.squad:
 	Inherits: ^ReflectorArmor
 	Buildable:
 		Prerequisites: stek, ~vehicles.soviet, ~commander_tree.mammoth_tank.tt,  ~commander_tree.mammoth_tank.reflector
-		Description: Big and slow tank with Tesla weapon.\n Has Reflector Armor, which is very good vs. Energy Weapons.\n  Strong vs Vehicles\n  Weak vs Aircraft
+		Description: Big and slow tank with Tesla weapon.\n Has Reflector Armor, which is very good vs. Energy Weapons.\n  Strong vs Vehicles, Infantry, Aircraft
 	Tooltip:
 		Name: Tesla Mammoth Tank (Reflector)
 		RequiresCondition: !iraqtank
