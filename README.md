@@ -12,3 +12,4 @@ Credits:
  - Patrick Weith for making YMCA, his mod of Combined Arms.
  - Sayedmamdouh for additional support.
  - Friends for playtesting.
+ - Winamp for acting as a therapist.
