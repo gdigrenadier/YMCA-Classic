@@ -14,7 +14,7 @@ ca:
 		Length: 12
 		Tick: 45
 	icon: caicon
-
+    
 dd:
 	Inherits: ^VehicleOverlays
 	idle: dd
@@ -142,3 +142,38 @@ seas:
 	muzzle: gunfire2
 		Length: 5
 	icon: seasicon
+
+#bot variants
+
+pt2.ai:
+	Inherits: pt2
+
+sb.ai:
+	Inherits: sb
+
+seas.ai:
+	Inherits: seas
+
+ss.ai:
+	Inherits: ss
+        
+dd.ai:
+	Inherits: dd
+        
+dd2.ai:
+	Inherits: dd2
+        
+ac.ai:
+	Inherits: aegis_cruiser
+        
+ca.ai:
+	Inherits: ca
+
+msub.ai:
+	Inherits: msub
+
+cv.ai:
+	Inherits: cv
+
+isub.ai:
+	Inherits: isub

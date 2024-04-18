@@ -1301,7 +1301,7 @@ Player:
 			shields.upgrade: 1
 	BaseBuilderBotModuleCA@naval:
 		RequiresCondition: enable-naval-ai
-		BuildingQueues: Building, Upgrade
+		BuildingQueues: Building, Upgrade, Commander_Tree
 		MinimumExcessPower: 50
 		MaximumExcessPower: 300
 		ExcessPowerIncrement: 20
@@ -1343,10 +1343,10 @@ Player:
 			fix: 1
 			rep: 1
 			srep: 1
-			spen: 6
-			syrd: 6
-			spen.nod: 6
-			syrd.gdi: 6
+			spen: 10
+			syrd: 10
+			spen.nod: 10
+			syrd.gdi: 10
 		BuildingFractions:
 			proc: 30
 			proc.td: 30
@@ -1414,10 +1414,10 @@ Player:
 			eye: 1
 			hpad: 3
 			hpad.td: 3
-			spen: 1
-			syrd: 1
-			spen.nod: 1
-			syrd.gdi: 1
+			spen: 20
+			syrd: 20
+			spen.nod: 20
+			syrd.gdi: 20
 			bombard.strat: 1
 			seek.strat: 1
 			hold.strat: 1
@@ -1440,7 +1440,6 @@ Player:
 			charv.upgrade: 1
 			regen.upgrade: 1
 			shields.upgrade: 1
-   			commander_tree.Battlecruiser: 1
 	SquadManagerBotModuleCA@brutal-vhard:
 		RequiresCondition: enable-brutal-ai || enable-vhard-ai
 		MinimumAttackForceDelay: 25
@@ -2236,13 +2235,13 @@ Player:
 			harv.chrono: 8
 	SquadManagerBotModule@naval:
 		RequiresCondition: enable-naval-ai
-		SquadSize: 1
+		SquadSize: 20
 		ExcludeFromSquadsTypes: harv, har2, harv.scrin, harv.chrono, mcv, amcv, smcv, dog, e6, n6, s6
 		ExcludeFromAirSquadsTypes: deva, pac, jjet, bjet
-		NavalUnitsTypes: ss,msub,dd,ca,lst,pt,pt2,dd2,ss2,isub,sb,seas
-		ConstructionYardTypes: fact,afac,sfac
+		NavalUnitsTypes: ss, msub, dd, ca, lst, pt, pt2, dd2, ss2, isub, sb, seas
+		ConstructionYardTypes: fact, afac, sfac
 		StaticAntiAirTypes: agun, sam, nsam, cram, shar
-		NavalProductionTypes: spen,syrd,spen.nod,syrd.gdi
+		NavalProductionTypes: spen, syrd, spen.nod, syrd.gdi
 		AirSquadTargetTypes:
 			mshp: Building
 	UnitBuilderBotModuleCA@naval:
@@ -2250,10 +2249,10 @@ Player:
 		MaxAircraft: 4
 		UnitIntervals:
 			mshp: 7500
-			harv: 2250
-			harv.td: 2250
-			harv.scrin: 2250
-			harv.chrono: 2250
+			harv: 500
+			harv.td: 500
+			harv.scrin: 500
+			harv.chrono: 500
 		UnitsToBuild:
 			e1: 65
 			e2: 25
@@ -2292,18 +2291,19 @@ Player:
 			kiro: 2
 			a10: 5
 			auro: 5
-			ss: 20
-			msub: 10
-			dd: 10
-			ca: 10
-			carr: 10
-			pt: 20
-			pt2: 20
-			dd2: 10
-			ss2: 20
-			isub: 10
-			sb: 10
-			seas: 10
+			ss.ai: 70
+			msub.ai: 60
+			dd.ai: 70
+			ca.ai: 60
+			carr.ai: 60
+			pt.ai: 70
+			pt2.ai: 70
+			dd2.ai: 70
+			ss2.ai: 70
+			isub.ai: 60
+			sb.ai: 70
+			seas.ai: 70
+            ac.ai: 70
 			stmr: 5
 			deva: 3
 			pac: 3

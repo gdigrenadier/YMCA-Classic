@@ -872,3 +872,61 @@ MSUB:
 		InitialStance: HoldFire
 	Selectable:
 		DecorationBounds: 44,44
+
+#bot variants
+PT2.AI:
+	Inherits: PT2
+	Buildable:
+		Prerequisites: ~ships.any, ~botplayer
+
+SB.AI:
+	Inherits: SB
+	Buildable:
+		Prerequisites: ~ships.any, ~botplayer
+
+SEAS.AI:
+	Inherits: SEAS
+	Buildable:
+		Prerequisites: ~ships.any, ~botplayer
+
+SS.AI:
+	Inherits: SS
+	Buildable:
+		Prerequisites: ~ships.any, radar, ~botplayer
+        
+DD.AI:
+	Inherits: DD
+	Buildable:
+		Prerequisites: ~ships.any, radar, ~botplayer
+        
+DD2.AI:
+	Inherits: DD2
+	Buildable:
+		Prerequisites: ~ships.any, radar, ~botplayer
+        
+AC.AI:
+	Inherits: Aegis_Cruiser
+	Buildable:
+		Prerequisites: ~ships.any, radar, ~botplayer
+        
+CA.AI:
+	Inherits: CA
+	Buildable:
+		Prerequisites: ~ships.any, techcenter, ~botplayer
+
+MSUB.AI:
+	Inherits: MSUB
+	Buildable:
+		Prerequisites: ~ships.any, techcenter, ~botplayer
+
+CARR.AI:
+	Inherits: CARR
+	Buildable:
+		Prerequisites: ~ships.any, techcenter, ~botplayer
+
+ISUB.AI:
+	Inherits: ISUB
+	Buildable:
+		Prerequisites: ~ships.any, techcenter, ~botplayer
+        
+

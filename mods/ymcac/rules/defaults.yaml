@@ -93,7 +93,7 @@
 ^BotDefenseProductionBonus:
 	ProductionTimeMultiplier@brutalbonus:
 		Multiplier: 80
-		Prerequisites: is-brutal-ai
+		Prerequisites: is-brutal-ai || owned-by-naval-ai
 	ProductionTimeMultiplier@vhardbonus:
 		Multiplier: 85
 		Prerequisites: is-vhard-ai
@@ -107,7 +107,7 @@
 ^BotGroundProductionBonus:
 	ProductionTimeMultiplier@brutalbonus:
 		Multiplier: 40
-		Prerequisites: is-brutal-ai
+		Prerequisites: is-brutal-ai || owned-by-naval-ai
 	ProductionTimeMultiplier@vhardbonus:
 		Multiplier: 50
 		Prerequisites: is-vhard-ai
@@ -121,7 +121,7 @@
 ^BotAirProductionBonus:
 	ProductionTimeMultiplier@brutalbonus:
 		Multiplier: 80
-		Prerequisites: is-brutal-ai
+		Prerequisites: is-brutal-ai || owned-by-naval-ai
 	ProductionTimeMultiplier@vhardbonus:
 		Multiplier: 85
 		Prerequisites: is-vhard-ai
@@ -141,7 +141,7 @@
 		Interval: 250
 		Amount: 1000
 		ShowTicks: False
-		RequiresCondition: owned-by-brutal-ai && !noinsurance
+		RequiresCondition: owned-by-brutal-ai || owned-by-naval-ai && !noinsurance
 	CashTrickler@vhardinsurance:
 		Interval: 250
 		Amount: 750
@@ -162,7 +162,7 @@
 ^BotIncome:
 	RefineryResourceMultiplier@brutalincome:
 		Modifier: 160
-		RequiresCondition: owned-by-brutal-ai
+		RequiresCondition: owned-by-brutal-ai || owned-by-naval-ai
 	RefineryResourceMultiplier@vhardincome:
 		Modifier: 150
 		RequiresCondition: owned-by-vhard-ai
