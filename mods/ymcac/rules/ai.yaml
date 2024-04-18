@@ -1343,10 +1343,10 @@ Player:
 			fix: 1
 			rep: 1
 			srep: 1
-			spen: 2
-			syrd: 2
-			spen.nod: 2
-			syrd.gdi: 2
+			spen: 6
+			syrd: 6
+			spen.nod: 6
+			syrd.gdi: 6
 		BuildingFractions:
 			proc: 30
 			proc.td: 30
