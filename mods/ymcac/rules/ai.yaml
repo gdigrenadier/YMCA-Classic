@@ -1394,8 +1394,8 @@ Player:
 			srep: 1
 			hq: 10
 			nerv: 10
-			afld: 3
-			afld.gdi: 3
+			afld: 8
+			afld.gdi: 8
 			grav: 3
 			mslo: 1
 			iron: 1
@@ -1412,8 +1412,8 @@ Player:
 			mslo.nod: 1
 			rift: 1
 			eye: 1
-			hpad: 3
-			hpad.td: 3
+			hpad: 8
+			hpad.td: 8
 			spen: 20
 			syrd: 20
 			spen.nod: 20
@@ -2273,24 +2273,24 @@ Player:
 			rmbc: 15
 			dog: 2
 			hsam: 40
-			1tnk: 70
-			ltnk: 40
-			hind: 5
-			heli: 5
-			apch: 5
-			venm: 5
-			orca: 5
-			orcb: 3
+			1tnk: 80
+			ltnk: 80
+			hind: 8
+			heli: 8
+			apch: 8
+			venm: 8
+			orca: 8
+			orcb: 8
 			scrn: 5
-			rah: 3
-			mig: 3
-			suk: 3
-			harr: 3
-			yak: 2
+			rah: 8
+			mig: 8
+			suk: 8
+			harr: 8
+			yak: 8
 			disr: 10
-			kiro: 2
-			a10: 5
-			auro: 5
+			kiro: 8
+			a10: 8
+			auro: 8
 			ss.ai: 70
 			msub.ai: 60
 			dd.ai: 70

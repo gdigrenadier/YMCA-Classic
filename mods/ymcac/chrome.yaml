@@ -576,6 +576,7 @@ flags:
 		RandomNOD: 195, 193, 30, 15
 		RandomScrin: 164, 193, 30,15
 		Random: 226, 241, 30, 15
+        RandomNoScrin: 165, 146, 30, 15
 		spectator: 226, 241, 30, 15
 
 music:

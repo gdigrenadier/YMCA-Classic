@@ -875,63 +875,63 @@ MSUB:
 
 #bot variants
 CH.AI:
-	Inherits: SubChaser
+	Inherits: Subchaser
 	Buildable:
-		Prerequisites: ~ships.allies, ~botplayer
+		Prerequisites: syrd, ~botplayer
 
 PT2.AI:
 	Inherits: PT2
 	Buildable:
-		Prerequisites: ~ships.gdi, ~botplayer
+		Prerequisites: syrd.gdi, ~botplayer
 
 SB.AI:
 	Inherits: SB
 	Buildable:
-		Prerequisites: ~ships.soviet, ~botplayer
+		Prerequisites: spen, ~botplayer
 
 SEAS.AI:
 	Inherits: SEAS
 	Buildable:
-		Prerequisites: ~ships.soviet, ~botplayer
-
+		Prerequisites: spen, ~botplayer
+        
 SS.AI:
 	Inherits: SS
 	Buildable:
-		Prerequisites: ~ships.nod, radar, ~botplayer
+		Prerequisites: spen.nod, radar, ~botplayer
         
 DD.AI:
 	Inherits: DD
 	Buildable:
-		Prerequisites: ~ships.allies, radar, ~botplayer
+		Prerequisites: syrd, radar, ~botplayer
         
 DD2.AI:
 	Inherits: DD2
 	Buildable:
-		Prerequisites: ~ships.gdi, radar, ~botplayer
+		Prerequisites: syrd.gdi, radar, ~botplayer
         
 AC.AI:
 	Inherits: Aegis_Cruiser
 	Buildable:
-		Prerequisites: ~ships.all, radar, ~botplayer
+		Prerequisites: ships.any, radar, ~botplayer
         
 CA.AI:
 	Inherits: CA
 	Buildable:
-		Prerequisites: ~ships.allies, techcenter, ~botplayer
+		Prerequisites: syrd, techcenter, ~botplayer
 
 MSUB.AI:
 	Inherits: MSUB
 	Buildable:
-		Prerequisites: ~ships.soviet, techcenter, ~botplayer
+		Prerequisites: spen, techcenter, ~botplayer
 
 CARR.AI:
 	Inherits: CARR
 	Buildable:
-		Prerequisites: ~ships.gdi, techcenter, ~botplayer
+		Prerequisites: syrd.gdi, techcenter, ~botplayer
 
 ISUB.AI:
 	Inherits: ISUB
 	Buildable:
-		Prerequisites: ~ships.nod, techcenter, ~botplayer
+		Prerequisites: spen.nod, techcenter, ~botplayer
         
 
