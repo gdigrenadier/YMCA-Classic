@@ -877,42 +877,42 @@ MSUB:
 CH.AI:
 	Inherits: SubChaser
 	Buildable:
-		Prerequisites: ~ships.any, ~botplayer
+		Prerequisites: ~ships.allies, ~botplayer
 
 PT2.AI:
 	Inherits: PT2
 	Buildable:
-		Prerequisites: ~ships.any, ~botplayer
+		Prerequisites: ~ships.gdi, ~botplayer
 
 SB.AI:
 	Inherits: SB
 	Buildable:
-		Prerequisites: ~ships.any, ~botplayer
+		Prerequisites: ~ships.soviet, ~botplayer
 
 SEAS.AI:
 	Inherits: SEAS
 	Buildable:
-		Prerequisites: ~ships.any, ~botplayer
+		Prerequisites: ~ships.soviet, ~botplayer
 
 SS.AI:
 	Inherits: SS
 	Buildable:
-		Prerequisites: ~ships.any, radar, ~botplayer
+		Prerequisites: ~ships.nod, radar, ~botplayer
         
 DD.AI:
 	Inherits: DD
 	Buildable:
-		Prerequisites: ~ships.any, radar, ~botplayer
+		Prerequisites: ~ships.allies, radar, ~botplayer
         
 DD2.AI:
 	Inherits: DD2
 	Buildable:
-		Prerequisites: ~ships.any, radar, ~botplayer
+		Prerequisites: ~ships.gdi, radar, ~botplayer
         
 AC.AI:
 	Inherits: Aegis_Cruiser
 	Buildable:
-		Prerequisites: ~ships.allies, radar, ~botplayer
+		Prerequisites: ~ships.all, radar, ~botplayer
         
 CA.AI:
 	Inherits: CA
