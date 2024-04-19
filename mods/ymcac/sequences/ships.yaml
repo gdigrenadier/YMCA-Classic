@@ -144,6 +144,8 @@ seas:
 	icon: seasicon
 
 #bot variants
+ch.ai:
+	Inherits: ch
 
 pt2.ai:
 	Inherits: pt2
