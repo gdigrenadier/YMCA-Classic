@@ -145,7 +145,7 @@ seas:
 
 #bot variants
 ch.ai:
-	Inherits: ch
+	Inherits: SubChaser
 
 pt2.ai:
 	Inherits: pt2
