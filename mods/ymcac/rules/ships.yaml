@@ -874,6 +874,11 @@ MSUB:
 		DecorationBounds: 44,44
 
 #bot variants
+CH.AI:
+	Inherits: SubChaser
+	Buildable:
+		Prerequisites: ~ships.any, ~botplayer
+
 PT2.AI:
 	Inherits: PT2
 	Buildable:
@@ -907,26 +912,26 @@ DD2.AI:
 AC.AI:
 	Inherits: Aegis_Cruiser
 	Buildable:
-		Prerequisites: ~ships.any, radar, ~botplayer
+		Prerequisites: ~ships.allies, radar, ~botplayer
         
 CA.AI:
 	Inherits: CA
 	Buildable:
-		Prerequisites: ~ships.any, techcenter, ~botplayer
+		Prerequisites: ~ships.allies, techcenter, ~botplayer
 
 MSUB.AI:
 	Inherits: MSUB
 	Buildable:
-		Prerequisites: ~ships.any, techcenter, ~botplayer
+		Prerequisites: ~ships.soviet, techcenter, ~botplayer
 
 CARR.AI:
 	Inherits: CARR
 	Buildable:
-		Prerequisites: ~ships.any, techcenter, ~botplayer
+		Prerequisites: ~ships.gdi, techcenter, ~botplayer
 
 ISUB.AI:
 	Inherits: ISUB
 	Buildable:
-		Prerequisites: ~ships.any, techcenter, ~botplayer
+		Prerequisites: ~ships.nod, techcenter, ~botplayer
         
 
