@@ -1891,12 +1891,12 @@ SILO:
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 35
-		Prerequisites: ref, ~structures.ra, ~techlevel.infonly
+		Prerequisites: ref, ~structures.ra, ~techlevel.infonly, !global.nosilo
 		Description: Stores excess refined\nTiberium, Ore and Gems.
 	Valued:
 		Cost: 150
 	Targetable:
-		TargetTypes: Ground, Structure, C4, DetonateAttack, ~!global.nosilo
+		TargetTypes: Ground, Structure, C4, DetonateAttack
 	Tooltip:
 		Name: Silo
 	-GivesBuildableArea:

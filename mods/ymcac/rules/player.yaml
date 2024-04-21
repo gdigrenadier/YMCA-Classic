@@ -138,14 +138,14 @@ Player:
 	LobbyPrerequisiteCheckbox@SUPERW:
 		ID: superweapon
 		Label: Super Weapons
-		Description: Enable or Disable Super Weapons
+		Description: Enable or Disable Super Weapons.
 		Enabled: True
 		DisplayOrder: 13
 		Prerequisites: techlevel.superw
 	LobbyPrerequisiteCheckbox@NONAVAL:
 		ID: nonaval
 		Label: No Naval Units
-		Description: Enable or Disable Naval Units
+		Description: Enable or Disable Naval Units.
 		Enabled: False
 		DisplayOrder: 13
 		Prerequisites: global.nonaval
@@ -194,7 +194,7 @@ Player:
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium
 		Id: medium
 	ProvidesTechPrerequisite@unrestricted:
-		Name: Unrestricted
+		Name: Everything
 		Prerequisites: techlevel.infonly, techlevel.low, techlevel.medium, techlevel.high, techlevel.unrestricted
 		Id: unrestricted
 	GrantConditionOnPrerequisiteManager:
@@ -203,6 +203,7 @@ Player:
 		Image: iconchevrons
 		Sequence: veteran
 	ResourceStorageWarning:
+        Prerequisite: ~!global.nosilo
 	PlayerExperience:
 	GameSaveViewportManager:
 	PlayerRadarTerrain:

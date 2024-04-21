@@ -364,11 +364,11 @@
 		Side: Random
 		Description: Random Faction\nA random faction will be chosen when the game starts.
     Faction@randomnoscrin:
-		Name: Anything But Scrin
+		Name: Any (No Scrin)
 		InternalName: RandomNoScrin
 		RandomFactionMembers: RandomAllies, RandomSoviet, RandomGDI, RandomNOD
 		Side: Random
-		Description: Random Faction Without Scrin\nA random faction, except Scrin, will be chosen when the game starts.
+		Description: Please god anything but Scrin\nA random faction, except Scrin, will be chosen when the game starts.
 	Faction@randomallies:
 		Name: Allies
 		InternalName: RandomAllies
