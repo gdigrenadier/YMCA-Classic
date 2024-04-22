@@ -703,13 +703,13 @@ commander_tree.Longbow.Cryo:
 commander_tree.Longbow.Torp:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Longbow Torpedos
+		Name: Longbow Anti-Naval Upgrade
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 48
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~!commander_tree.longbow.cryo, ~!commander_tree.longbow.artillery, ~!commander_tree.longbow.payload, ~aircraft.allies
-		Description: Equips the Longbow with Torpedos.
+		Description: Equips the Longbow with Torpedoes.
 	TooltipExtras:
 		Strengths: • Strong vs Ships, Submarines
 		Weaknesses: • Weak vs Anti-Air
@@ -1230,13 +1230,13 @@ commander_tree.Hind.Missile:
 commander_tree.Hind.Torp:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Hind Torpedo Upgrade
+		Name: Hind Anti-Naval Upgrade
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 127
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.soviet, ~!commander_tree.hind.missile, ~!commander_tree.hind.tesla, ~!commander_tree.hind.radcannon
-		Description: Upgrades the Hind with torpedo bombs.
+		Description: Upgrades the Hind with torpedoes.
 	TooltipExtras:
 		Strengths: • Strong vs Ships, Submarines
 		Weaknesses: • Weak vs Anti-Air
@@ -2036,14 +2036,14 @@ commander_tree.Orca.HE:
 commander_tree.Orca.Torp:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Orca Torpedo Upgrade
+		Name: Orca Anti-Naval Upgrade
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrome
 		BuildPaletteOrder: 243
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, gtek, ~!commander_tree.orca.he, ~!commander_tree.orca.payload, ~!commander_tree.orca.ap, ~aircraft.gdi
-		Description: Equips the Orca with torpedo bombs.
+		Description: Equips the Orca with torpedoes.
 	TooltipExtras:
 		Strengths: • Strong vs Ships, Submarines
 		Weaknesses: • Weak vs Anti-Air
@@ -2654,7 +2654,7 @@ hack.cameo_filler.322:
 commander_tree.Apache.Flyby:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Harpy Flyby
+		Name: Apache Flyby
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 344
@@ -2667,13 +2667,13 @@ commander_tree.Apache.Flyby:
 commander_tree.Apache.Torp:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Harpy Torpedo Upgrade
+		Name: Apache Anti-Naval Upgrade
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 344
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.nod, tmpl, ~!commander_tree.apache.flyby
-		Description: Upgrades the Apache with torpedo bombs.
+		Description: Upgrades the Apache with torpedoes.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.apache
 
@@ -2742,7 +2742,7 @@ commander_tree.Venom.Payload:
 		BuildPaletteOrder: 346
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, tmpl, ~aircraft.marked, ~!commander_tree.venom.heavy_laser
-		Description: Upgrades the payload of the Venom.
+		Description: Increases the amount of shots avaliable for the Venom.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.venom
 
@@ -2770,7 +2770,7 @@ commander_tree.Gunwalker.Sensor:
 		BuildPaletteOrder: 400
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, wsph, ~vehicles.scrin
-		Description: Upgrades the Gunwalker with improved sensor bionics. Gives stealth detection.
+		Description: Gives the gunwalker the ability to detect stealth.
 
 hack.cameo_filler.400:
 	Inherits: ^default.cameo_filler
@@ -2806,7 +2806,7 @@ commander_tree.Interloper.Teleport:
 		BuildPaletteOrder: 404
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, wsph, ~vehicles.scrin, ~!commander_tree.interloper.aa
-		Description: Upgrades the Interloper with a teleport system.
+		Description: Upgrades the Interloper with a teleporter.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.interloper
 
@@ -3058,7 +3058,7 @@ commander_tree.Tripod.Chainer:
 		BuildPaletteOrder: 433
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, techcenter, ~vehicles.tpod, ~!commander_tree.tripod.acid
-		Description: Upgrades the Tripod with imporoved laser chaining to a second and third target.
+		Description: Upgrades the Tripod with improved laser chaining to a second and third target.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.tripod
 
@@ -3246,7 +3246,7 @@ commander_tree.Stormbomber:
 commander_tree.Stormbomber.Torp:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stormbomber Torpedo Upgrade
+		Name: Stormbomber Anti-Naval Upgrade
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 452

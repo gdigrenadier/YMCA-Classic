@@ -1307,13 +1307,13 @@ HELI.Torp:
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 40
 		Prerequisites: ~hpad, ~aircraft.allies, ~commander_tree.longbow.torp
-		Description: Helicopter gunship armed\nwith torpedo bombs.
+		Description: Helicopter gunship armed\nwith torpedoes.
 	TooltipExtras:
 		Strengths: • Strong vs Ships, Submarines
 		Weaknesses: • Weak vs Anti-Air
 		Attributes: • Detects submerged vessels
 	Tooltip:
-		Name: Longbow (Torpedo)
+		Name: Anti-Naval Longbow
 	-Armament@PRIMARY
 	Armament@SECONDARY:
 		Weapon: TorpBomb
@@ -1483,13 +1483,13 @@ HIND.Torp:
 	Inherits: HIND
 	Buildable:
 		Prerequisites: ~hpad, ~commander_tree.hind.torp
-		Description: Helicopter gunship armed\nwith torpedo bombs.
+		Description: Helicopter gunship armed\nwith torpedoes.
 	TooltipExtras:
 		Strengths: • Strong vs Ships, Submarines
 		Weaknesses: • Weak vs Anti-Air
 		Attributes: • Detects submerged vessels
 	Tooltip:
-		Name: Hind (Torpedo)
+		Name: Anti-Naval Hind
 	Armament@PRIMARY:
 		Weapon: TorpBomb
 		LocalOffset: 85,-213,-185, 85,213,-185
@@ -2049,7 +2049,7 @@ APCH:
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Harpy
+		Name: Apache
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -2139,7 +2139,7 @@ APCH.Flyby:
 		IconPalette: chrome
 		Description: Helicopter gunship with a chaingun.\n Upgraded to be able to fire on the move. \n Strong vs Infantry, Light Armor\n  Weak vs Tanks
 	Tooltip:
-		Name: Harpy Flyby
+		Name: Apache Flyby
 	-AttackAircraft:
 	Turreted:
 		TurnSpeed: 1000
@@ -2156,11 +2156,11 @@ APCH.Flyby:
 APCH.Torp:
 	Inherits: APCH
 	Tooltip:
-		Name: Harpy (Torpedo)
+		Name: Anti-Naval Apache
 	Buildable:
 		Prerequisites: ~hpad.td, ~aircraft.nod, ~commander_tree.apache.torp
 		IconPalette: chrome
-		Description: Helicopter gunship with torpedo bombs.
+		Description: Helicopter gunship with torpedoes.
 	TooltipExtras:
 		Strengths: • Strong vs Ships, Submarines
 		Weaknesses: • Weak vs Anti-Air
@@ -2316,11 +2316,11 @@ ORCA.Payload:
 ORCA.Torp:
 	Inherits: ORCA
 	Tooltip:
-		Name: Orca (Torpedo)
+		Name: Anti-Naval Orca
 	Buildable:
 		Prerequisites: ~hpad.td, ~aircraft.gdi, ~commander_tree.orca.torp
 		IconPalette: chrome
-		Description: VTOL gunship armed\nwith torpedo bombs.
+		Description: VTOL gunship armed\nwith torpedoes.
 	TooltipExtras:
 		Strengths: • Strong vs Ships, Submarines
 		Weaknesses: • Weak vs Anti-Air
