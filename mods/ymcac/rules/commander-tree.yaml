@@ -48,7 +48,7 @@ commander_tree.oil_pumps:
 		IconPalette: chrometd
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~anypower, ~global.oilpumps
-		Description: Enables to build Oil Pumps.\n  Generates slow trickling endless income.
+		Description: Enables to build Oil Pumps.\n  Generates slow endless source of income.
 
 commander_tree.stealth_miners:
 	Inherits: ^default.commander_tree_item
@@ -60,7 +60,7 @@ commander_tree.stealth_miners:
 		IconPalette: chrome
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~structures.nod, ~anypower
-		Description: Equips Miners with stealth technology.
+		Description: Equips harvesters with stealth technology.
 
 commander_tree.shielded_miners:
 	Inherits: ^default.commander_tree_item
@@ -71,7 +71,7 @@ commander_tree.shielded_miners:
 		BuildPaletteOrder: 1
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~structures.gdi, ~anypower
-		Description: Equips Miners with shield technology.
+		Description: Equips harvesters with shield technology.
 
 hack.cameo_filler.1:
 	Inherits: ^default.cameo_filler
@@ -117,14 +117,14 @@ hack.cameo_filler.2a:
 commander_tree.advanced_infantry_training:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Advanced Infantry Training
+		Name: Advanced Infantry
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
 		BuildPaletteOrder: 6
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~infantry.any
-		Description: Enables to build specialized Infantry.
+		Description: Enables the ability to train advanced infantry.
 
 hack.cameo_filler.3:
 	Inherits: ^default.cameo_filler
@@ -149,6 +149,9 @@ commander_tree.Spec_Ops:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~infantry.allies, commander_tree.advanced_infantry_training, atek
 		Description: Marks Vehicles and Buildings with a laser allowing rocket infantry to shoot at these from great distance.\n Can detect other stealthed units.
+        TooltipExtras:
+		Weaknesses: • Weak vs Everything
+		Attributes: • Features the ability to target enemies allowing rocket infantry to fire from incredible ranges.
 
 commander_tree.Prism_Tank:
 	Inherits: ^default.commander_tree_item
@@ -172,7 +175,10 @@ commander_tree.Prism_Cannon:
 		BuildPaletteOrder: 10
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.allies, radar, ~!commander_tree.prism_blaster, ~!commander_tree.prism_tank, ~!vehicles.france
-		Description: Enables construction of the Prism Cannon. \n  Has higher range and more damage than the Prism Tank, but does not split its beam. \n  It is stronger vs. base defenses and single units but less effective against large armies.
+		Description: Enables construction of the Prism Cannon. \n  Has higher range and more damage than the Prism Tank, but does not split its beam.
+    TooltipExtras:
+		Strengths: • Strong vs Buildings, Single Targets
+		Weaknesses: • Weak vs Large Groups
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.prism
 
@@ -186,7 +192,11 @@ commander_tree.Prism_Blaster:
 		BuildPaletteOrder: 11
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.allies, radar, ~!commander_tree.prism_cannon, ~!commander_tree.prism_tank, ~!vehicles.germany
-		Description: Enables construction of the Prism Blaster. \n  Has less range than the Prism Tank, but does split its beam to more targets. \n  It is stronger vs. large armies and less effective against base defenses and single targets.
+		Description: Enables construction of the Prism Blaster. \n  Has less range than the Prism Tank, but does split its beam to more targets.
+    TooltipExtras:
+		Strengths: • Strong vs Large Groups
+		Weaknesses: • Weak vs Buildings, Single Targets
+		Attributes: • 
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.prism
 
@@ -256,7 +266,11 @@ commander_tree.Chrono_Tank:
 		BuildPaletteOrder: 15
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, atek, ~vehicles.allies
-		Description: Enables construction of the Chrono Tank. \n  It can teleport over short distances and has missiles vs. tanks.
+		Description: Enables construction of the Chrono Tank.
+    TooltipExtras:
+		Strengths: • Strong vs Vehicles, Air
+		Weaknesses: • Weak vs Infantry
+		Attributes: • Can teleport over short distances.
 
 commander_tree.Chrono_Tank_PLD:
 	Inherits: ^default.commander_tree_item
@@ -306,7 +320,11 @@ commander_tree.Chrono_Prison:
 		BuildPaletteOrder: 17
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.allies, atek
-		Description: Enables construction of the Chrono Prison. \n  It traps other units in the Time Aether, \n  teleporting them out of existence shortly thereafter.
+		Description: Enables construction of the Chrono Prison.
+    TooltipExtras:
+		Strengths: • Strong vs Single Targets
+		Weaknesses: • Weak vs Large Groups
+		Attributes: • Traps units in the time aether eventually teleporting them out of existance shortly after.
 
 commander_tree.Chrono_Prison_AA:
 	Inherits: ^default.commander_tree_item
@@ -364,7 +382,11 @@ commander_tree.Cryo_Launcher:
 		BuildPaletteOrder: 22
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, radar, ~vehicles.allies
-		Description: Enables construction of the Cryo Launcher. \n  An artillery support unit slowing enemy vehicles and making them more vulnerable.
+		Description: Enables construction of the Cryo Launcher.
+    TooltipExtras:
+		Strengths: • Strong vs Groups, Vehicles
+		Weaknesses: • Weak vs Air
+		Attributes: • Slows units in its missiles explosive radius.
 
 hack.cameo_filler.12:
 	Inherits: ^default.cameo_filler
@@ -388,6 +410,10 @@ commander_tree.Battle_Fortress.Arty:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.france, atek, ~!commander_tree.battle_fortress.prism, ~!commander_tree.battle_fortress.missile
 		Description: Rearms the Battle Fortress with an Artillery.
+    TooltipExtras:
+		Strengths: • Strong vs Groups
+		Weaknesses: • Weak vs Air
+		Attributes: • Can have infantry garrisoned inside.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.batf
 
@@ -401,6 +427,10 @@ commander_tree.Battle_Fortress.Missile:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.france, atek, ~!commander_tree.battle_fortress.arty, ~!commander_tree.battle_fortress.prism
 		Description: Rearms the Battle Fortress with a Missile Launcher.
+    TooltipExtras:
+		Strengths: • Strong vs Infantry, Vehicles, Air
+		Weaknesses: • Weak vs Artillery
+		Attributes: • Can have infantry garrisoned inside.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.batf
 
@@ -414,6 +444,10 @@ commander_tree.Battle_Fortress.Prism:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.france, atek, ~!commander_tree.battle_fortress.arty, ~!commander_tree.battle_fortress.missile
 		Description: Rearms the Battle Fortress with Prism turrets.
+    TooltipExtras:
+		Strengths: • Strong vs Groups
+		Weaknesses: • Weak vs Air
+		Attributes: • Can have infantry garrisoned inside.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.batf
 
@@ -567,7 +601,11 @@ commander_tree.Huey.Cryo:
 		BuildPaletteOrder: 37
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.allies, ~!commander_tree.huey.grenade, ~!commander_tree.huey.recon
-		Description: Upgrades the attack of the Huey with cryo missiles, slowing down enemies.
+		Description: Upgrades the attack of the Huey with cryo missiles.
+    TooltipExtras:
+		Strengths: • Strong vs Groups, Vehicles
+		Weaknesses: • Weak vs Anti-Air
+		Attributes: • Slows units in its missiles explosive radius.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.huey
 
@@ -580,7 +618,10 @@ commander_tree.Huey.Recon:
 		BuildPaletteOrder: 37
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.allies, ~!commander_tree.huey.grenade, ~!commander_tree.huey.cryo
-		Description: Upgrades the sensors of the Huey and removes the armament. \nThe Huey can transport an infantry unit, sniper can shoot from it.
+		Description: Upgrades the sensors of the Huey and removes the armament, replacing it with a sniper nest.
+    TooltipExtras:
+		Weaknesses: • Weak vs Everything
+		Attributes: • Can detect stealth.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.huey
 
@@ -594,6 +635,9 @@ commander_tree.Huey.Grenade:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.allies, ~!aircraft.england, ~!commander_tree.huey.cryo, ~!commander_tree.huey.recon
 		Description: Upgrades the weapon of the Huey to a grenade machine gun, firing bursts of grenades.
+    TooltipExtras:
+		Strengths: • Strong vs Infantry, Buildings, Groups
+		Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.huey
 
@@ -624,7 +668,11 @@ commander_tree.Aurora:
 		BuildPaletteOrder: 41
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.allies, atek, ~!aircraft.france
-		Description: Enables construction of the Aurora, a supersonic bomber. \n  It drops the Mother of all Bombs. \n  Very efficient versus groups of weakly armored units.
+		Description: Enables construction of the Aurora, a supersonic bomber. \n  It drops the Mother of all Bombs.
+    TooltipExtras:
+		Strengths: • Strong vs Large Groups
+		Weaknesses: • Weak vs Armored Vehicles, Air
+		Attributes: • Before dropping its payload, it goes supersonic causing missiles to be unable to hit it. After dropping its payload, it returns to normal.
 
 hack.cameo_filler.22:
 	Inherits: ^default.cameo_filler
@@ -647,7 +695,10 @@ commander_tree.Raptor:
 		BuildPaletteOrder: 44
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.allies
-		Description: Enables construction of the Raptor. It is a supersonic air superiority fighter. \n  Very effective vs. other air units.
+		Description: Enables construction of the Raptor. It is a supersonic air superiority fighter.
+    TooltipExtras:
+		Strengths: • Strong vs Air
+		Weaknesses: • Weak vs Ground
 
 hack.cameo_filler.24:
 	Inherits: ^default.cameo_filler
@@ -670,7 +721,10 @@ commander_tree.Longbow.Artillery:
 		BuildPaletteOrder: 48
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~!commander_tree.longbow.torp, ~!commander_tree.longbow.payload, ~!commander_tree.longbow.cryo, ~aircraft.allies, ~!aircraft.england
-		Description: Upgrades the missiles of Longbow Helicopter for high range use. \n  This allows the Longbow to be used against defensive structures efficiently.
+		Description: Upgrades the missiles of Longbow Helicopter for high range use.
+    TooltipExtras:
+		Strengths: • Strong vs Buildings, Single Targets
+		Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.longbow
 
@@ -696,7 +750,11 @@ commander_tree.Longbow.Cryo:
 		BuildPaletteOrder: 48
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~!commander_tree.longbow.torp, ~!commander_tree.longbow.artillery, ~!commander_tree.longbow.payload, ~aircraft.allies, ~!aircraft.france
-		Description: Upgrades the missiles of the Longbow with Cryo explosives. \n  In addition to the damage targets are also slowed.
+		Description: Upgrades the missiles of the Longbow with Cryo explosives.
+    TooltipExtras:
+		Strengths: • Strong vs Vehicles, Groups
+		Weaknesses: • Weak vs Anti-Air
+		Attributes: • Slows units in its missiles explosive radius.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.longbow
 
@@ -738,7 +796,10 @@ commander_tree.Harrier:
 		BuildPaletteOrder: 50
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, atek, ~aircraft.allies, ~!aircraft.germany
-		Description: Enables construction of the Harrier, a VTOL aircraft.  \n  Strong vs. groups of light armored ground units.
+		Description: Enables construction of the Harrier, a VTOL aircraft.
+    TooltipExtras:
+		Strengths: • Strong vs Single Targets
+		Weaknesses: • Weak vs Anti-Air
 
 commander_tree.Harrier.Avionics:
 	Inherits: ^default.commander_tree_item
@@ -749,7 +810,7 @@ commander_tree.Harrier.Avionics:
 		BuildPaletteOrder: 51
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, atek, commander_tree.harrier, ~!commander_tree.harrier.payload, ~aircraft.england
-		Description: Upgrades the Avionics of the Harrier, allowing it to hover when shooting  \n
+		Description: Upgrades the Avionics of the Harrier, allowing it to hover when shooting.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.harrier
 
@@ -762,7 +823,7 @@ commander_tree.Harrier.Payload:
 		BuildPaletteOrder: 51
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, atek, commander_tree.harrier, ~!commander_tree.harrier.avionics, ~aircraft.allies, ~!aircraft.germany
-		Description: Increases the Payload of the Harrier \n
+		Description: Increases the Payload of the Harrier.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.harrier
 
@@ -789,7 +850,10 @@ commander_tree.Mortar:
 		BuildPaletteOrder: 6
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, radar, ~infantry.soviet, commander_tree.advanced_infantry_training
-		Description: Enables construction of the Mortar Infantry. \n  It fires mortar shells over a great distance, good vs light armored units and buildings.
+		Description: Enables construction of the Mortar Infantry.
+    TooltipExtras:
+		Strengths: • Strong vs Infantry, Groups
+		Weaknesses: • Weak vs Vehicles, Air
 
 commander_tree.Yuri:
 	Inherits: ^default.commander_tree_item
@@ -800,7 +864,9 @@ commander_tree.Yuri:
 		BuildPaletteOrder: 99
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~infantry.soviet
-		Description: Form Unholy Alliance with Yuri and his forces. \n This replaces multiple units and support powers: \n  Lasher Tank replaces Heavy Tank. \n  Yuri replaces Boris. \n  Chaos Drone replaces MAD Tank \n  Genetic Mutation Bomb replaces Parabombs. \n
+		Description: Form an Unholy Alliance with Yuri and his forces. \n This replaces multiple units and support powers.
+    TooltipExtras:
+		Attributes: • Lasher Tank replaces Heavy Tank /n • Yuri replaces Boris /n • Chaos Drone replaces Mad Tank /n • Genetic Mutation Bomb replaces Parabombs
 
 hack.cameo_filler.99a:
 	Inherits: ^default.cameo_filler
@@ -824,6 +890,9 @@ commander_tree.ISU:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, radar, ~vehicles.ukraine
 		Description: Enables construction of the ISU Bombard Tank. \n  It moves slowly and shoots slow grenades dealing a lot of damage on impact. \n Has Point Laser Defense System.
+    TooltipExtras:
+        Strengths: • Strong vs Infantry, Vehicles, Groups
+        Weaknesses: • Weak vs Air
 
 commander_tree.ISU_Concussion:
 	Inherits: ^default.commander_tree_item
@@ -836,6 +905,8 @@ commander_tree.ISU_Concussion:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, ~vehicles.ukraine, commander_tree.isu
 		Description: Upgrades the ISU Bombard Tank to cause concussion on units at the impact zone.
+    TooltipExtras:
+        Attributes: • Causes units to be stunned for a short amount of time.
 
 hack.cameo_filler.100a:
 	Inherits: ^default.cameo_filler
@@ -876,7 +947,10 @@ commander_tree.Flak_Track:
 		BuildPaletteOrder: 0
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.soviet, ~!vehicles.soviet
-		Description: Upgrades the BTR with Flak cannons. \n  This makes it less efficient vs. vehicles and better vs. air units.
+		Description: Upgrades the BTR with Flak cannons.
+    TooltipExtras:
+        Strengths: • Strong vs Infantry, Air
+        Weaknesses: • Weak vs Vehicles, Buildings
 
 commander_tree.Flak_Track.Barrage:
 	Inherits: ^default.commander_tree_item
@@ -887,7 +961,10 @@ commander_tree.Flak_Track.Barrage:
 		BuildPaletteOrder: 106
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.soviet, ~!vehicles.russia
-		Description: Upgrades the Flak Track with fast firing Flak cannons. \n  This makes it better vs. Point Laser Defense Systems and groups of units.
+		Description: Upgrades the Flak Track with fast firing Flak cannons.
+    TooltipExtras:
+        Strengths: • Strong vs Groups, Point Laser Defences
+        Weaknesses: • Weak vs Armored Vehicles, Air
 
 hack.cameo_filler.103:
 	Inherits: ^default.cameo_filler
@@ -967,7 +1044,11 @@ commander_tree.V3_Launcher:
 		BuildPaletteOrder: 114
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.soviet, radar, ~!vehicles.iraq, ~!commander_tree.akatsiya, ~!commander_tree.katyusha
-		Description: Enables construction of the V3 Launcher as Advanced Siege Vehicle. \n  The V3 has the longest range, but the Rocket can be shot down.
+		Description: Enables construction of the V3 Launcher as Advanced Siege Vehicle.
+    TooltipExtras:
+        Strengths: • Strong vs Buildings
+        Weaknesses: • Weak vs Air
+        Attributes: • Has a powerful missile that can be shot down.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.sovietarty
 
@@ -980,7 +1061,10 @@ commander_tree.Akatsiya:
 		BuildPaletteOrder: 115
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.soviet, radar, ~!vehicles.ukraine, ~!commander_tree.v3_launcher, ~!commander_tree.katyusha
-		Description: Enables construction of the Akatsiya as Advanced Siege Vehicle. \n  The Akatsiya has the best armor and can hit moving targets with its cluster bombs.
+		Description: Enables construction of the Akatsiya as Advanced Siege Vehicle.
+    TooltipExtras:
+        Strengths: • Strong vs Infantry, Light Vehicles, Buildings, Groups
+        Weaknesses: • Weak vs Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.sovietarty
 
@@ -994,7 +1078,10 @@ commander_tree.Katyusha:
 		BuildPaletteOrder: 115
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.soviet, radar, ~!vehicles.russia, ~!commander_tree.v3_launcher, ~!commander_tree.akatsiya
-		Description: Enables construction of the Katyusha as Advanced Siege Vehicle. \n  The Katyusha fires the most projectiles.
+		Description: Enables construction of the Katyusha as Advanced Siege Vehicle.
+    TooltipExtras:
+        Strengths: • Strong vs Groups, Point Laser Defences
+        Weaknesses: • Weak vs Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.sovietarty
 
@@ -1019,7 +1106,10 @@ commander_tree.BTR:
 		BuildPaletteOrder: 117
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, ~!commander_tree.nona_svk, ~!commander_tree.surveillance_btr, ~vehicles.soviet
-		Description: Enables construction of the BTR.\n  It is a missile based anti-air troop transporter. \nOptimal for taking out heavy air units.
+		Description: Enables construction of the BTR.\n  It is a missile based anti-air troop transporter.
+    TooltipExtras:
+        Strengths: • Strong vs Air
+        Weaknesses: • Weak vs Infantry, Vehicles
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.btr
 
@@ -1033,6 +1123,9 @@ commander_tree.Surveillance_BTR:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, ~!commander_tree.nona_svk, ~!commander_tree.btr, ~vehicles.soviet
 		Description: Enables construction of the Surveillance BTR.\n  It has high visual range, detects stealth units, jams radar and is a troop transporter on top.
+    TooltipExtras:
+        Weaknesses: • Weak vs Everything
+        Attributes: • Detects stealth units.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.btr
 
@@ -1046,6 +1139,9 @@ commander_tree.Nona_SVK:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, ~!commander_tree.surveillance_btr, ~!commander_tree.btr, ~vehicles.soviet
 		Description: Enables construction of the Nona SVK.\n  It is a highly mobile artillery unit, excelling at hit and run tactics.
+    TooltipExtras:
+        Strengths: • Strong vs Point Laser Defences
+        Weaknesses: • Weak vs Everything
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.btr
 
@@ -1071,6 +1167,9 @@ commander_tree.Mammoth_Tank:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, ~vehicles.soviet, ~disabled
 		Description: Enables construction of the Mammoth Tank.\n  The Mammoth is a slow and very heavy tank, which can be further specialized.
+    TooltipExtras:
+        Strengths: • Strong vs Everything
+        Weaknesses: • Weak vs Point Laser Defences
 
 commander_tree.Mammoth_Tank.TT:
 	Inherits: ^default.commander_tree_item
@@ -1083,6 +1182,8 @@ commander_tree.Mammoth_Tank.TT:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.soviet, stek, ~!commander_tree.mammoth_tank.ns, ~!commander_tree.mammoth_tank.pt
 		Description: The Mammoth Tank is upgraded with a Tesla Weapon System. \n  Energy based weapons systems cannot be shot down by Point Defense Systems.
+    TooltipExtras:
+        Strengths: • Strong vs Everything
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.sovietmammoth
 
@@ -1096,7 +1197,10 @@ commander_tree.Mammoth_Tank.NS:
 		BuildPaletteOrder: 120
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.iraq, stek, ~!commander_tree.mammoth_tank.tt, ~!commander_tree.mammoth_tank.pt
-		Description: The Mammoth is upgraded with Nuclear Shells. \n  Nuclear Shells deal a lot of damage to the target and its surroundings. \n  Nuclear Shells are weak vs. Point Laser Defense Systems.
+		Description: The Mammoth is upgraded with Nuclear Shells. \n  Nuclear Shells deal a lot of damage to the target and its surroundings. 
+    TooltipExtras:
+        Strengths: • Strong vs Everything
+        Weaknesses: • Weak vs Point Laser Defences
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.sovietmammoth
 
@@ -1164,6 +1268,9 @@ commander_tree.Apocalypse:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.soviet, stek
 		Description: Unlocks the Apocalypse Tank. It is very good at breaking through PLD defenses.
+    TooltipExtras:
+        Strengths: • Strong vs Ground, Point Laser Defences
+        Weaknesses: • Weak vs Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.apoc
 
@@ -1265,7 +1372,10 @@ commander_tree.Frogfoot:
 		BuildPaletteOrder: 130
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.soviet, ~!aircraft.iraq
-		Description: Enables construction of the Frogfoot. \n  A bomber optimized to take down large groups of ground units or buildings.
+		Description: Enables construction of the Frogfoot.
+    TooltipExtras:
+        Strengths: • Strong vs Buildings, Groups
+        Weaknesses: • Weak vs Anti-Air
 
 commander_tree.Dirty_Frogfoot:
 	Inherits: ^default.commander_tree_item
@@ -1277,7 +1387,7 @@ commander_tree.Dirty_Frogfoot:
 		BuildPaletteOrder: 131
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.iraq
-		Description: Enables construction of the Dirty Frogfoot. \n  It is a bomber armed with dirty bombs leaving a lot of radiation at the strike site.
+		Description: Enables construction of the Dirty Frogfoot. \n  It is a bomber armed with radioactive bombs leaving radiation where ever they drop.
 
 hack.cameo_filler.115:
 	Inherits: ^default.cameo_filler
@@ -1301,7 +1411,10 @@ commander_tree.Chemyak:
 		BuildPaletteOrder: 134
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.iraq
-		Description: Equips the Yak Plane with chemical spray. \n  It is more efficient vs. heavy vehicles and buildings.
+		Description: Equips the Yak Plane with chemical spray.
+    TooltipExtras:
+        Strengths: • Strong vs Infantry, Vehicles, Buildings
+        Weaknesses: • Weak vs Anti-Air
 
 commander_tree.Chemyak_Volatile_Tanks:
 	Inherits: ^default.commander_tree_item
@@ -1330,7 +1443,10 @@ commander_tree.Sukhoi:
 		BuildPaletteOrder: 137
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, ~aircraft.ukraine
-		Description: Allows to build the Sukhoi. \n  It is a attack fighter to take down groups of vehicles.
+		Description: Allows to build the Sukhoi.
+    TooltipExtras:
+        Strengths: • Strong vs Vehicles
+        Weaknesses: • Weak vs Anti-Air
 
 commander_tree.Sukhoi_Concussion:
 	Inherits: ^default.commander_tree_item
@@ -1343,6 +1459,8 @@ commander_tree.Sukhoi_Concussion:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.ukraine, stek, commander_tree.sukhoi
 		Description: Upgrades the bombs of Sukhois to cause concussion near the strike site.
+    TooltipExtras:
+        Attributes: • Causes units to be stunned for a short amount of time.
 
 hack.cameo_filler.118:
 	Inherits: ^default.cameo_filler
@@ -1360,6 +1478,8 @@ commander_tree.Airship:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, ~aircraft.soviet
 		Description: Enables construction of the Airship of the People. \n  It greatly accelerates the Revolution by paradropping revolutionaries on the field.
+    TooltipExtras:
+        Attributes: • Portable, flying infantry production blimp.
 
 hack.cameo_filler.119:
 	Inherits: ^default.cameo_filler
@@ -1383,6 +1503,9 @@ commander_tree.Kirov:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, ~aircraft.soviet
 		Description: Enables construction of the Kirov. \n  It is a slow moving blimp dropping devastating bombs.
+    TooltipExtras:
+        Strengths: • Strong vs Groups, Buildings
+        Weaknesses: • Weak vs Anti-Air
 
 hack.cameo_filler.121:
 	Inherits: ^default.cameo_filler
@@ -1405,7 +1528,9 @@ commander_tree.Mig:
 		BuildPaletteOrder: 147
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, ~aircraft.soviet, ~!aircraft.ukraine
-		Description: Enables construction of the Mig. \n  It is an attack fighter best suited for taking out single vehicles.
+		Description: Enables construction of the Mig.
+        TooltipExtras:
+        Strengths: • Strong vs Single Targets
 
 commander_tree.Mig.Nuke:
 	Inherits: ^default.commander_tree_item
@@ -1417,6 +1542,9 @@ commander_tree.Mig.Nuke:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, commander_tree.mig, ~!commander_tree.mig.aa, ~!commander_tree.mig.tesla, ~aircraft.iraq
 		Description: Upgrades the Mig to a Nuke bomber. \n  It drops a single nuclear bomb with devastating damage.
+    TooltipExtras:
+        Strengths: • Strong vs Ground
+        Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.mig
 
@@ -1430,6 +1558,9 @@ commander_tree.Mig.AA:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, commander_tree.mig, ~!commander_tree.mig.tesla, ~!commander_tree.mig.nuke, ~aircraft.soviet, ~!aircraft.ukraine
 		Description: Upgrades the Mig to be able to attack aircraft.
+    TooltipExtras:
+        Strengths: • Strong vs Air
+        Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.mig
 
@@ -1443,6 +1574,9 @@ commander_tree.Mig.Tesla:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, stek, commander_tree.mig, ~!commander_tree.mig.aa, ~!commander_tree.mig.nuke, ~aircraft.russia
 		Description: Equips the Mig with Tesla bombs. \n  It increases the damage of the mig vs. groups of enemies.
+    TooltipExtras:
+        Strengths: • Strong vs Groups
+        Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.mig
 
@@ -1463,7 +1597,10 @@ commander_tree.Railgunner:
 		BuildPaletteOrder: 200
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~infantry.gdi, gtek, ~commander_tree.advanced_infantry_training
-		Description: Enables construction of the Railgunner, a strong tank destroyer infantry.
+		Description: Enables construction of the Railgunner.
+    TooltipExtras:
+        Strengths: • Strong vs Vehicles
+        Weaknesses: • Weak vs Infantry, Air
 
 commander_tree.Railgunner.No_Crush:
 	Inherits: ^default.commander_tree_item
@@ -1493,7 +1630,10 @@ commander_tree.Jumpjet:
 		BuildPaletteOrder: 203
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~infantry.gdi, radar, ~commander_tree.advanced_infantry_training
-		Description: Enables construction of the flying Jumpjet infantry, which can be further specialized.
+		Description: Enables construction of the flying Jumpjet infantry.
+    TooltipExtras:
+        Strengths: • Strong vs Infantry
+        Weaknesses: • Weak vs Anti-Air
 
 commander_tree.Jumpjet_Railgun:
 	Inherits: ^default.commander_tree_item
@@ -1505,7 +1645,10 @@ commander_tree.Jumpjet_Railgun:
 		BuildPaletteOrder: 204
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~infantry.gdi, ~!infantry.talon, gtek, commander_tree.jumpjet, ~!commander_tree.jumpjet_rockets, ~commander_tree.advanced_infantry_training
-		Description: Equips the Jumpjet with a Railgun. \n  This makes it strong vs tanks.
+		Description: Equips the Jumpjet with a Railgun.
+    TooltipExtras:
+        Strengths: • Strong vs Ground
+        Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.jjet
 
@@ -1519,7 +1662,10 @@ commander_tree.Jumpjet_Rockets:
 		BuildPaletteOrder: 205
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~infantry.gdi, ~!infantry.zocom, gtek, commander_tree.jumpjet, ~!commander_tree.jumpjet_railgun, ~commander_tree.advanced_infantry_training
-		Description: Equips the Jumpjet with a rocket launcher.\n This makes it strong vs aircraft and vehicles.
+		Description: Equips the Jumpjet with a rocket launcher.
+    TooltipExtras:
+        Strengths: • Strong vs Vehicles, Air
+        Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.jjet
 
@@ -1546,6 +1692,10 @@ commander_tree.Slingshot:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, gtek, ~vehicles.gdi
 		Description: Enables construction of the Slingshot. \n  The Slingshot is a hovercraft specialized to shoot down aircraft.
+    TooltipExtras:
+        Strengths: • Strong vs Air
+        Weaknesses: • Weak vs Ground
+        Attributes: • Can traverse ground and sea using hover technology.
 
 hack.cameo_filler.203:
 	Inherits: ^default.cameo_filler
@@ -1570,6 +1720,10 @@ commander_tree.Hover_MLRS:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.gdi, ~!vehicles.eagle, gtek, ~!commander_tree.hailstorm_mlrs
 		Description: Enables construction of the Hover MLRS. \n  The Hover MLRS improves the MLRS' agility and gives it high explosive rockets.
+    TooltipExtras:
+        Strengths: • Strong vs Infantry, Air, Buildings
+        Weaknesses: • Weak vs Vehicles
+        Attributes: • Can traverse ground and sea using hover technology.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.hmlrs
 
@@ -1611,7 +1765,10 @@ commander_tree.Hailstorm_MLRS:
 		IconPalette: chrometd
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.gdi, gtek, ~!commander_tree.hover_mlrs
-		Description: Enables construction of the Hailstorm MLRS. \n  The Hailstorm MLRS fires a lot of rockets over long distances. \n This upgrade removes the anti-air capabilities.
+		Description: Enables construction of the Hailstorm MLRS. \n  The Hailstorm MLRS fires a lot of rockets over long distances.
+    TooltipExtras:
+        Strengths: • Strong vs Ground
+        Weaknesses: • Weak vs Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.mlrs
 
@@ -1714,7 +1871,6 @@ commander_tree.APC_Vulcan:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.gdi, gtek, ~!vehicles.zocom
 		Description: Upgrades the APC with a Vulcan cannon to attack air units.
-
 hack.cameo_filler.212:
 	Inherits: ^default.cameo_filler
 	Buildable:
@@ -1738,6 +1894,8 @@ commander_tree.Mobile_EMP:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, gtek, ~vehicles.gdi
 		Description: Enables construction of the Mobile EMP unit.
+    TooltipExtras:
+        Attributes: • When deployed, it fires a large EMP inside the tank, disabling all the vehicles in a small area.
 
 commander_tree.Mobile_EMP_Stable_Reactor:
 	Inherits: ^default.commander_tree_item
@@ -1790,6 +1948,8 @@ commander_tree.Mammoth_Tank_GDI.Hover:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.gdi, gtek, ~!vehicles.talon, ~!commander_tree.mammoth_tank_gdi.ion, ~!commander_tree.mammoth_tank_gdi.nr
 		Description: The Mammoth is upgraded with Hover technology. \n  This gives the Mammoth much more maneuverability.
+    TooltipExtras:
+        Attributes: • Can traverse ground and sea using hover technology.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.gdimammoth
 
@@ -1804,6 +1964,8 @@ commander_tree.Mammoth_Tank_GDI.Ion:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.gdi, ~!vehicles.zocom, ~!vehicles.talon, gtek, ~!commander_tree.mammoth_tank_gdi.nr, ~!commander_tree.mammoth_tank_gdi.hover
 		Description: The Mammoth is upgraded with an Ion cannon. \n  Energy based weapon systems cannot be shot down by Point Laser Defense Systems.
+    TooltipExtras:
+        Strengths: • Strong vs Everything
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.gdimammoth
 
@@ -1817,7 +1979,9 @@ commander_tree.Mammoth_Tank_GDI.NR:
 		BuildPaletteOrder: 230
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.zocom, gtek, ~!commander_tree.mammoth_tank_gdi.ion, ~!commander_tree.mammoth_tank_gdi.hover
-		Description: The Mammoth Tank is upgraded with a Nanite Repair System. \n  This makes it more durable and vastly increases its self repair capabilites.
+		Description: The Mammoth Tank is upgraded with a Nanite Repair System.
+    TooltipExtras:
+        Attributes: • Massively improved self repair.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.gdimammoth
 
@@ -1871,7 +2035,11 @@ commander_tree.Titan.Battle:
 		BuildPaletteOrder: 235
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.talon, gtek, ~!commander_tree.titan.railgun
-		Description: Upgrades the Titan with EMP shells. \n  EMP Shells disable the target on impact.
+		Description: Upgrades the Titan with EMP shells.
+    TooltipExtras:
+        Strengths: • Strong vs Vehicles, Defences
+        Weaknesses: • Weak vs Infantry, Air
+        Attributes: • EMP Shells disable the target on impact.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.titan
 
@@ -1885,7 +2053,10 @@ commander_tree.Titan.Railgun:
 		BuildPaletteOrder: 235
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.talon, gtek, ~!commander_tree.titan.battle
-		Description: Upgrades the Titan with a Railgun. \n  The Railgun is strong vs. tanks and is an energy based weapon.
+		Description: Upgrades the Titan with a Railgun. \n  The Railgun is unable to be shot down by Point Laser Defences.
+    TooltipExtras:
+        Strengths: • Strong vs Ground
+        Weaknesses: • Weak vs Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.titan
 
@@ -1962,7 +2133,11 @@ commander_tree.Stealth_Fighter:
 		BuildPaletteOrder: 239
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, gtek, ~aircraft.gdi
-		Description: Enables construction of the Stealth Fighter. \n  It is a cloaked aircraft optimized to take out single heavy armored vehicles.
+		Description: Enables construction of the Stealth Fighter.
+    TooltipExtras:
+        Strengths: • Strong vs Single Targets
+        Weaknesses: • Weak vs Anti-Air
+        Attributes: • Can cloak itself.
 
 commander_tree.Stealth_Fighter.Payload:
 	Inherits: ^default.commander_tree_item
@@ -2012,7 +2187,7 @@ commander_tree.Orca.AP:
 		Description: Equips the Orca with armor-piercing missiles.
 	TooltipExtras:
 		Strengths: • Strong vs Heavy Armor
-		Weaknesses: • Weak vs Point Defense Laser, Anti-Air
+		Weaknesses: • Weak vs Point Defense Lasers, Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.orca
 
@@ -2029,7 +2204,7 @@ commander_tree.Orca.HE:
 		Description: Equips the Orca with high-explosive missiles.
 	TooltipExtras:
 		Strengths: • Strong vs Light Armor, Infantry
-		Weaknesses: • Weak vs Point Defense Laser, Anti-Air
+		Weaknesses: • Weak vs Point Defense Lasers, Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.orca
 
@@ -2045,7 +2220,7 @@ commander_tree.Orca.Torp:
 		Prerequisites: prerequisite.has_points, gtek, ~!commander_tree.orca.he, ~!commander_tree.orca.payload, ~!commander_tree.orca.ap, ~aircraft.gdi
 		Description: Equips the Orca with torpedoes.
 	TooltipExtras:
-		Strengths: • Strong vs Ships, Submarines
+		Strengths: • Strong vs Naval
 		Weaknesses: • Weak vs Anti-Air
 		Attributes: • Detects submerged vessles.
 	ProvidesPrerequisite@filler:
@@ -2073,7 +2248,9 @@ commander_tree.Mammoth_MKII:
 		IconPalette: chrometd
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.gdi, miss.gdi,
-		Description: Enables construction of the Mammoth MK.II. \n  It is epic walker with dual Railguns and high explosive Rockets against ground and air.
+		Description: Enables construction of the Mammoth MK.II. \n  It is epic walker with dual Railguns and high explosive rockets.
+    TooltipExtras:
+        Strengths: • Strong vs Everything
 
 hack.cameo_filler.222:
 	Inherits: ^default.cameo_filler
@@ -2098,7 +2275,11 @@ commander_tree.Chemical_Mortar:
 		BuildPaletteOrder: 7
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~infantry.nod, ~!infantry.marked, commander_tree.advanced_infantry_training
-		Description: Enables to build mortar infantry firing chemical shells
+		Description: Enables to build mortar infantry firing chemical shells.
+    TooltipExtras:
+        Strengths: • Strong vs Infantry, Groups
+        Weaknesses: • Weak vs Vehicles, Air
+        Attributes: • Leaves a trail of chemicals wherever their shells land.
 
 commander_tree.Elite_Cyborg:
 	Inherits: ^default.commander_tree_item
@@ -2111,6 +2292,9 @@ commander_tree.Elite_Cyborg:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~infantry.nod, bio.nod, ~commander_tree.advanced_infantry_training
 		Description: Enables construction of the Elite Cyborg. \n  A very tough cyborg infantry with scrin weaponry. \n  Energy based weapons cannot be intercepted by Point Laser Defense.
+    TooltipExtras:
+        Strengths: • Strong vs Ground
+        Weaknesses: • Weak vs Air
 
 commander_tree.Elite_Cyborg.Range:
 	Inherits: ^default.commander_tree_item
@@ -2139,7 +2323,9 @@ commander_tree.Rebel_Leader:
 		BuildPaletteOrder: 306
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~infantry.nod, tmpl, ~commander_tree.advanced_infantry_training
-		Description: Enables to recruit the Rebel Leader who allows to train infantry from the map edges.
+		Description: Allows training of the Rebel Leader.
+    TooltipExtras:
+        Attributes: • Can produce infantry from the sides of the map.
 
 hack.cameo_filler.303:
 	Inherits: ^default.cameo_filler
@@ -2163,7 +2349,9 @@ commander_tree.Reinforcements_Coordinator:
 		BuildPaletteOrder: 5
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod
-		Description: Enables construction of the Reinforcements Coordinator. \n It coordinates reinforcements directly to the frontline when deployed.
+		Description: Enables construction of the Reinforcements Coordinator.
+    TooltipExtras:
+        Attributes: • It coordinates reinforcements directly to the frontline when deployed.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.coordinator
 
@@ -2224,6 +2412,9 @@ commander_tree.SSM_Launcher:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, ~!vehicles.nod, ~!commander_tree.ssm_toxin_launcher,  ~!commander_tree.ssm_multi_launcher
 		Description: Enables construction of the SSM Launcher, a high range artillery.
+    TooltipExtras:
+        Strengths: • Strong vs Buildings, Groups
+        Weaknesses: • Weak vs Air
 
 commander_tree.SSM_Toxin_Launcher:
 	Inherits: ^default.commander_tree_item
@@ -2342,7 +2533,11 @@ commander_tree.Stealth_Tank.AP:
 		BuildPaletteOrder: 325
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, ~!vehicles.marked, tmpl, ~!commander_tree.stealth_tank.explosive_rockets,  ~!commander_tree.stealth_tank.scrin
-		Description: Upgrades the Stealth Tank with a Armor Piercing Missiles. \n  This makes it much more effective vs. heavy tanks and heavy aircraft.
+		Description: Upgrades the Stealth Tank with a Armor Piercing Missiles. 
+    TooltipExtras:
+        Strengths: • Strong vs Vehicles, Air
+        Weaknesses: • Weak vs Infantry
+        Attributes: • Can cloak itself.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.stealthtank
 
@@ -2357,6 +2552,10 @@ commander_tree.Stealth_Tank.Scrin:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, ~!vehicles.legion, tmpl, ~!commander_tree.stealth_tank.explosive_rockets, ~!commander_tree.stealth_tank.ap
 		Description: Upgrades the Stealth Tank with a Scrin Weapon. \n  Energy based weapons cannot be intercepted by Point Laser Defense.
+    TooltipExtras:
+        Strengths: • Strong vs Vehicles, Vehicles
+        Weaknesses: • Weak vs Air
+        Attributes: • Can cloak itself.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.stealthtank
 
@@ -2371,6 +2570,10 @@ commander_tree.Stealth_Tank.Explosive_Rockets:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, ~!vehicles.blackh, tmpl, ~!commander_tree.stealth_tank.ap, ~!commander_tree.stealth_tank.scrin
 		Description: Upgrades the Stealth Tank's missiles with a high explosive load.
+    TooltipExtras:
+        Strengths: • Strong vs Infantry, Buildings, Groups
+        Weaknesses: • Weak vs Vehicles
+        Attributes: • Can cloak itself.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.stealthtank
 
@@ -2424,6 +2627,9 @@ commander_tree.Recon_Bike.Scrin:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, ~!vehicles.marked, hq, ~!commander_tree.recon_bike.rocket_hail, ~!commander_tree.recon_bike.explosive
 		Description: Upgrades the Recon Bike with a Scrin Weapon.\n  Energy based weapons cannot be intercepted by Point Laser Defense.
+    TooltipExtras:
+        Strengths: • Strong vs Vehicles, Buildings
+        Weaknesses: • Weak vs Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.bike
 
@@ -2466,6 +2672,9 @@ commander_tree.Recon_Bike.Rocket_Hail:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, ~!vehicles.legion, hq, ~!commander_tree.recon_bike.scrin, ~!commander_tree.recon_bike.explosive
 		Description: Upgrades the Recon Bike to shoot more missiles at high range. \n  This makes the recon bike a hit and run artillery unit. \n  The recon bike loses its ability to fight flying targets.
+    TooltipExtras:
+        Strengths: • Strong vs Single Targets, Buildings
+        Weaknesses: • Weak vs Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.bike
 
@@ -2508,13 +2717,17 @@ commander_tree.Recon_Bike.Explosive:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, ~!vehicles.blackh, hq, ~!commander_tree.recon_bike.scrin, ~!commander_tree.recon_bike.rocket_hail
 		Description: Upgrades the Recon Bike to shoot explosive missiles. \n  This is very strong vs. weakly armored units. \n
+    TooltipExtras:
+        Strengths: • Strong vs Infantry, Air, Buildings
+        Weaknesses: • Weak vs Vehicles
+        Attributes: •
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.bike
 
 commander_tree.Recon_Bike.Explosive.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Explosive Rocket Bike Point Laser Defense System
+		Name: Explosive Rocket Bike (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2562,6 +2775,9 @@ commander_tree.Light_Tank_Laser:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, tmpl
 		Description: Upgrades the Light Tank with a Laser weapon. \n  Energy based weapons cannot be intercepted by Point Laser Defense.
+    TooltipExtras:
+        Strengths: • Strong vs Vehicles, Buildings
+        Weaknesses: • Weak vs Infantry, Air
 
 hack.cameo_filler.317:
 	Inherits: ^default.cameo_filler
@@ -2585,7 +2801,10 @@ commander_tree.Beam_Cannon:
 		BuildPaletteOrder: 338
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, tmpl
-		Description: Enables construction of the Beam Cannon. \n It shoots a continuous energy beam at distant targets Strong vs. Vehicles, Weak vs. Aircraft.
+		Description: Enables construction of the Beam Cannon. \n It shoots a continuous energy beam at distant targets.
+    TooltipExtras:
+        Strengths: • Strong vs Vehicles, Buildings
+        Weaknesses: • Weak vs Aircraft
 
 hack.cameo_filler.319:
 	Inherits: ^default.cameo_filler
@@ -2610,6 +2829,10 @@ commander_tree.Banshee:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, tmpl, ~!commander_tree.banshee.bomber, ~!commander_tree.banshee.payload, ~aircraft.nod
 		Description: Enables construction of the Banshee, a versatile VTOL fighter.\n  Energy based weapons cannot be intercepted by Point Laser Defense.
+    TooltipExtras:
+        Strengths: • Strong vs Ground, Air
+        Weaknesses: • Weak vs Anti-Air
+        Attributes: •
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.banshee
 
@@ -2623,6 +2846,9 @@ commander_tree.Banshee.Bomber:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, tmpl, ~!commander_tree.banshee, ~!commander_tree.banshee.payload, ~aircraft.nod
 		Description: Enables construction of the Banshee Bomber, a dedicated Anti-Tank Bomber.\n  Energy based weapons cannot be intercepted by Point Laser Defense.
+    TooltipExtras:
+        Strengths: • Strong vs Ground
+        Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.banshee
 
@@ -2674,6 +2900,10 @@ commander_tree.Apache.Torp:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~aircraft.nod, tmpl, ~!commander_tree.apache.flyby
 		Description: Upgrades the Apache with torpedoes.
+    TooltipExtras:
+		Strengths: • Strong vs Ships, Submarines
+		Weaknesses: • Weak vs Anti-Air
+		Attributes: • Detects submerged vessles.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.apache
 
@@ -2705,6 +2935,9 @@ commander_tree.Comanche.Bomber:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, tmpl, ~aircraft.blackh
 		Description: Upgrades the Comanche with heavy bombs, making it slower but more devastating.
+    TooltipExtras:
+        Strengths: • Strong vs Ground
+        Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.comanche
 
@@ -2869,7 +3102,7 @@ commander_tree.Devourer.Acid:
 		BuildPaletteOrder: 413
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, radar, ~vehicles.devo, ~!commander_tree.devourer.heavy
-		Description: Upgrades the Devourer with an acid attack.
+		Description: Upgrades the Devourer with an acid attack. Acid is more effective vs Reflector Armor.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.devourer
 
@@ -2908,7 +3141,7 @@ commander_tree.Darkener.Chain:
 		BuildPaletteOrder: 417
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, nerv, ~vehicles.harbinger, ~!commander_tree.darkener.disc
-		Description: Upgrades the Darkener with chained rift beam.
+		Description: Upgrades the Darkener with refraction beams. Upon the beam hitting its target, its refracts hitting further targets.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.darkener
 
@@ -2922,6 +3155,9 @@ commander_tree.Darkener.Disc:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, nerv, ~vehicles.harbinger, ~!commander_tree.darkener.chain
 		Description: Equips the Darkener with armor piercing disks.
+    TooltipExtras:
+		Strengths: • Strong vs Vehicles
+		Weaknesses: • Weak vs Infantry, Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.darkener
 
@@ -3010,7 +3246,10 @@ commander_tree.Lacerator.AP:
 		BuildPaletteOrder: 427
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, vehicles.any, ~vehicles.traveler, ~!commander_tree.lacerator.pld, ~!commander_tree.lacerator.reflector
-		Description: Upgrades the Lacerator with Armor Piercing Discs.\n AP Discs are very efficient vs heavy armor.
+		Description: Upgrades the Lacerator with Armor Piercing Discs.
+    TooltipExtras:
+		Strengths: • Strong vs Vehicles
+		Weaknesses: • Weak vs Infantry, Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.lacerator
 
@@ -3052,13 +3291,13 @@ hack.cameo_filler.415:
 commander_tree.Tripod.Chainer:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Tripod Chainer Upgrade
+		Name: Tripod Refraction Upgrade
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 433
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, techcenter, ~vehicles.tpod, ~!commander_tree.tripod.acid
-		Description: Upgrades the Tripod with improved laser chaining to a second and third target.
+		Description: Upgrades the Tripod with improved laser refraction causing the original laser to split into multiple parts upon hitting a target.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.tripod
 
@@ -3227,6 +3466,9 @@ commander_tree.Stormhunter:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, nerv, grav, ~aircraft.scrin, ~!commander_tree.stormbomber, ~!commander_tree.stormbomber.torp
 		Description: Removes the anti-ground weaponry from the Stormrider. \nThe Stormhunter is cheaper, smaller, faster and specialized to hunt air units.
+    TooltipExtras:
+		Strengths: • Strong vs Air
+		Weaknesses: • Weak vs Ground
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.stormrider
 
@@ -3239,7 +3481,11 @@ commander_tree.Stormbomber:
 		BuildPaletteOrder: 452
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, nerv, grav, ~aircraft.scrin, ~!commander_tree.stormhunter, ~!commander_tree.stormbomber.torp
-		Description: Upgrades the Stormrider with plasmabombs \nStrong vs vehicles but cannot target air anymore.
+		Description: Upgrades the Stormrider with plasmabombs at the cost of it being unable to target air.
+    TooltipExtras:
+		Strengths: • Strong vs Vehicles
+		Weaknesses: • Weak vs Anti-Air
+		Attributes: • Detects submerged vessles.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.stormrider
 
@@ -3294,7 +3540,10 @@ commander_tree.Devastator.Shard:
 		BuildPaletteOrder: 456
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, scrt, grav, ~aircraft.scrin, ~!commander_tree.devastator.beam
-		Description: Upgrades the Devastator with armor piercing Shards. \nVery efficient vs heavy armor.
+		Description: Upgrades the Devastator with armor piercing Shards.
+    TooltipExtras:
+        Strengths: • Strong vs Vehicles
+        Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.devastator
 
@@ -3427,7 +3676,7 @@ commander_tree.Recon_Boat:
 		Prerequisites: prerequisite.has_points, ~ships.any, ~recon_boat, ~!commander_tree.subchaser, ~!commander_tree.hunter_submarine, ~!commander_tree.patrol_boat, ~!commander_tree.sea_scorpion
 		Description: The Recon Boat is a fast vessel armed with missiles.
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Ships, Aircraft
+		Strengths: • Strong vs Ships, Aircraft
 		Weaknesses: • Weak vs Point Defense Laser, Submarines
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.basic_naval
@@ -3473,7 +3722,7 @@ commander_tree.Attack_Submarine:
 		Description: The Attack Submarine is specialized in fighting other ships. \nIt is submerged and cannot be detected by all ships.
 	TooltipExtras:
 		Strengths: • Strong vs Ships
-		Weaknesses: • Weak vs Anti-Sub Ships, Aircraft
+		Weaknesses: • Weak vs Anti-Sub
 		Attributes: • Detects submerged vessles.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.adv_naval
@@ -3507,7 +3756,7 @@ commander_tree.Frigate:
 		Prerequisites: prerequisite.has_points, ~ships.any, radar, ~frigate, ~!commander_tree.attack_submarine, ~!commander_tree.destroyer, ~!commander_tree.aegis_cruiser
 		Description: The Frigate brings a heavy energy weapon to the seas. \nThis makes it suited best against Point Defense Laser systems.
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Slow Fleets
+		Strengths: • Strong vs Buildings, Ships
 		Weaknesses: • Weak vs Point Defense Laser, Aircraft, Submarines
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.adv_naval
@@ -3553,7 +3802,7 @@ commander_tree.Battlecruiser:
 		Prerequisites: prerequisite.has_points, ~ships.any, techcenter, ~battlecruiser, ~!commander_tree.carrier, ~!commander_tree.icbm_submarine, ~!commander_tree.missile_submarine
 		Description: The Battlecruiser is the ultimate artillery ship. \n Dual 8-inch cannons provide constant barrage, \n while a Point Defense Laser fends of incoming enemy artillery.
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Slow Fleets
+		Strengths: • Strong vs Ground
 		Weaknesses: • Weak vs Point Defense Laser, Aircraft, Submarines
 		Attributes: • Point Defense Laser
 	ProvidesPrerequisite@filler:
@@ -3571,8 +3820,8 @@ commander_tree.Carrier:
 		Prerequisites: prerequisite.has_points, ~ships.any, techcenter, ~carrier, ~!commander_tree.battlecruiser, ~!commander_tree.icbm_submarine, ~!commander_tree.missile_submarine
 		Description: The Carrier launches small strike aircraft. \nThe aircraft are able to fight submarines as well as all ground targets.
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Submarines
-		Weaknesses: • Weak vs Anti-Aircraft, Aircraft
+		Strengths: • Strong vs Ground, Submarines
+		Weaknesses: • Weak vs Anti-Air, Aircraft
 		Attributes: • Detects submerged vessles.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.siege_naval
@@ -3588,8 +3837,8 @@ commander_tree.ICBM_Submarine:
 		Prerequisites: prerequisite.has_points, ~ships.any, techcenter, ~icbm_sub, ~!commander_tree.battlecruiser, ~!commander_tree.carrier, ~!commander_tree.missile_submarine
 		Description: The ICBM Submarine can fire Nukes over a very long distance.
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Slow Fleets
-		Weaknesses: • Weak vs Anti-Aircraft, Aircraft, Submarines
+		Strengths: • Strong vs Buildings, Ships
+		Weaknesses: • Weak vs Anti-Air, Aircraft, Submarines
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.siege_naval
 
@@ -3604,7 +3853,7 @@ commander_tree.Missile_Submarine:
 		Prerequisites: prerequisite.has_points, ~ships.any, techcenter, ~missile_sub, ~!commander_tree.battlecruiser, ~!commander_tree.carrier, ~!commander_tree.icbm_submarine
 		Description: The Missile Submarine launches a barrage of missiles with very high range.
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Slow Fleets
+		Strengths: • Strong vs Buildings, Ships
 		Weaknesses: • Weak vs Point Defense Laser, Submarines
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.siege_naval
