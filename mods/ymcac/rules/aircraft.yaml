@@ -2881,7 +2881,7 @@ OCAR:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 45
-		Prerequisites: ~disabled, aircraft.all, ~!aircraft.eagle, ~commander_tree.advanced_logistics
+		Prerequisites: ~disabled, aircraft.all, ~!aircraft.eagle, ~commander_tree.basic_logistics
 		IconPalette: chrometd
 		Description: Fast VTOL Vehicle Transporter.\n  Unarmed
 	Aircraft:
@@ -2935,7 +2935,7 @@ OCAR.Eagle:
 	Inherits: OCAR
 	Buildable:
 		Queue: Aircraft
-		Prerequisites: aircraft.all, ~commander_tree.advanced_logistics
+		Prerequisites: aircraft.all, ~commander_tree.basic_logistics
 	Tooltip:
 		Name: Carryall (Auto)
 	Selectable:
@@ -3711,7 +3711,7 @@ Dropship:
 		Queue: Aircraft
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 50
-		Prerequisites: ~afld.generic, ~commander_tree.advanced_logistics
+		Prerequisites: ~afld.generic, ~commander_tree.basic_logistics
 		Description: Superheavy cargo lifter plane.\nMaximum 1 can be built.\n Special Ability: Supertransport\nTransports up to 15 Infantry or Vehicles.\nDeploys those with a parachute (force fire to parachute)\n  Unarmed
 	Valued:
 		Cost: 1200

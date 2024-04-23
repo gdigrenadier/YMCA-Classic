@@ -88,25 +88,19 @@ hack.cameo_filler.2:
 commander_tree.basic_logistics:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Basic Logistics
+		Name: Advanced Logistics
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 3
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~anypower, ~!structures.scrin
-		Description: Enables construction of the Chinook and the Supply Truck.
+		Description: Enables construction of the Chinook, Carryalls, Dropships, Minelayers and the Supply Truck.
 
-commander_tree.advanced_logistics:
-	Inherits: ^default.commander_tree_item
-	Tooltip:
-		Name: Advanced Logistics
+hack.cameo_filler.2020:
+	Inherits: ^default.cameo_filler
 	Buildable:
-		Queue: Commander_Tree
-		BuildPaletteOrder: 4
-		IconPalette: chrometd
-		ForceIconLocation: true
-		Prerequisites: prerequisite.has_points, ~anypower, commander_tree.basic_logistics, ~!structures.scrin
-		Description: Enables to build Carryalls, Dropships and Minelayer vehicles.
+		BuildPaletteOrder: 8
+		Prerequisites: prerequisite.has_points, ~infantry.any, disabled
 
 hack.cameo_filler.2a:
 	Inherits: ^default.cameo_filler
