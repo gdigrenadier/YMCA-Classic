@@ -170,11 +170,15 @@ Stealth_Fighter:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 50
 		Prerequisites: gtek, ~afld.gdi, ~aircraft.gdi, ~commander_tree.stealth_fighter, ~!commander_tree.stealth_fighter.payload, ~techlevel.high
-		Description: Stealth Ground-Attack Plane.\n Drops laser-guided armor piercing bombs. Strong vs Buildings, Heavy Vehicles\n  Weak vs Infantry, Aircraft
+		Description: Stealth Ground-Attack Plane.\n Drops laser-guided armor piercing bombs.
 	Valued:
 		Cost: 2000
 	Tooltip:
 		Name: Stealth Fighter
+    TooltipExtras:
+        Strengths: • Strong vs Single Targets
+        Weaknesses: • Weak vs Anti-Air
+        Attributes: • Can cloak itself.
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -245,7 +249,6 @@ Stealth_Fighter.payload:
 	Buildable:
 		IconPalette: chrometd
 		Prerequisites: gtek, ~afld.gdi, ~aircraft.gdi, ~commander_tree.stealth_fighter.payload, ~techlevel.high
-		Description: Stealth Ground-Attack Plane.\n Drops laser-guided armor piercing bombs. \n  Strong vs Buildings, Heavy Vehicles\n  Weak vs Infantry, Aircraft
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -261,7 +264,9 @@ MIG:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 50
 		Prerequisites: ~afld, stek, ~commander_tree.mig, ~!commander_tree.mig.aa, ~!commander_tree.mig.tesla, ~!commander_tree.mig.nuke
-		Description: Precision strike aircraft.\n  Strong vs Vehicles, Defenses\n  Weak vs Infantry, Aircraft
+		Description: Precision strike aircraft.
+    TooltipExtras:
+        Strengths: • Strong vs Single Targets
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -352,7 +357,10 @@ SU47:
 	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
 	Buildable:
 		Prerequisites: ~afld, stek, ~commander_tree.mig.aa
-		Description: Air Superiority fighter aircraft.\n  Can attack aircraft. \n  Strong vs Aircraft \n  Weak vs Infantry
+		Description: Air Superiority fighter aircraft.\n  Can attack aircraft.
+    TooltipExtras:
+        Strengths: • Strong vs Air
+        Weaknesses: • Weak vs Anti-Air
 	Valued:
 		Cost: 1750
 	Tooltip:
@@ -379,11 +387,14 @@ MIG.Nuke:
 	Inherits: MIG
 	Buildable:
 		Prerequisites: ~afld, stek, ~commander_tree.mig.nuke
-		Description: Nuclear attack bomber aircraft.\n  Strong vs Vehicles, Defenses\n  Weak vs Aircraft
+		Description: Nuclear attack bomber aircraft.
 	Valued:
 		Cost: 2800
 	Tooltip:
 		Name: MiG Nuclear Attack Bomber
+    TooltipExtras:
+        Strengths: • Strong vs Ground
+        Weaknesses: • Weak vs Anti-Air
 	AmmoPool:
 		Ammo: 1
 	WithAmmoPipsDecoration:
@@ -397,7 +408,11 @@ MIG.Tesla:
 	Inherits: MIG
 	Buildable:
 		Prerequisites: ~afld, stek, ~commander_tree.mig.tesla, ~techlevel.high
-		Description: Precision strike bomber.\n  Bombs emit Tesla zaps on impact. \n  Strong vs Vehicles, Defenses\n  Weak vs Infantry, Aircraft
+		Description: Precision strike bomber.\n  Bombs emit Tesla zaps on impact.
+    TooltipExtras:
+        Strengths: • Strong vs Groups
+        Weaknesses: • Weak vs Anti-Air
+	ProvidesPrerequisite@filler:
 	Valued:
 		Cost: 2200
 	AmmoPool:
@@ -418,7 +433,10 @@ SUK:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 51
 		Prerequisites: ~afld, stek, ~commander_tree.sukhoi, ~!commander_tree.sukhoi_concussion
-		Description: Fast ground attack aircraft armed\nwith powerful explosive missiles.\n  Strong vs Tanks, Defenses\n  Weak vs Aircraft
+		Description: Fast ground attack aircraft armed\nwith powerful explosive missiles.
+    TooltipExtras:
+        Strengths: • Strong vs Vehicles, Defences
+        Weaknesses: • Weak vs Anti-Air
 	Valued:
 		Cost: 1600
 	Tooltip:
