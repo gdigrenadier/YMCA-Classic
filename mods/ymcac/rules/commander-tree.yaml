@@ -692,7 +692,7 @@ commander_tree.Raptor:
 		Description: Enables construction of the Raptor. It is a supersonic air superiority fighter.
     TooltipExtras:
 		Strengths: • Strong vs Air
-		Weaknesses: • Weak vs Ground
+		Weaknesses: • Weak vs Ground \n • Cannot attack ground.
 
 hack.cameo_filler.24:
 	Inherits: ^default.cameo_filler
@@ -1559,7 +1559,7 @@ commander_tree.Mig.AA:
 		Description: Upgrades the Mig to be able to attack aircraft.
     TooltipExtras:
         Strengths: • Strong vs Air
-        Weaknesses: • Weak vs Anti-Air
+        Weaknesses: • Weak vs Anti-Air \n • Cannot attack ground.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.mig
 
@@ -1699,7 +1699,7 @@ commander_tree.Slingshot:
 		Description: Enables construction of the Slingshot. \n  The Slingshot is a hovercraft specialized to shoot down aircraft.
     TooltipExtras:
         Strengths: • Strong vs Air \n • Can traverse ground and sea using hover technology.
-        Weaknesses: • Weak vs Ground
+        Weaknesses: • Weak vs Ground \n • Cannot attack ground.
 
 hack.cameo_filler.203:
 	Inherits: ^default.cameo_filler
@@ -3492,7 +3492,7 @@ commander_tree.Stormhunter:
 		Description: Removes the anti-ground weaponry from the Stormrider. \nThe Stormhunter is cheaper, smaller, faster and specialized to hunt air units.
     TooltipExtras:
 		Strengths: • Strong vs Air
-		Weaknesses: • Weak vs Ground
+		Weaknesses: • Weak vs Anti-Air \n • Cannot attack ground.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.stormrider
 
@@ -3596,6 +3596,9 @@ commander_tree.Carrier.Warship:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, sign, scrt, grav, ~aircraft.scrin, ~!commander_tree.carrier.support, ~!commander_tree.carrier.suicide
 		Description: Re-equips the Carrier as Warship with strong armor piercing lasers.
+    TooltipExtras:
+        Strengths: • Strong vs Ground
+        Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.carrier
 
@@ -3609,6 +3612,9 @@ commander_tree.Carrier.Suicide:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, sign, scrt, grav, ~aircraft.scrin, ~!commander_tree.carrier.warship, ~!commander_tree.carrier.support
 		Description: Re-equips the Carrier Invaders with acid suicide modules.
+    TooltipExtras:
+        Strengths: • Strong vs Buildings
+        Weaknesses: • Weak vs Anti-Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.carrier
 
@@ -3622,6 +3628,9 @@ commander_tree.Carrier.Support:
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, sign, scrt, grav, ~aircraft.scrin, ~!commander_tree.carrier.warship, ~!commander_tree.carrier.suicide
 		Description: Re-equips the Carrier Invaders with a repair beam to repair allied units.
+    TooltipExtras:
+        Strengths: • Can repair large groups.
+        Weaknesses: • Unarmed
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.carrier
 
@@ -3683,11 +3692,10 @@ commander_tree.Patrol_Boat:
 		BuildPaletteOrder: 2000
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~ships.any, ~patrol_boat, ~!commander_tree.subchaser, ~!commander_tree.hunter_submarine, ~!commander_tree.recon_boat, ~!commander_tree.sea_scorpion
-		Description: The Patrol Boat is a versatile rocket vessel. \nIt comes with Point-Defense-Laser to stop incoming projectiles.
+		Description: The Patrol Boat is a versatile rocket vessel.
 	TooltipExtras:
-		Strengths: • Strong vs Projectiles
+		Strengths: • Strong vs Projectiles \n • Has an intergrated Point Defense Laser System.
 		Weaknesses: • Weak vs Submarines
-		Attributes: • Point Defense Laser
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.basic_naval
 
@@ -3717,11 +3725,10 @@ commander_tree.Sea_Scorpion:
 		BuildPaletteOrder: 2000
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~ships.any, ~sea_scorpion, ~!commander_tree.subchaser, ~!commander_tree.hunter_submarine, ~!commander_tree.patrol_boat, ~!commander_tree.recon_boat
-		Description: The Sea Scorpion is a flak boat specialized in fighting aircraft. \nIt comes with Point-Defense-Laser to stop incoming projectiles.
+		Description: The Sea Scorpion is a flak boat specialized in fighting aircraft.
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Projectiles
-		Weaknesses: • Weak vs Ships, Submarines
-		Attributes: • Point Defense Laser
+		Strengths: • Strong vs Air, Projectiles \n • Has an intergrated Point Defense Laser System.
+		Weaknesses: • Weak vs Naval
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.basic_naval
 
@@ -3798,11 +3805,10 @@ commander_tree.Aegis_Cruiser:
 		BuildPaletteOrder: 2010
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~ships.any, radar, ~aegis_cruiser, ~!commander_tree.attack_submarine, ~!commander_tree.destroyer, ~!commander_tree.frigate
-		Description: The Aegis Cruiser fires a barrage of missiles. \nThe missiles are best suited against aircraft.\nHas Point Defense Laser system.
+		Description: The Aegis Cruiser fires a barrage of missiles. \nThe missiles are best suited against aircraft.
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft, Projectiles
-		Weaknesses: • Weak vs Submarines, Ships
-		Attributes: • Point Defense Laser
+		Strengths: • Strong vs Air, Projectiles \n • Has an intergrated Point Defense Laser System.
+		Weaknesses: • Weak vs Naval
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.adv_naval
 
@@ -3829,9 +3835,8 @@ commander_tree.Battlecruiser:
 		Prerequisites: prerequisite.has_points, ~ships.any, techcenter, ~battlecruiser, ~!commander_tree.carrier, ~!commander_tree.icbm_submarine, ~!commander_tree.missile_submarine
 		Description: The Battlecruiser is the ultimate artillery ship. \n Dual 8-inch cannons provide constant barrage, \n while a Point Defense Laser fends of incoming enemy artillery.
 	TooltipExtras:
-		Strengths: • Strong vs Ground
-		Weaknesses: • Weak vs Point Defense Laser, Aircraft, Submarines
-		Attributes: • Point Defense Laser
+		Strengths: • Strong vs Ground \n • Has an intergrated Point Defense Laser System.
+		Weaknesses: • Weak vs Point Defense Laser, Air, Submarines
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.siege_naval
 
@@ -3848,7 +3853,7 @@ commander_tree.Carrier:
 		Description: The Carrier launches small strike aircraft. \nThe aircraft are able to fight submarines as well as all ground targets.
 	TooltipExtras:
 		Strengths: • Strong vs Ground, Submarines
-		Weaknesses: • Weak vs Anti-Air, Aircraft
+		Weaknesses: • Weak vs Anti-Air, Air
 		Attributes: • Detects submerged vessles.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.siege_naval
@@ -3865,7 +3870,7 @@ commander_tree.ICBM_Submarine:
 		Description: The ICBM Submarine can fire Nukes over a very long distance.
 	TooltipExtras:
 		Strengths: • Strong vs Buildings, Ships
-		Weaknesses: • Weak vs Anti-Air, Aircraft, Submarines
+		Weaknesses: • Weak vs Anti-Air, Air, Submarines
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.siege_naval
 
