@@ -10,6 +10,7 @@ Of course as per usual with other OpenRA mods. download the installers on the la
  - OpenRA devs for making OpenRA.
  - Darkademic and the Combined Arms team for making Combined Arms in the first place.
  - Patrick Weith for making YMCA, his mod of Combined Arms.
+ - Westwood Studios for creating C&C.
  - Sayedmamdouh for additional support.
  - Friends for playtesting.
  - Winamp for acting as a therapist.
