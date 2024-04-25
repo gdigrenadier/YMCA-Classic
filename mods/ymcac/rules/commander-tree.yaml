@@ -136,7 +136,7 @@ hack.cameo_filler.4:
 commander_tree.Spec_Ops:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Spec Ops
+		Name: Targeter
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 7
@@ -179,7 +179,7 @@ commander_tree.Prism_Cannon:
 commander_tree.Prism_Blaster:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Prism Blaster
+		Name: Prism Refractor
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -208,7 +208,7 @@ hack.cameo_filler.6:
 commander_tree.Scout_Tank_PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Scout Tank Point Laser Defense System
+		Name: Scout Tank (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -222,7 +222,7 @@ commander_tree.Scout_Tank_PLD:
 commander_tree.Scout_Tank.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Scout Tank Reflector Armor
+		Name: Scout Tank (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 13
@@ -268,7 +268,7 @@ commander_tree.Chrono_Tank:
 commander_tree.Chrono_Tank_PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Chrono Tank Point Laser Defense System
+		Name: Chrono Tank (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 15
@@ -281,7 +281,7 @@ commander_tree.Chrono_Tank_PLD:
 commander_tree.Chrono_Tank.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Chrono Tank Reflector Armor
+		Name: Chrono Tank (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 15
@@ -322,7 +322,7 @@ commander_tree.Chrono_Prison:
 commander_tree.Chrono_Prison_AA:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Chrono Prison Anti-Air Upgrade
+		Name: Chrono Prison (AA)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -336,7 +336,7 @@ commander_tree.Chrono_Prison_AA:
 commander_tree.Chrono_Prison_Range:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Chrono Prison Range Upgrade
+		Name: Chrono Prison (Range)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -396,7 +396,7 @@ hack.cameo_filler.13:
 commander_tree.Battle_Fortress.Arty:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Battle Fortress Artillery Armament
+		Name: Battle Fortress (Artillery)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 24
@@ -413,7 +413,7 @@ commander_tree.Battle_Fortress.Arty:
 commander_tree.Battle_Fortress.Missile:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Battle Fortress Missile Armament
+		Name: Battle Fortress (Missile)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 24
@@ -430,7 +430,7 @@ commander_tree.Battle_Fortress.Missile:
 commander_tree.Battle_Fortress.Prism:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Battle Fortress Prism Armament
+		Name: Battle Fortress (Prism)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 24
@@ -447,7 +447,7 @@ commander_tree.Battle_Fortress.Prism:
 commander_tree.Battle_Fortress.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Battle Fortress Point Laser Defense
+		Name: Battle Fortress (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -461,7 +461,7 @@ commander_tree.Battle_Fortress.PLD:
 commander_tree.Battle_Fortress.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Battle Fortress Reflector Armor
+		Name: Battle Fortress (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 26
@@ -480,7 +480,7 @@ hack.cameo_filler.15b:
 commander_tree.Mirage_PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mirage Tank Point Laser Defense System
+		Name: Mirage Tank (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -494,7 +494,7 @@ commander_tree.Mirage_PLD:
 commander_tree.Mirage_Fire_Rate:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mirage Tank Fire Rate Upgrade
+		Name: Mirage Tank (Fire Rate)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -508,7 +508,7 @@ commander_tree.Mirage_Fire_Rate:
 commander_tree.Mirage.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mirage Tank Reflector Armor
+		Name: Mirage Tank (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 30
@@ -533,7 +533,7 @@ hack.cameo_filler.17:
 commander_tree.Tank_Destroyer_PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Tank Destroyer Point Laser Defense System
+		Name: Tank Destroyer (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -547,7 +547,7 @@ commander_tree.Tank_Destroyer_PLD:
 commander_tree.Tank_Destroyer_Burst:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Tank Destroyer Burst Fire Upgrade
+		Name: Tank Destroyer (Burst)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -561,7 +561,7 @@ commander_tree.Tank_Destroyer_Burst:
 commander_tree.Tank_Destroyer.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Tank Destroyer Reflector Armor
+		Name: Tank Destroyer (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -587,7 +587,7 @@ hack.cameo_filler.19:
 commander_tree.Huey.Cryo:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Cryo Huey Upgrade
+		Name: Cryo Huey
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -605,7 +605,7 @@ commander_tree.Huey.Cryo:
 commander_tree.Huey.Recon:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Huey Recon Upgrade
+		Name: Recon Huey
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 37
@@ -622,7 +622,7 @@ commander_tree.Huey.Recon:
 commander_tree.Huey.Grenade:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Grenade Huey Upgrade
+		Name: Grenadier Huey
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 38
@@ -709,7 +709,7 @@ hack.cameo_filler.25:
 commander_tree.Longbow.Artillery:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Longbow Artillery Missiles
+		Name: Artillery-bow 
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 48
@@ -725,7 +725,7 @@ commander_tree.Longbow.Artillery:
 commander_tree.Longbow.Payload:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Longbow Payload
+		Name: Longbow (Payload)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 48
@@ -738,7 +738,7 @@ commander_tree.Longbow.Payload:
 commander_tree.Longbow.Cryo:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Longbow Cryo Missiles
+		Name: Cyro-bow
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 48
@@ -755,7 +755,7 @@ commander_tree.Longbow.Cryo:
 commander_tree.Longbow.Torp:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Longbow Anti-Naval Upgrade
+		Name: Longbow (Anti-Naval)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 48
@@ -798,7 +798,7 @@ commander_tree.Harrier:
 commander_tree.Harrier.Avionics:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Harrier Avionics Upgrade
+		Name: Harrier (Avionics)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 51
@@ -811,7 +811,7 @@ commander_tree.Harrier.Avionics:
 commander_tree.Harrier.Payload:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Harrier Payload Upgrade
+		Name: Harrier (Payload)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 51
@@ -883,15 +883,15 @@ commander_tree.ISU:
 		BuildPaletteOrder: 100
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, radar, ~vehicles.ukraine
-		Description: Enables construction of the ISU Bombard Tank. \n  It moves slowly and shoots slow grenades dealing a lot of damage on impact. \n Has Point Laser Defense System.
+		Description: Enables construction of the ISU Bombard Tank. \n  It moves slowly and shoots slow grenades dealing a lot of damage on impact.
     TooltipExtras:
-        Strengths: • Strong vs Infantry, Vehicles, Groups
+        Strengths: • Strong vs Infantry, Vehicles, Groups \n • Has Point Laser Defense System.
         Weaknesses: • Weak vs Air
 
 commander_tree.ISU_Concussion:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: ISU Bombard Tank Concussion Shells
+		Name: ISU Bombard Tank (Concussion)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -911,7 +911,7 @@ hack.cameo_filler.100a:
 commander_tree.Tesla_Tank_Arc:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Tesla Tank Arcing
+		Name: Tesla Tank (Arcing)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -949,7 +949,7 @@ commander_tree.Flak_Track:
 commander_tree.Flak_Track.Barrage:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mobile Barrage Flak
+		Name: Mobile Flak (Barrage)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 106
@@ -975,7 +975,7 @@ hack.cameo_filler.104:
 commander_tree.Heavy_Tank.AP:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Heavy Tank Armor Piercing Shells
+		Name: Heavy Tank (AP)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 109
@@ -988,7 +988,7 @@ commander_tree.Heavy_Tank.AP:
 commander_tree.Heavy_Tank.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Heavy Tank Point Laser Defense
+		Name: Heavy Tank (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 110
@@ -1001,7 +1001,7 @@ commander_tree.Heavy_Tank.PLD:
 commander_tree.Heavy_Tank.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Heavy Tank Reflector Armor
+		Name: Heavy Tank (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 110
@@ -1169,7 +1169,7 @@ commander_tree.Mammoth_Tank:
 commander_tree.Mammoth_Tank.TT:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mammoth Tesla Turret
+		Name: Teska Mammoth Tank
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1186,7 +1186,7 @@ commander_tree.Mammoth_Tank.TT:
 commander_tree.Mammoth_Tank.NS:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mammoth Nuclear Shells
+		Name: Nuclear Mammoth Tank
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1203,7 +1203,7 @@ commander_tree.Mammoth_Tank.NS:
 commander_tree.Mammoth_Tank.PT:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mammoth Propaganda Tower
+		Name: Propaganda Mammoth Tank
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1217,7 +1217,7 @@ commander_tree.Mammoth_Tank.PT:
 commander_tree.Mammoth_Tank.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mammoth Point Laser Defense
+		Name: Mammoth Tank (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1231,7 +1231,7 @@ commander_tree.Mammoth_Tank.PLD:
 commander_tree.Mammoth_Tank.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mammoth PLD Reflector Armor
+		Name: Mammoth Tank (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1333,7 +1333,7 @@ commander_tree.Hind.Missile:
 commander_tree.Hind.Torp:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Hind Anti-Naval Upgrade
+		Name: Hind (Anti-Naval)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 127
@@ -1415,7 +1415,7 @@ commander_tree.Chemyak:
 commander_tree.Chemyak_Volatile_Tanks:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Chemyak Volatile Tanks
+		Name: Volatile Chemyak 
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1447,7 +1447,7 @@ commander_tree.Sukhoi:
 commander_tree.Sukhoi_Concussion:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Sukhoi Concussion Bombs
+		Name: Sukhoi (Concussion)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1550,7 +1550,7 @@ commander_tree.Mig.Nuke:
 commander_tree.Mig.AA:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mig Anti-Aircraft
+		Name: Mig (AA)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 149
@@ -1604,7 +1604,7 @@ commander_tree.Railgunner:
 commander_tree.Railgunner.No_Crush:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Railgunner Crush-Proof
+		Name: Railgunner (Uncrushable)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1625,7 +1625,7 @@ hack.cameo_filler.200:
 commander_tree.Jumpjet:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Jumpjet Trooper
+		Name: Jumpjet Vulcaneer
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1659,7 +1659,7 @@ commander_tree.Jumpjet_Railgun:
 commander_tree.Jumpjet_Rockets:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Jumpjet Rocket Trooper
+		Name: Jumpjet Rocketeer
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1739,7 +1739,7 @@ hack.cameo_filler.204a:
 commander_tree.Hover_MLRS.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Hover MLRS Reflector
+		Name: Hover MLRS (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 211
@@ -1750,7 +1750,7 @@ commander_tree.Hover_MLRS.Reflector:
 commander_tree.Hover_MLRS.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Hover MLRS PLD
+		Name: Hover MLRS (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 211
@@ -1802,7 +1802,7 @@ hack.cameo_filler.206a:
 commander_tree.Mobile_Sensor_PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mobile Sensor Point Laser Defense
+		Name: Mobile Sensor (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1826,7 +1826,7 @@ hack.cameo_filler.209:
 commander_tree.Medium_Tank_PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Medium Tank Point Laser Defense
+		Name: Medium Tank (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1840,7 +1840,7 @@ commander_tree.Medium_Tank_PLD:
 commander_tree.Medium_Tank.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Medium Tank Reflector Armor
+		Name: Medium Tank (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1866,7 +1866,7 @@ hack.cameo_filler.211:
 commander_tree.APC_Vulcan:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: APC_Vulcan
+		Name: Vulcan APC
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1904,7 +1904,7 @@ commander_tree.Mobile_EMP:
 commander_tree.Mobile_EMP_Stable_Reactor:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mobile EMP Stable Reactor
+		Name: Stable Mobile EMP
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1922,7 +1922,7 @@ commander_tree.Mobile_EMP_Stable_Reactor:
 commander_tree.Mobile_EMP_Volatile_Reactor:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mobile EMP Volatile Reactor
+		Name: Volatile Mobile EMP
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1968,7 +1968,7 @@ commander_tree.Mammoth_Tank_GDI.Hover:
 commander_tree.Mammoth_Tank_GDI.Ion:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Ion Mammoth
+		Name: Ion Mammoth Tank
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -1985,7 +1985,7 @@ commander_tree.Mammoth_Tank_GDI.Ion:
 commander_tree.Mammoth_Tank_GDI.NR:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mammoth Nanite Repair
+		Name: Nanite Mammoth Tank
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2001,7 +2001,7 @@ commander_tree.Mammoth_Tank_GDI.NR:
 commander_tree.Mammoth_Tank_GDI.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mammoth Reflector Armor
+		Name: Mammoth Tank (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2015,7 +2015,7 @@ commander_tree.Mammoth_Tank_GDI.Reflector:
 commander_tree.Mammoth_Tank_GDI.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Mammoth Tank Point Laser Defense
+		Name: Mammoth Tank (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2059,7 +2059,7 @@ commander_tree.Titan.Battle:
 commander_tree.Titan.Railgun:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Titan Railgun
+		Name: Rail-Titan 
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2076,7 +2076,7 @@ commander_tree.Titan.Railgun:
 commander_tree.Titan.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Titan Point Laser Defense System
+		Name: Titan (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2090,7 +2090,7 @@ commander_tree.Titan.PLD:
 commander_tree.Titan.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Titan Reflector Armor
+		Name: Titan (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 236
@@ -2155,7 +2155,7 @@ commander_tree.Stealth_Fighter:
 commander_tree.Stealth_Fighter.Payload:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stealth Fighter Double Payload
+		Name: Stealth Fighter (Payload)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2173,7 +2173,7 @@ hack.cameo_filler.219:
 commander_tree.Orca.Payload:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Orca Payload Upgrade
+		Name: Orca (Payload)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrome
@@ -2190,7 +2190,7 @@ commander_tree.Orca.Payload:
 commander_tree.Orca.AP:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Orca Armor-Piercing Upgrade
+		Name: Orca (AP)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrome
@@ -2207,7 +2207,7 @@ commander_tree.Orca.AP:
 commander_tree.Orca.HE:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Orca High-Explosive Upgrade
+		Name: Orca (HE)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrome
@@ -2224,7 +2224,7 @@ commander_tree.Orca.HE:
 commander_tree.Orca.Torp:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Orca Anti-Naval Upgrade
+		Name: Orca (Anti-Naval)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrome
@@ -2264,7 +2264,6 @@ commander_tree.Mammoth_MKII:
 		Description: Enables construction of the Mammoth MK.II. \n  It is epic walker with dual Railguns and high explosive rockets.
     TooltipExtras:
         Strengths: • Strong vs Everything
-        Weaknesses: • Weak vs Large Armies
 
 hack.cameo_filler.222:
 	Inherits: ^default.cameo_filler
@@ -2283,7 +2282,7 @@ hack.cameo_filler.223:
 commander_tree.Chemical_Mortar:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Chemical Mortar Infantry
+		Name: Chem-Mortar Infantry
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 7
@@ -2331,7 +2330,7 @@ hack.cameo_filler.302:
 commander_tree.Rebel_Leader:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Nod Rebel Leader
+		Name: Rebel Leader
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2376,7 +2375,7 @@ commander_tree.Reinforcements_Coordinator:
 commander_tree.Buggy_PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Buggy Point Laser Defense System
+		Name: Buggy (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2390,7 +2389,7 @@ commander_tree.Buggy_PLD:
 commander_tree.Buggy_AA:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Buggy Anti-Air Laser
+		Name: Buggy (AA)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2485,7 +2484,7 @@ hack.cameo_filler.309:
 commander_tree.Flame_Tank.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Flame Tank Reflector Armor
+		Name: Flame Tank (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 319
@@ -2498,7 +2497,7 @@ commander_tree.Flame_Tank.Reflector:
 commander_tree.Flame_Tank.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Flame Tank Point Laser Defense System
+		Name: Flame Tank (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2512,7 +2511,7 @@ commander_tree.Flame_Tank.PLD:
 commander_tree.Chem_Tank:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Chemical Tank
+		Name: Chem-spray Tank
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2552,7 +2551,7 @@ hack.cameo_filler.312:
 commander_tree.Stealth_Tank.AP:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stealth Tank AP Missiles
+		Name: Stealth Tank (AP)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2570,16 +2569,16 @@ commander_tree.Stealth_Tank.AP:
 commander_tree.Stealth_Tank.Scrin:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stealth Tank Scrin Weapon
+		Name: Stealth Tank (Energy)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
 		BuildPaletteOrder: 325
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, ~!vehicles.legion, tmpl, ~!commander_tree.stealth_tank.explosive_rockets, ~!commander_tree.stealth_tank.ap
-		Description: Upgrades the Stealth Tank with a Scrin Weapon. \n  Energy based weapons cannot be intercepted by Point Laser Defense.
+		Description: Upgrades the Stealth Tank with a Energy Weapon.
     TooltipExtras:
-        Strengths: • Strong vs Vehicles, Vehicles
+        Strengths: • Strong vs Vehicles \n • Energy based weapons cannot be intercepted by Point Laser Defense.
         Weaknesses: • Weak vs Air
         Attributes: • Can cloak itself.
 	ProvidesPrerequisite@filler:
@@ -2588,7 +2587,7 @@ commander_tree.Stealth_Tank.Scrin:
 commander_tree.Stealth_Tank.Explosive_Rockets:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stealth Tank Explosive Rockets
+		Name: Stealth Tank (HE)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2606,7 +2605,7 @@ commander_tree.Stealth_Tank.Explosive_Rockets:
 commander_tree.Stealth_Tank.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stealth Tank Reflector Armor
+		Name: Stealth Tank (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2620,7 +2619,7 @@ commander_tree.Stealth_Tank.Reflector:
 commander_tree.Stealth_Tank.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stealth Tank Point Laser Defense System
+		Name: Stealth Tank (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 326
@@ -2645,7 +2644,7 @@ hack.cameo_filler.314:
 commander_tree.Recon_Bike.Scrin:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Recon Bike (E)
+		Name: Recon Bike (Energy)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2662,35 +2661,35 @@ commander_tree.Recon_Bike.Scrin:
 commander_tree.Recon_Bike.Scrin.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Scrin Bike Point Laser Defense System
-	Buildable:
+		Name: Energy Bike (PLD)
+    Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
 		BuildPaletteOrder: 332
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, ~!vehicles.marked, tmpl, ~commander_tree.recon_bike.scrin, ~!commander_tree.recon_bike.scrin.reflector
-		Description: Upgrades the Scrin Bike with a Point Laser Defense System to shoot down incoming projectiles.
+		Description: Upgrades the Energy Bike with a Point Laser Defense System to shoot down incoming projectiles.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.bike2
 
 commander_tree.Recon_Bike.Scrin.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Scrin Bike Reflector Armor
+		Name: Energy Bike (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
 		BuildPaletteOrder: 332
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, ~!vehicles.marked, tmpl, ~commander_tree.recon_bike.scrin, ~!commander_tree.recon_bike.scrin.pld
-		Description: Equips the Scrin Bike with Reflector Armor. \n Very resistent vs. Energy Weapons.
+		Description: Equips the Energy Bike with Reflector Armor. \n Very resistent vs. Energy Weapons.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.bike2
 
 commander_tree.Recon_Bike.Rocket_Hail:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Recon Bike Rocket Hail
+		Name: Hailer Bike 
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2707,7 +2706,7 @@ commander_tree.Recon_Bike.Rocket_Hail:
 commander_tree.Recon_Bike.Rocket_Hail.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Rocket Hail Bike Reflector Armor
+		Name: Hailer Bike (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2721,7 +2720,7 @@ commander_tree.Recon_Bike.Rocket_Hail.Reflector:
 commander_tree.Recon_Bike.Rocket_Hail.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Rocket Hail Bike Point Laser Defense System
+		Name: Hailer Bike (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2735,7 +2734,7 @@ commander_tree.Recon_Bike.Rocket_Hail.PLD:
 commander_tree.Recon_Bike.Explosive:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Explosive Rocket Bike
+		Name: Recon Bike (HE)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2752,7 +2751,7 @@ commander_tree.Recon_Bike.Explosive:
 commander_tree.Recon_Bike.Explosive.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Explosive Rocket Bike (PLD)
+		Name: Recon Bike (HE/PLD)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2766,7 +2765,7 @@ commander_tree.Recon_Bike.Explosive.PLD:
 commander_tree.Recon_Bike.Explosive.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Explosive Rocket Bike Reflector Armor
+		Name: Recon Bike (HE/Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2792,7 +2791,7 @@ hack.cameo_filler.316:
 commander_tree.Light_Tank_Laser:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Light Tank Laser Weapon
+		Name: Laser Light Tank
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -2879,7 +2878,7 @@ commander_tree.Banshee.Bomber:
 commander_tree.Banshee.Payload:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Banshee Payload Upgraded
+		Name: Banshee (Payload)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 341
@@ -2904,7 +2903,7 @@ hack.cameo_filler.322:
 commander_tree.Apache.Flyby:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Apache Flyby
+		Name: Flyby Apache
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 344
@@ -2917,7 +2916,7 @@ commander_tree.Apache.Flyby:
 commander_tree.Apache.Torp:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Apache Anti-Naval Upgrade
+		Name: Apache (Anti-Naval)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 344
@@ -2980,7 +2979,7 @@ hack.cameo_filler.322d:
 commander_tree.Venom.Heavy_Laser:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Venom Heavy Laser
+		Name: Heavy Venom
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 346
@@ -2993,7 +2992,7 @@ commander_tree.Venom.Heavy_Laser:
 commander_tree.Venom.Payload:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Venom Payload Upgrade
+		Name: Venom (Payload)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 346
@@ -3021,7 +3020,7 @@ hack.cameo_filler.322:
 commander_tree.Gunwalker.Sensor:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Gunwalker Sensors Upgrade
+		Name: Gunwalker (Sensors)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 400
@@ -3044,7 +3043,7 @@ hack.cameo_filler.401:
 commander_tree.Interloper.AA:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Interloper Anti-Air Upgrade
+		Name: Interloper (AA)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 403
@@ -3057,7 +3056,7 @@ commander_tree.Interloper.AA:
 commander_tree.Interloper.Teleport:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Interloper Teleport Upgrade
+		Name: Interloper (Teleport)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 404
@@ -3082,7 +3081,7 @@ hack.cameo_filler.403:
 commander_tree.Corrupter.Area:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Corrupter Area Upgrade
+		Name: Corrupter (AOE)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 409
@@ -3095,7 +3094,7 @@ commander_tree.Corrupter.Area:
 commander_tree.Corrupter.Range:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Corrupter Range Upgrade
+		Name: Corrupter (Range)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 410
@@ -3120,7 +3119,7 @@ hack.cameo_filler.405:
 commander_tree.Devourer.Acid:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Devourer Acid Upgrade
+		Name: Devourer (Acid)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 413
@@ -3133,7 +3132,7 @@ commander_tree.Devourer.Acid:
 commander_tree.Devourer.Heavy:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Devourer Heavy Upgrade
+		Name: Heavy Devourer
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 414
@@ -3158,7 +3157,7 @@ hack.cameo_filler.407:
 commander_tree.Darkener.Chain:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Darkener Chain Upgrade
+		Name: Darkener (Refractor)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -3172,7 +3171,7 @@ commander_tree.Darkener.Chain:
 commander_tree.Darkener.Disc:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Darkener Disc Upgrade
+		Name: Darkener (AP)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 418
@@ -3200,7 +3199,7 @@ hack.cameo_filler.409:
 commander_tree.Seeker.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Seeker PLD Upgrade
+		Name: Seeker (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 421
@@ -3213,7 +3212,7 @@ commander_tree.Seeker.PLD:
 commander_tree.Seeker.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Seeker Reflector Upgrade
+		Name: Seeker (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 422
@@ -3238,7 +3237,7 @@ hack.cameo_filler.411:
 commander_tree.Lacerator.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Lacerator PLD Upgrade
+		Name: Lacerator (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 425
@@ -3251,7 +3250,7 @@ commander_tree.Lacerator.PLD:
 commander_tree.Lacerator.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Lacerator Reflector Upgrade
+		Name: Lacerator (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 426
@@ -3264,7 +3263,7 @@ commander_tree.Lacerator.Reflector:
 commander_tree.Lacerator.AP:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Lacerator AP Upgrade
+		Name: Lacerator (AP)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 427
@@ -3292,7 +3291,7 @@ hack.cameo_filler.413:
 commander_tree.Ruiner.Barrage:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Ruiner Barrage Upgrade
+		Name: Ruiner (Barrage)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 430
@@ -3315,7 +3314,7 @@ hack.cameo_filler.415:
 commander_tree.Tripod.Chainer:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Tripod Refraction Upgrade
+		Name: Tripod (Refraction)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 433
@@ -3328,7 +3327,7 @@ commander_tree.Tripod.Chainer:
 commander_tree.Tripod.Acid:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Tripod Acid Upgrade
+		Name: Tripod (Acid)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 435
@@ -3341,7 +3340,7 @@ commander_tree.Tripod.Acid:
 commander_tree.Tripod.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Tripod PLD Upgrade
+		Name: Tripod (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 437
@@ -3354,7 +3353,7 @@ commander_tree.Tripod.PLD:
 commander_tree.Tripod.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Tripod Reflector Upgrade
+		Name: Tripod (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -3380,7 +3379,7 @@ hack.cameo_filler.416a:
 commander_tree.Reaper.Acid:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Reaper Acid Upgrade
+		Name: Reaper (Acid)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 440
@@ -3393,7 +3392,7 @@ commander_tree.Reaper.Acid:
 commander_tree.Reaper.Range:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Reaper Range Upgrade
+		Name: Reaper (Range)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 440
@@ -3406,7 +3405,7 @@ commander_tree.Reaper.Range:
 commander_tree.Reaper.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Reaper Tripod PLD Upgrade
+		Name: Reaper Tripod (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 441
@@ -3419,7 +3418,7 @@ commander_tree.Reaper.PLD:
 commander_tree.Reaper.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Reaper Reflector Upgrade
+		Name: Reaper (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		IconPalette: chrometd
@@ -3445,7 +3444,7 @@ hack.cameo_filler.417a:
 commander_tree.Stormcrawler.PLD:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stormcrawler PLD Upgrade
+		Name: Stormcrawler (PLD)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 447
@@ -3458,7 +3457,7 @@ commander_tree.Stormcrawler.PLD:
 commander_tree.Stormcrawler.Reflector:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stormcrawler Reflector Upgrade
+		Name: Stormcrawler (Reflector)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 448
@@ -3483,7 +3482,7 @@ hack.cameo_filler.419:
 commander_tree.Stormhunter:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stormhunter Upgrade
+		Name: Stormhunter
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 451
@@ -3499,7 +3498,7 @@ commander_tree.Stormhunter:
 commander_tree.Stormbomber:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stormbomber Upgrade
+		Name: Stormbomber
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 452
@@ -3516,7 +3515,7 @@ commander_tree.Stormbomber:
 commander_tree.Stormbomber.Torp:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Stormbomber Anti-Naval Upgrade
+		Name: Stormbomber (Anti-Naval)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 452
@@ -3545,7 +3544,7 @@ hack.cameo_filler.421:
 commander_tree.Devastator.Beam:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Devastator Beam Upgrade
+		Name: Devastator (Beam)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 455
@@ -3561,7 +3560,7 @@ commander_tree.Devastator.Beam:
 commander_tree.Devastator.Shard:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Devastator Shard Upgrade
+		Name: Devastator (AP)
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 456
@@ -3589,7 +3588,7 @@ hack.cameo_filler.423:
 commander_tree.Carrier.Warship:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Warship Upgrade
+		Name: Warship
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 459
@@ -3605,7 +3604,7 @@ commander_tree.Carrier.Warship:
 commander_tree.Carrier.Suicide:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Suicide Drone Carrier Upgrade
+		Name: Suicide Drone Carrier
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 460
@@ -3621,7 +3620,7 @@ commander_tree.Carrier.Suicide:
 commander_tree.Carrier.Support:
 	Inherits: ^default.commander_tree_item
 	Tooltip:
-		Name: Support Carrier Upgrade
+		Name: Support Carrier
 	Buildable:
 		Queue: Commander_Tree
 		BuildPaletteOrder: 461
