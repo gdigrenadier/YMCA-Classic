@@ -1977,8 +1977,8 @@ commander_tree.Mammoth_Tank_GDI.Ion:
 		Prerequisites: prerequisite.has_points, ~vehicles.gdi, ~!vehicles.zocom, ~!vehicles.talon, gtek, ~!commander_tree.mammoth_tank_gdi.nr, ~!commander_tree.mammoth_tank_gdi.hover
 		Description: The Mammoth is upgraded with an Ion cannon. \n  Energy based weapon systems cannot be shot down by Point Laser Defense Systems.
     TooltipExtras:
-        Strengths: • Strong vs Everything
-        Weaknesses: • Weak vs Armies
+        Strengths: • Strong vs Ground
+        Weaknesses: • Weak vs Air
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.gdimammoth
 

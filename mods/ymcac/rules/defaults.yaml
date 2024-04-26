@@ -3625,7 +3625,7 @@
 	ProvidesPrerequisite@naval:
 		Prerequisite: ships.any
 	ProvidesPrerequisite@hunter_sub:
-		Factions: soviet, russia, ukraine, iraq, nod, marked, blackh, legion, china
+		Factions: nod, marked, blackh, legion
 		Prerequisite: hunter_sub
 	ProvidesPrerequisite@subchaser:
 		Factions: allies, france, england, germany
