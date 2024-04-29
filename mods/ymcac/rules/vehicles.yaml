@@ -2620,7 +2620,7 @@ HTNK.Ion:
 		Weapon: IonZap
 		LocalOffset: 870,0,360
     Armament@SECONDARY:
-        Weapon: None
+        Weapon:
 	SpawnActorOnDeath:
 		Actor: HTNK.Ion.Husk
 
