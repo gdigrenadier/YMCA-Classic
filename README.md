@@ -5,7 +5,7 @@ Of course as per usual with other OpenRA mods. download the installers on the la
 
 (Finally got those damned installers to work if you couldn't already tell.)
 
-# Credits:
+# Credits
 
  - OpenRA devs for making OpenRA.
  - Darkademic and the Combined Arms team for making Combined Arms in the first place.
