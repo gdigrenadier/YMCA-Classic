@@ -1,7 +1,7 @@
 # YMCA Classic
 YMCAC (YMCA: Classic) is a mod of an OpenRA mod called YMCA. It updates an old version of the mod, adding new maps, balances and some other cool stuff.
 
-Of course as per usual with other OpenRA mods. download the installers on the latest releases.
+As per usual with other OpenRA mods, download the installers in the release section.
 
 (Finally got those damned installers to work if you couldn't already tell.)
 
