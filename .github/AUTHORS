@@ -1,12 +1,25 @@
-The Combined Arms Mod has grown from a small personal
-modding project, to a small, but passionate community.
+The YMCA OpenRA mod has grown from a personal Combined Arms fork
+modding project, to a small, but passionate community. We are very thankful
+for the inspiration Combined Arms has given us, so that we even copied the sentence
+before this one.
+There are still many things from Combined Arms left in this mod and we do not intend
+to steal any of their original creations. If you find assets that are still in this
+mod but are taken without consent, please let us know, we will remove that.
+If you like this mod and don't know Combined
+Arms (unlikely) please go and try out their mod as well. It might also be very
+enjoyable for you (https://discord.gg/CxFYWEJ).
+Another big thanks goes to ppmsite or ppmforums.com. What these guys have done for
+the C&C modding community is insane and their endurance doing this for decades is
+unparalleled.
 
-However It wouldn't be what it is today without the help of the
-talented wider OpenRA community.
+In this sense, big thanks go to
 
 Combined Arms developers:
 	* Inq (Project lead)
-	* Darkademic (Art & Balanace)
+	* Darkademic (Art & Balance)
+
+However It wouldn't be what it is today without the help of the
+talented wider OpenRA community.
 
 Contributors & special thanks to:
 	* GraionDilach (C#)
@@ -24,21 +37,57 @@ Contributors & special thanks to:
 
 	* Mortecha (Huey)
 	* Katzsmile (UAV)
-	* KylieAdams (V-22 Carryall, SU-47, SU-27 frog, F-22, YF-23)
+	* KylieAdams (YF-23, Black Hawk)
+	* 206UE (F-22)
 	* CombinE (0tnk Beam Cannon)
 	* TeleVisor (Orca v2, Orca Bomber, Orca Warship, Banshee, Harpy)
 	* Arikado (Kirov, Kirov Carrier)
 	* Siopee (Harrier)
-	* ElPollo/The Commando (Comanche)
+	* ElPollo/The Commando (New Scrin Units, old are Darkademic - to be replaced)
 	* Hassan_2030 (Venom)
 	* sayedmamdouh (Rebel Leader)
 	* ra2killer (Hornet)
-	* Azri_Apoc (B2B)
-	* Creator (Splitter)
-	* Salted Old (ptnk2/sref)
+	* Azri_Apoc (B2B, Scoutdrone)
+	* Creator (Splitter, SU-25, SU-27, SU-47, V-22 Carryall)
+	* Salted Old (ptnk2/sref, A-222/Spectre, V3, Gattling Warship)
 	* Tony (ptnk/sref)
+	* Stygs (Disruptor, APC3)
+	* McPwny, AnimalMan, PatrickWieth (Oil Platform)
+	* DaFool, EA (Juggernaut, Cyborg Commando)
+	* CombinE (PDLT)
+	* Ronco (Heavy Tesla Tank)
+	* IVI (Scorpion)
+	* Bu7loos (Slingshot, Grand Cannon, Cryolauncher/Yuri Chaos Platform, Apocalypse, HMLRS, Mobile EMP)
+	* Orac (Chronoharv)
+	* Overwatch (Heavy Flame Tank, XO/Bastion, Support Battlefortress)
+	* Midian-P (Battlemaster, Outpost, Dragon Tank, Bulldozer, Supply Truck, Overlord, Helix, Chinese Mig, Centurion/Gene Splicer, ysgen/MSG, Bastion, Chinook)
+	* B.A.Znd (China Nuke Cannon, ISU, Katyusha, BPNE/Rice Cooker, Soviet Miner)
+	* G-E (2S3 Akatsiya)
+	* partyzanPaulZy (MARV)
+	* L()KI (Ogunship/Orca.Drone)
+	* 206UE, Slavack, Ackron (Titan)
+	* Kiriha (prmd/Tankd)
+	* Yuriko222 (arty/howi)
+	* atomic noodles (Prismfortress, Battlefortress)
+	* cxtian (mini/mgdrone)
+	* MigEater (Aurora, Comanche)
+	* FreisArk01 (Mtank/IFV)
+	* lalalayuan777 (Chrono Prison)
+	* LKO (light tripod)
+	* cort (Bastion icon)
+	* RoadWarrior (Huey)
+	* zenoniations (Chinese Gatling Tank)
+	* Shepherd Moons (Inferno Cannon)
+	* YUAN YIN (China gatling infantry)
+	* Augusto (Red Guard, Minigunner, Tank Hunter)
+	* DarkStar (snct.shp/SonicTurret)
+	* Conman (Bi Xi Dragon)
+	* Medalmonkey/DerekPlus (Obelisktrooper, Mirage Trooper/Saboteur, Mercenary, Stormtrooper, Shock Trooper, Railgunner/Parasite)
+	* m7 (Microwave Tank)
+	* Merophage/RAPD (conscript, light infantry)
+	* unknown_men (Crazy Ivan)
 
-Of course Combined Arms wouldn't exist today without OpenRA & the
+Of course YMCA wouldn't exist today without OpenRA & the
 hard work of the many OpenRA contributors.
 
 The OpenRA developers are:
@@ -188,6 +237,7 @@ Also thanks to:
     * UnknownProgrammer
     * Vladimir Komarov (VrKomarov)
     * Wuschel
+
 
 Using GNU FreeFont distributed under the GNU GPL
 terms.
