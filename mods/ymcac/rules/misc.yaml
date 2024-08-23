@@ -197,6 +197,16 @@ MONEYCRATE:
 	RenderSprites:
 		Image: wcrate
 
+MONEYCRATE1K:
+	Inherits: MONEYCRATE
+	GiveCashCrateAction:
+		Amount: 1000
+
+MONEYCRATE2K:
+	Inherits: MONEYCRATE
+	GiveCashCrateAction:
+		Amount: 2000
+
 HEALCRATE:
 	Inherits: ^Crate
 	Tooltip:

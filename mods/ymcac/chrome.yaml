@@ -550,33 +550,33 @@ strategic:
 flags:
 	Inherits: ^Glyphs
 	Regions:
-		england: 226, 49, 30, 15
-		germany: 226, 65, 30, 15
-		france: 226, 81, 30, 15
-		zocom: 226, 97, 30, 15
-		talon: 226, 113, 30, 15
-		eagle: 226, 129, 30, 15
-		ukraine: 226, 145, 30, 15
-		russia: 226, 161, 30, 15
-		iraq: 195, 145, 30, 15
-		blackh: 195, 161, 30, 15
-		legion: 133, 161, 30, 15
-		marked: 164, 161, 30, 15
-		allies: 226, 177, 30, 15
-		soviet: 226, 193, 30, 15
-		gdi: 226, 97, 30, 15
-		nod: 195, 161, 30, 15
-		scrin: 164, 177, 30, 15
-		reaper: 133, 177, 30, 15
-		traveler: 102, 177, 30, 15
-		harbinger: 164, 177, 30, 15
-		RandomSoviet: 226, 209, 30, 15
-		RandomAllies: 226, 225, 30, 15
-		RandomGDI: 195, 177, 30, 15
-		RandomNOD: 195, 193, 30, 15
-		RandomScrin: 164, 193, 30,15
-		Random: 226, 241, 30, 15
-        RandomNoScrin: 165, 146, 30, 15
+		england: 226, 50, 30, 15
+		germany: 226, 66, 30, 15
+		france: 226, 82, 30, 15
+		zocom: 226, 98, 30, 15
+		talon: 226, 114, 30, 15
+		eagle: 226, 130, 30, 15
+		ukraine: 226, 146, 30, 15
+		russia: 226, 162, 30, 15
+		iraq: 195, 146, 30, 15
+		blackh: 195, 162, 30, 15
+		legion: 133, 162, 30, 15
+		marked: 164, 162, 30, 15
+		allies: 226, 178, 30, 15
+		soviet: 226, 194, 30, 15
+		gdi: 226, 98, 30, 15
+		nod: 195, 162, 30, 15
+		scrin: 164, 178, 30, 15
+		reaper: 133, 178, 30, 15
+		traveler: 102, 178, 30, 15
+		harbinger: 164, 178, 30, 15
+		RandomSoviet: 226, 210, 30, 15
+		RandomAllies: 226, 226, 30, 15
+		RandomGDI: 195, 178, 30, 15
+		RandomNOD: 195, 194, 30, 15
+		RandomScrin: 164, 194, 30, 15
+		Random: 226, 242, 30, 15
+        RandomNoScrin: 164, 146, 30, 15
 		spectator: 226, 241, 30, 15
 
 music:

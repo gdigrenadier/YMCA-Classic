@@ -886,7 +886,7 @@ BuggyLaserAA:
 AdvancedPointLaser:
 	Inherits: LaserPrototype
 	ReloadDelay: 5
-	ValidTargets: Ground, Missile, BulletCA
+	ValidTargets: Ground, Missile, BulletCA, Air
 	InvalidTargets: Infantry, Vehicle, Tank, Structure, Wall
 	Range: 2c768
 	Report: vpalwe2d.aud

@@ -1602,18 +1602,19 @@ Player:
 			kiro: 2
 			a10: 5
 			auro: 5
-			ss: 1
-			msub: 1
-			dd: 1
-			ca: 1
-			carr: 1
-			pt: 1
-			pt2: 1
-			dd2: 1
-			ss2: 2
-			isub: 1
-			sb: 1
-			seas: 1
+			ss.ai: 70
+			msub.ai: 60
+			dd.ai: 70
+			ca.ai: 60
+			carr.ai: 60
+			pt.ai: 70
+			pt2.ai: 70
+			dd2.ai: 70
+			ss2.ai: 70
+			isub.ai: 60
+			sb.ai: 70
+			seas.ai: 70
+            ac.ai: 70
 			stmr: 5
 			deva: 3
 			pac: 3
@@ -1634,17 +1635,17 @@ Player:
 			mech: 1
 			medi: 1
 			msub: 4
-			ca: 4
-			isub: 4
-			carr: 4
+			ca.ai: 4
+			isub.ai: 4
+			carr.ai: 4
 			jjet: 8
 			kiro: 3
 			deva: 3
 			pac: 3
-			ss: 10
-			ss2: 10
-			sb: 10
-			seas: 10
+			ss.ai: 10
+			ss2.ai: 10
+			sb.ai: 10
+			seas.ai: 10
 			harv: 8
 			har2: 8
 			harv.scrin: 8
@@ -1815,18 +1816,19 @@ Player:
 			kiro: 2
 			a10: 5
 			auro: 5
-			ss: 1
-			msub: 1
-			dd: 1
-			ca: 1
-			carr: 1
-			pt: 1
-			pt2: 1
-			dd2: 1
-			ss2: 2
-			isub: 1
-			sb: 1
-			seas: 1
+			ss.ai: 70
+			msub.ai: 60
+			dd.ai: 70
+			ca.ai: 60
+			carr.ai: 60
+			pt.ai: 70
+			pt2.ai: 70
+			dd2.ai: 70
+			ss2.ai: 70
+			isub.ai: 60
+			sb.ai: 70
+			seas.ai: 70
+            ac.ai: 70
 			stmr: 5
 			deva: 3
 			pac: 3
@@ -1846,18 +1848,18 @@ Player:
 			s6: 1
 			mech: 1
 			medi: 1
-			msub: 4
-			ca: 4
-			isub: 4
-			carr: 4
+			msub.ai: 4
+			ca.ai: 4
+			isub.ai: 4
+			carr.ai: 4
 			jjet: 8
 			kiro: 3
 			deva: 3
 			pac: 3
-			ss: 10
-			ss2: 10
-			sb: 10
-			seas: 10
+			ss.ai: 10
+			ss2.ai: 10
+			sb.ai: 10
+			seas.ai: 10
 			harv: 8
 			har2: 8
 			harv.scrin: 8
@@ -2001,18 +2003,19 @@ Player:
 			kiro: 2
 			a10: 5
 			auro: 5
-			ss: 1
-			msub: 1
-			dd: 1
-			ca: 1
-			carr: 1
-			pt: 1
-			pt2: 1
-			dd2: 1
-			ss2: 2
-			isub: 1
-			sb: 1
-			seas: 1
+			ss.ai: 70
+			msub.ai: 60
+			dd.ai: 70
+			ca.ai: 60
+			carr.ai: 60
+			pt.ai: 70
+			pt2.ai: 70
+			dd2.ai: 70
+			ss2.ai: 70
+			isub.ai: 60
+			sb.ai: 70
+			seas.ai: 70
+            ac.ai: 70
 			stmr: 5
 			deva: 3
 			pac: 3
@@ -2032,18 +2035,18 @@ Player:
 			s6: 1
 			mech: 1
 			medi: 1
-			msub: 4
-			ca: 4
-			isub: 4
-			carr: 4
+			msub.ai: 4
+			ca.ai: 4
+			isub.ai: 4
+			carr.ai: 4
 			jjet: 8
 			kiro: 2
 			deva: 2
 			pac: 2
-			ss: 10
-			ss2: 10
-			sb: 10
-			seas: 10
+			ss.ai: 10
+			ss2.ai: 10
+			sb.ai: 10
+			seas.ai: 10
 			harv: 8
 			har2: 8
 			harv.scrin: 8
@@ -2186,18 +2189,19 @@ Player:
 			kiro: 2
 			a10: 5
 			auro: 5
-			ss: 1
-			msub: 1
-			dd: 1
-			ca: 1
-			carr: 1
-			pt: 1
-			pt2: 1
-			dd2: 1
-			ss2: 2
-			isub: 1
-			sb: 1
-			seas: 1
+			ss.ai: 70
+			msub.ai: 60
+			dd.ai: 70
+			ca.ai: 60
+			carr.ai: 60
+			pt.ai: 70
+			pt2.ai: 70
+			dd2.ai: 70
+			ss2.ai: 70
+			isub.ai: 60
+			sb.ai: 70
+			seas.ai: 70
+            ac.ai: 70
 			stmr: 5
 			deva: 3
 			pac: 3
@@ -2217,18 +2221,18 @@ Player:
 			s6: 1
 			mech: 1
 			medi: 1
-			msub: 4
-			ca: 4
-			isub: 4
-			carr: 4
+			msub.ai: 4
+			ca.ai: 4
+			isub.ai: 4
+			carr.ai: 4
 			jjet: 8
 			kiro: 1
 			deva: 1
 			pac: 1
-			ss: 10
-			ss2: 10
-			sb: 10
-			seas: 10
+			ss.ai: 10
+			ss2.ai: 10
+			sb.ai: 10
+			seas.ai: 10
 			harv: 8
 			har2: 8
 			harv.scrin: 8

@@ -203,7 +203,7 @@ Player:
 		Image: iconchevrons
 		Sequence: veteran
 	ResourceStorageWarning:
-        Prerequisite: ~!global.nosilo
+		Prerequisite: ~!global.nosilo
 	PlayerExperience:
 	GameSaveViewportManager:
 	PlayerRadarTerrain:
