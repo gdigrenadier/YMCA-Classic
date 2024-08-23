@@ -541,7 +541,7 @@ E6:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 60
-		Prerequisites: ~infantry.ra, ~techlevel.infonly
+		Prerequisites: ~infantry.ra, ~techlevel.infonly, ~!infantry.germany
 		Description: Infiltrates and captures\nenemy structures.\n  Can repair friendly structures & bridges.\n  Special Ability: Repair\n  Unarmed
 	Valued:
 		Cost: 500
@@ -565,6 +565,15 @@ E6:
 		Priority: 5
 	Targetable:
 		TargetTypes: Ground, Infantry, Disguise, ChaosImmune
+
+PIONEER:
+	Inherits: E6
+	Buildable:
+		Prerequisites: ~infantry.germany
+	Tooltip:
+		Name: German Pioneer
+	Voiced:
+		VoiceSet: EngineerVoice
 
 SPY:
 	Inherits: ^Soldier

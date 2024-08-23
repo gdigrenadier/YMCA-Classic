@@ -686,6 +686,67 @@ e6:
 		Tick: 80
 	icon: e6icon
 
+pioneer:
+	Inherits: ^CommonDeaths
+	stand: n6
+		Facings: 8
+	stand2: n6
+		Start: 8
+		Facings: 8
+	run: n6
+		Start: 16
+		Length: 6
+		Facings: 8
+		Tick: 100
+	idle1: n6
+		Start: 121
+		Length: 8
+		Tick: 120
+	idle2: n6
+		Start: 130
+		Length: 14
+		Tick: 120
+	die1: n6
+		Start: 146
+		Length: 8
+	die2: n6
+		Start: 154
+		Length: 8
+	die3: n6
+		Start: 162
+		Length: 8
+	die4: n6
+		Start: 170
+		Length: 12
+	die5: n6
+		Start: 182
+		Length: 18
+	die7: n6
+		Start: 130
+		Length: 4
+		Tick: 80
+	prone-stand: n6
+		Start: 82
+		Stride: 4
+		Facings: 8
+	prone-stand2: n6
+		Start: 82
+		Stride: 4
+		Facings: 8
+	prone-run: n6
+		Start: 82
+		Length: 4
+		Facings: 8
+		Tick: 100
+	chrono-overlay: chronofade_small
+		Length: *
+		BlendMode: Additive
+		Offset: 0, 0
+		UseTilesetCode: false
+		ZOffset: 512
+		Tick: 80
+	icon: e6icon
+
 e7:
 	Inherits: ^CommonDeaths
 	stand: e7

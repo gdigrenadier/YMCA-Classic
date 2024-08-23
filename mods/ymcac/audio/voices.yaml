@@ -69,6 +69,12 @@ EngineerVoice:
 		Select: eengin1,eyessir1
 		Action: eaffirm1,emovout1
 
+PioneerVoice:
+	Inherits: ^InfantryDeaths
+	Voices:
+		Select: pionselect,pionyessir
+		Action: pionaffirmative,pionmoveout
+
 MedicVoice:
 	Inherits: ^InfantryDeaths
 	Voices:
