@@ -2382,7 +2382,7 @@ commander_tree.Buggy_PLD:
 		BuildPaletteOrder: 309
 		ForceIconLocation: true
 		Prerequisites: prerequisite.has_points, ~vehicles.nod, ~!vehicles.blackh, tmpl, ~!commander_tree.buggy_aa
-		Description: Upgrades the Buggy with a Point Laser Defense system to shoot down incoming projectiles.
+		Description: Upgrades the Buggy with a Point Laser Defense system.
 	ProvidesPrerequisite@filler:
 		Prerequisite: filler.buggy
 
