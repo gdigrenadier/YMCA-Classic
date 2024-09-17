@@ -904,6 +904,11 @@ AGUN:
 		Range: 8c0
 		RequiresCondition: !(disabled || empdisable || being-warped)
 
+DOME.inf:
+	Inherits: DOME
+	Buildable:
+		Prerequisites: ref, ~structures.ra, techlevel.infonly
+
 DOME:
 	Inherits: ^Building
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDownOrForceDisable
@@ -2423,6 +2428,26 @@ TPWR:
 		ActiveColor: 0080FF60
 		CooldownColor: FFFF0080
 		RequiresCondition: !critical && (owned-by-brutal-ai || owned-by-hard-ai || owned-by-normal-ai || owned-by-easy-ai || owned-by-naval-ai)
+
+STEK.inf:
+	Inherits: STEK
+	Buildable:
+		Prerequisites: dome, ~structures.soviet, techlevel.infonly
+
+GTEK.inf:
+	Inherits: GTEK
+	Buildable:
+		Prerequisites: HQ, ~structures.gdi, techlevel.infonly
+
+ATEK.inf:
+	Inherits: ATEK
+	Buildable:
+		Prerequisites: dome, ~structures.allies, techlevel.infonly
+
+TMPL.inf:
+	Inherits: TMPL
+	Buildable:
+		Prerequisites: HQ, ~structures.nod, techlevel.infonly
 
 STEK:
 	Inherits: ^ScienceBuilding
@@ -4232,6 +4257,11 @@ OBLI:
 	Targetable@BoostMe:
 		RequiresCondition: !ammo
 		TargetTypes: BoostMe
+		
+HQ.inf:
+	Inherits: HQ
+	Buildable:
+		Prerequisites: tdref, ~structures.td, ~techlevel.infonly
 
 HQ:
 	Inherits: ^BuildingTD
@@ -6606,6 +6636,11 @@ UPGC.DROP:
 		Type: tower.drop
 	Power:
 		Amount: -50
+
+BIO.Nod.inf:
+	Inherits: BIO.Nod
+	Buildable:
+		Prerequisites: ~structures.nod, tmpl.inf
 
 BIO.Nod:
 	Inherits: ^BuildingTD

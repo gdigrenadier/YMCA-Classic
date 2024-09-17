@@ -444,6 +444,27 @@ atek:
 	icon: atekicon
 	fake-icon: ateficon
 
+bio.inf:
+	Inherits: bio
+
+dome.inf:
+	Inherits: dome
+
+hq.inf:
+	Inherits: hq
+
+stek.inf:
+	Inherits: stek
+
+gtek.inf:
+	Inherits: gtek
+
+atek.inf:
+	Inherits: atek
+
+tmpl.inf:
+	Inherits: tmpl
+
 stek:
 	Inherits: ^StructureOverlays
 	idle: stek
